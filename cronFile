@@ -1,0 +1,10 @@
+SHELL=/bin/bash
+
+30 18 * * 5 export DISPLAY=':0.0'; \
+export XAUTHORITY=$HOME/.Xauthority; \
+export PATH=$PATH:$HOME/.cargo/bin:$HOME/.zim:/usr/local/bin; \
+export XDG_RUNTIME_DIR=/tmp/runtime-erebus; \
+dbus_session_file=$HOME/.dbus/session-bus/$(cat /var/lib/dbus/machine-id)-0; \
+address=$(grep ^'DBUS_SESSION_BUS_ADDRESS' $dbus_session_file); \
+export $address; \
+nc -zw1 mirror.clarkson.edu 443 && alacritty -e $HOME/bin/void_updates.sh success || alacritty -e $HOME/bin/void_updates.sh fail

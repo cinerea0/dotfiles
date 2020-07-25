@@ -1,0 +1,48 @@
+**** BEGIN LOGGING AT Tue Mar 10 11:26:45 2020
+
+Mar 10 11:26:45 *	Looking up chat.freenode.net
+**** BEGIN LOGGING AT Thu Mar 12 20:41:52 2020
+
+Mar 12 20:41:52 *	Looking up irc.freenode.net
+Mar 12 20:41:53 *	Connecting to chat.freenode.net (195.154.200.232:6697)
+Mar 12 20:41:54 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:41:54 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:41:54 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:41:54 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:41:54 *	* Subject: /CN=barjavel.freenode.net
+Mar 12 20:41:54 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:41:54 *	* Certification info:
+Mar 12 20:41:54 *	  Subject:
+Mar 12 20:41:54 *	    CN=barjavel.freenode.net
+Mar 12 20:41:54 *	  Issuer:
+Mar 12 20:41:54 *	    C=US
+Mar 12 20:41:54 *	    O=Let's Encrypt
+Mar 12 20:41:54 *	    CN=Let's Encrypt Authority X3
+Mar 12 20:41:54 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 12 20:41:54 *	  Sign algorithm sha256WithRSAEncryption
+Mar 12 20:41:54 *	  Valid since Mar  2 05:01:21 2020 GM to May 31 05:01:21 2020 GM
+Mar 12 20:41:54 *	* Cipher info:
+Mar 12 20:41:54 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 12 20:41:54 *	Connected. Now logging in.
+Mar 12 20:41:54 *	*** Looking up your hostname...
+Mar 12 20:41:54 *	*** Checking Ident
+Mar 12 20:41:54 *	*** Found your hostname
+Mar 12 20:42:01 *	*** No Ident response
+Mar 12 20:42:01 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Mar 12 20:42:01 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:42:01 *	cinerea0 is already in use. Retrying with erebus_...
+Mar 12 20:42:02 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:42:02 *	Authenticating via SASL as cinerea0 (PLAIN)
+Mar 12 20:42:02 *	SASL authentication successful
+**** ENDING LOGGING AT Thu Mar 12 20:42:03 2020
+
+**** BEGIN LOGGING AT Tue Jun  2 22:20:55 2020
+
+Jun 02 22:20:55 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Tue Jun  2 22:20:55 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 22:48:10 2020
+
+Jun 03 22:48:10 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Wed Jun  3 22:48:10 2020
+

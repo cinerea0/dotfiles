@@ -1,0 +1,868 @@
+**** BEGIN LOGGING AT Tue Mar 10 11:26:45 2020
+
+Mar 10 11:26:45 Sysinfo plugin loaded
+Mar 10 11:26:45 FiSHLiM plugin loaded
+Mar 10 11:26:45 Checksum plugin loaded
+**** BEGIN LOGGING AT Tue Mar 10 21:59:04 2020
+
+Mar 10 21:59:04 Sysinfo plugin loaded
+Mar 10 21:59:04 FiSHLiM plugin loaded
+Mar 10 21:59:04 Checksum plugin loaded
+Mar 10 21:59:04 *	Looking up chat.freenode.net
+Mar 10 21:59:05 *	Connecting to chat.freenode.net (162.213.39.42:6697)
+Mar 10 21:59:05 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 10 21:59:05 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 10 21:59:05 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 10 21:59:05 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 10 21:59:05 *	* Subject: /CN=weber.freenode.net
+Mar 10 21:59:05 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 10 21:59:06 *	* Certification info:
+Mar 10 21:59:06 *	  Subject:
+Mar 10 21:59:06 *	    CN=weber.freenode.net
+Mar 10 21:59:06 *	  Issuer:
+Mar 10 21:59:06 *	    C=US
+Mar 10 21:59:06 *	    O=Let's Encrypt
+Mar 10 21:59:06 *	    CN=Let's Encrypt Authority X3
+Mar 10 21:59:06 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 10 21:59:06 *	  Sign algorithm sha256WithRSAEncryption
+Mar 10 21:59:06 *	  Valid since Mar  9 05:01:21 2020 GM to Jun  7 05:01:21 2020 GM
+Mar 10 21:59:06 *	* Cipher info:
+Mar 10 21:59:06 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 10 21:59:06 *	Connected. Now logging in.
+Mar 10 21:59:06 *	*** Looking up your hostname...
+Mar 10 21:59:06 *	*** Checking Ident
+Mar 10 21:59:06 *	*** Found your hostname
+Mar 10 21:59:15 *	*** No Ident response
+Mar 10 21:59:15 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Mar 10 21:59:15 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+Mar 10 21:59:15 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+**** ENDING LOGGING AT Tue Mar 10 21:59:15 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 20:26:46 2020
+
+Mar 12 20:26:46 Sysinfo plugin loaded
+Mar 12 20:26:46 FiSHLiM plugin loaded
+Mar 12 20:26:46 Checksum plugin loaded
+Mar 12 20:26:46 *	Looking up chat.freenode.net
+Mar 12 20:26:46 *	Connecting to chat.freenode.net (195.154.200.232:6697)
+Mar 12 20:26:47 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:26:47 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:26:47 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:26:47 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:26:47 *	* Subject: /CN=barjavel.freenode.net
+Mar 12 20:26:47 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:26:48 *	* Certification info:
+Mar 12 20:26:48 *	  Subject:
+Mar 12 20:26:48 *	    CN=barjavel.freenode.net
+Mar 12 20:26:48 *	  Issuer:
+Mar 12 20:26:48 *	    C=US
+Mar 12 20:26:48 *	    O=Let's Encrypt
+Mar 12 20:26:48 *	    CN=Let's Encrypt Authority X3
+Mar 12 20:26:48 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 12 20:26:48 *	  Sign algorithm sha256WithRSAEncryption
+Mar 12 20:26:48 *	  Valid since Mar  2 05:01:21 2020 GM to May 31 05:01:21 2020 GM
+Mar 12 20:26:48 *	* Cipher info:
+Mar 12 20:26:48 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 12 20:26:48 *	Connected. Now logging in.
+Mar 12 20:26:48 *	*** Looking up your hostname...
+Mar 12 20:26:48 *	*** Checking Ident
+Mar 12 20:26:48 *	*** Found your hostname
+Mar 12 20:26:56 *	*** No Ident response
+Mar 12 20:26:56 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Mar 12 20:26:56 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+Mar 12 20:26:57 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+**** ENDING LOGGING AT Thu Mar 12 20:26:57 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 20:32:51 2020
+
+Mar 12 20:32:51 Sysinfo plugin loaded
+Mar 12 20:32:51 FiSHLiM plugin loaded
+Mar 12 20:32:51 Checksum plugin loaded
+Mar 12 20:32:51 *	Looking up chat.freenode.net
+Mar 12 20:32:51 *	Connecting to chat.freenode.net (195.154.200.232:6697)
+Mar 12 20:32:52 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:32:52 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:32:52 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:32:52 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:32:52 *	* Subject: /CN=barjavel.freenode.net
+Mar 12 20:32:52 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:32:52 *	* Certification info:
+Mar 12 20:32:52 *	  Subject:
+Mar 12 20:32:52 *	    CN=barjavel.freenode.net
+Mar 12 20:32:52 *	  Issuer:
+Mar 12 20:32:52 *	    C=US
+Mar 12 20:32:52 *	    O=Let's Encrypt
+Mar 12 20:32:52 *	    CN=Let's Encrypt Authority X3
+Mar 12 20:32:52 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 12 20:32:52 *	  Sign algorithm sha256WithRSAEncryption
+Mar 12 20:32:52 *	  Valid since Mar  2 05:01:21 2020 GM to May 31 05:01:21 2020 GM
+Mar 12 20:32:52 *	* Cipher info:
+Mar 12 20:32:52 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 12 20:32:52 *	Connected. Now logging in.
+Mar 12 20:32:53 *	*** Looking up your hostname...
+Mar 12 20:32:53 *	*** Checking Ident
+Mar 12 20:32:53 *	*** Found your hostname
+Mar 12 20:33:01 *	*** No Ident response
+Mar 12 20:33:01 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Mar 12 20:33:01 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+Mar 12 20:33:01 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix 
+**** ENDING LOGGING AT Thu Mar 12 20:33:02 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 20:39:29 2020
+
+Mar 12 20:39:29 Sysinfo plugin loaded
+Mar 12 20:39:29 FiSHLiM plugin loaded
+Mar 12 20:39:29 Checksum plugin loaded
+Mar 12 20:39:29 *	Looking up chat.freenode.net
+Mar 12 20:39:29 *	Connecting to chat.freenode.net (185.30.166.37:6697)
+Mar 12 20:39:30 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:39:30 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:39:30 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:39:30 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:39:30 *	* Subject: /CN=orwell.freenode.net
+Mar 12 20:39:30 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:39:31 *	* Certification info:
+Mar 12 20:39:31 *	  Subject:
+Mar 12 20:39:31 *	    CN=orwell.freenode.net
+Mar 12 20:39:31 *	  Issuer:
+Mar 12 20:39:31 *	    C=US
+Mar 12 20:39:31 *	    O=Let's Encrypt
+Mar 12 20:39:31 *	    CN=Let's Encrypt Authority X3
+Mar 12 20:39:31 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 12 20:39:31 *	  Sign algorithm sha256WithRSAEncryption
+Mar 12 20:39:31 *	  Valid since Mar  3 20:05:55 2020 GM to Jun  1 20:05:55 2020 GM
+Mar 12 20:39:31 *	* Cipher info:
+Mar 12 20:39:31 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 12 20:39:31 *	Connected. Now logging in.
+Mar 12 20:39:31 *	*** Looking up your hostname...
+Mar 12 20:39:31 *	*** Checking Ident
+Mar 12 20:39:31 *	*** Found your hostname
+Mar 12 20:39:35 *	*** No Ident response
+Mar 12 20:39:35 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Mar 12 20:39:35 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:39:36 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:39:36 *	Authenticating via SASL as cinerea0 (PLAIN)
+Mar 12 20:39:36 *	SASL authentication successful
+**** ENDING LOGGING AT Thu Mar 12 20:39:36 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 20:40:38 2020
+
+Mar 12 20:40:38 Sysinfo plugin loaded
+Mar 12 20:40:38 FiSHLiM plugin loaded
+Mar 12 20:40:38 Checksum plugin loaded
+Mar 12 20:40:38 *	Looking up chat.freenode.net
+Mar 12 20:40:38 *	Connecting to chat.freenode.net (185.30.166.37:6697)
+Mar 12 20:40:39 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:40:39 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:40:39 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:40:39 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:40:39 *	* Subject: /CN=orwell.freenode.net
+Mar 12 20:40:39 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:40:40 *	* Certification info:
+Mar 12 20:40:40 *	  Subject:
+Mar 12 20:40:40 *	    CN=orwell.freenode.net
+Mar 12 20:40:40 *	  Issuer:
+Mar 12 20:40:40 *	    C=US
+Mar 12 20:40:40 *	    O=Let's Encrypt
+Mar 12 20:40:40 *	    CN=Let's Encrypt Authority X3
+Mar 12 20:40:40 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 12 20:40:40 *	  Sign algorithm sha256WithRSAEncryption
+Mar 12 20:40:40 *	  Valid since Mar  3 20:05:55 2020 GM to Jun  1 20:05:55 2020 GM
+Mar 12 20:40:40 *	* Cipher info:
+Mar 12 20:40:40 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 12 20:40:40 *	Connected. Now logging in.
+Mar 12 20:40:40 *	*** Looking up your hostname...
+Mar 12 20:40:40 *	*** Checking Ident
+Mar 12 20:40:40 *	*** Found your hostname
+Mar 12 20:40:45 *	*** No Ident response
+Mar 12 20:40:45 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Mar 12 20:40:45 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:40:46 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:40:46 *	Authenticating via SASL as cinerea0 (PLAIN)
+Mar 12 20:40:46 *	SASL authentication successful
+**** ENDING LOGGING AT Thu Mar 12 20:40:46 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 20:42:39 2020
+
+Mar 12 20:42:39 Sysinfo plugin loaded
+Mar 12 20:42:39 FiSHLiM plugin loaded
+Mar 12 20:42:39 Checksum plugin loaded
+Mar 12 20:42:39 *	Looking up irc.freenode.net
+Mar 12 20:42:39 *	Connecting to chat.freenode.net (195.154.200.232:6697)
+Mar 12 20:42:40 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:42:40 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:42:40 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:42:40 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 12 20:42:40 *	* Subject: /CN=barjavel.freenode.net
+Mar 12 20:42:40 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 12 20:42:40 *	* Certification info:
+Mar 12 20:42:40 *	  Subject:
+Mar 12 20:42:40 *	    CN=barjavel.freenode.net
+Mar 12 20:42:40 *	  Issuer:
+Mar 12 20:42:40 *	    C=US
+Mar 12 20:42:40 *	    O=Let's Encrypt
+Mar 12 20:42:40 *	    CN=Let's Encrypt Authority X3
+Mar 12 20:42:40 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 12 20:42:40 *	  Sign algorithm sha256WithRSAEncryption
+Mar 12 20:42:40 *	  Valid since Mar  2 05:01:21 2020 GM to May 31 05:01:21 2020 GM
+Mar 12 20:42:40 *	* Cipher info:
+Mar 12 20:42:40 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 12 20:42:40 *	Connected. Now logging in.
+Mar 12 20:42:40 *	*** Looking up your hostname...
+Mar 12 20:42:40 *	*** Checking Ident
+Mar 12 20:42:40 *	*** Found your hostname
+Mar 12 20:42:46 *	*** No Ident response
+Mar 12 20:42:46 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Mar 12 20:42:46 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:42:46 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Mar 12 20:42:47 *	Authenticating via SASL as cinerea0 (PLAIN)
+Mar 12 20:42:47 *	SASL authentication successful
+**** ENDING LOGGING AT Thu Mar 12 20:42:47 2020
+
+**** BEGIN LOGGING AT Tue Apr 21 15:14:58 2020
+
+Apr 21 15:14:58 Sysinfo plugin loaded
+Apr 21 15:14:58 FiSHLiM plugin loaded
+Apr 21 15:14:58 Checksum plugin loaded
+Apr 21 15:14:58 *	Looking up irc.freenode.net
+Apr 21 15:14:58 *	Connecting to chat.freenode.net (149.56.134.238:6697)
+Apr 21 15:14:59 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Apr 21 15:14:59 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Apr 21 15:14:59 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Apr 21 15:14:59 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Apr 21 15:14:59 *	* Subject: /CN=cherryh.freenode.net
+Apr 21 15:14:59 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Apr 21 15:14:59 *	* Certification info:
+Apr 21 15:14:59 *	  Subject:
+Apr 21 15:14:59 *	    CN=cherryh.freenode.net
+Apr 21 15:14:59 *	  Issuer:
+Apr 21 15:14:59 *	    C=US
+Apr 21 15:14:59 *	    O=Let's Encrypt
+Apr 21 15:14:59 *	    CN=Let's Encrypt Authority X3
+Apr 21 15:14:59 *	  Public key algorithm: rsaEncryption (4096 bits)
+Apr 21 15:14:59 *	  Sign algorithm sha256WithRSAEncryption
+Apr 21 15:14:59 *	  Valid since Apr 13 05:04:10 2020 GM to Jul 12 05:04:10 2020 GM
+Apr 21 15:14:59 *	* Cipher info:
+Apr 21 15:14:59 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Apr 21 15:14:59 *	Connected. Now logging in.
+Apr 21 15:14:59 *	*** Looking up your hostname...
+Apr 21 15:14:59 *	*** Checking Ident
+Apr 21 15:14:59 *	*** Found your hostname
+Apr 21 15:15:08 *	*** No Ident response
+Apr 21 15:15:08 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Apr 21 15:15:08 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Apr 21 15:15:08 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Apr 21 15:15:08 *	Authenticating via SASL as cinerea0 (PLAIN)
+Apr 21 15:15:09 *	You are now logged in as cinerea0.
+Apr 21 15:15:09 *	SASL authentication successful
+**** ENDING LOGGING AT Tue Apr 21 15:15:10 2020
+
+**** BEGIN LOGGING AT Fri May 22 21:56:29 2020
+
+May 22 21:56:29 Sysinfo plugin loaded
+May 22 21:56:29 FiSHLiM plugin loaded
+May 22 21:56:29 Checksum plugin loaded
+May 22 21:56:29 *	Looking up irc.freenode.net
+May 22 21:56:29 *	Connecting to chat.freenode.net (204.225.96.251:6697)
+May 22 21:56:30 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+May 22 21:56:30 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+May 22 21:56:30 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+May 22 21:56:30 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+May 22 21:56:30 *	* Subject: /CN=tolkien.freenode.net
+May 22 21:56:30 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+May 22 21:56:30 *	* Certification info:
+May 22 21:56:30 *	  Subject:
+May 22 21:56:30 *	    CN=tolkien.freenode.net
+May 22 21:56:30 *	  Issuer:
+May 22 21:56:30 *	    C=US
+May 22 21:56:30 *	    O=Let's Encrypt
+May 22 21:56:30 *	    CN=Let's Encrypt Authority X3
+May 22 21:56:30 *	  Public key algorithm: rsaEncryption (4096 bits)
+May 22 21:56:30 *	  Sign algorithm sha256WithRSAEncryption
+May 22 21:56:30 *	  Valid since Apr  6 05:02:46 2020 GM to Jul  5 05:02:46 2020 GM
+May 22 21:56:30 *	* Cipher info:
+May 22 21:56:30 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+May 22 21:56:30 *	Connected. Now logging in.
+May 22 21:56:30 *	*** Looking up your hostname...
+May 22 21:56:30 *	*** Checking Ident
+May 22 21:56:30 *	*** Found your hostname
+May 22 21:56:37 *	*** No Ident response
+May 22 21:56:37 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+May 22 21:56:37 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+May 22 21:56:37 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+May 22 21:56:37 *	Authenticating via SASL as cinerea0 (PLAIN)
+May 22 21:56:38 *	You are now logged in as cinerea0.
+May 22 21:56:38 *	SASL authentication successful
+**** ENDING LOGGING AT Fri May 22 21:56:38 2020
+
+**** BEGIN LOGGING AT Tue Jun  2 16:52:03 2020
+
+Jun 02 16:52:03 Sysinfo plugin loaded
+Jun 02 16:52:03 FiSHLiM plugin loaded
+Jun 02 16:52:03 Checksum plugin loaded
+Jun 02 16:52:03 *	Looking up irc.freenode.net
+Jun 02 16:52:03 *	Connecting to chat.freenode.net (130.185.232.126:6697)
+Jun 02 16:52:04 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 02 16:52:04 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 02 16:52:04 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 02 16:52:04 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 02 16:52:04 *	* Subject: /CN=hitchcock.freenode.net
+Jun 02 16:52:04 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 02 16:52:04 *	* Certification info:
+Jun 02 16:52:04 *	  Subject:
+Jun 02 16:52:04 *	    CN=hitchcock.freenode.net
+Jun 02 16:52:04 *	  Issuer:
+Jun 02 16:52:04 *	    C=US
+Jun 02 16:52:04 *	    O=Let's Encrypt
+Jun 02 16:52:04 *	    CN=Let's Encrypt Authority X3
+Jun 02 16:52:04 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 02 16:52:04 *	  Sign algorithm sha256WithRSAEncryption
+Jun 02 16:52:04 *	  Valid since May 11 05:02:54 2020 GM to Aug  9 05:02:54 2020 GM
+Jun 02 16:52:04 *	* Cipher info:
+Jun 02 16:52:04 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 02 16:52:04 *	Connected. Now logging in.
+Jun 02 16:52:04 *	*** Looking up your hostname...
+Jun 02 16:52:04 *	*** Checking Ident
+Jun 02 16:52:04 *	*** Found your hostname
+Jun 02 16:52:09 *	*** No Ident response
+Jun 02 16:52:09 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 02 16:52:09 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 02 16:52:10 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 02 16:52:10 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 02 16:52:10 *	You are now logged in as cinerea0.
+Jun 02 16:52:10 *	SASL authentication successful
+**** ENDING LOGGING AT Tue Jun  2 16:52:11 2020
+
+**** BEGIN LOGGING AT Tue Jun  2 19:51:57 2020
+
+Jun 02 19:51:57 Sysinfo plugin loaded
+Jun 02 19:51:57 FiSHLiM plugin loaded
+Jun 02 19:51:57 Checksum plugin loaded
+Jun 02 19:51:57 *	Looking up irc.freenode.net
+Jun 02 19:51:57 *	Connecting to chat.freenode.net (185.30.166.38:6697)
+Jun 02 19:51:58 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 02 19:51:58 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 02 19:51:58 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 02 19:51:58 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 02 19:51:58 *	* Subject: /CN=verne.freenode.net
+Jun 02 19:51:58 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 02 19:51:59 *	* Certification info:
+Jun 02 19:51:59 *	  Subject:
+Jun 02 19:51:59 *	    CN=verne.freenode.net
+Jun 02 19:51:59 *	  Issuer:
+Jun 02 19:51:59 *	    C=US
+Jun 02 19:51:59 *	    O=Let's Encrypt
+Jun 02 19:51:59 *	    CN=Let's Encrypt Authority X3
+Jun 02 19:51:59 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 02 19:51:59 *	  Sign algorithm sha256WithRSAEncryption
+Jun 02 19:51:59 *	  Valid since May 11 05:01:59 2020 GM to Aug  9 05:01:59 2020 GM
+Jun 02 19:51:59 *	* Cipher info:
+Jun 02 19:51:59 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 02 19:51:59 *	Connected. Now logging in.
+Jun 02 19:51:59 *	*** Looking up your hostname...
+Jun 02 19:51:59 *	*** Checking Ident
+Jun 02 19:51:59 *	*** Found your hostname
+Jun 02 19:52:06 *	*** No Ident response
+Jun 02 19:52:06 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 02 19:52:06 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 02 19:52:06 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 02 19:52:06 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 02 19:52:06 *	You are now logged in as cinerea0.
+Jun 02 19:52:07 *	SASL authentication successful
+**** ENDING LOGGING AT Tue Jun  2 19:52:07 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 13:58:16 2020
+
+Jun 03 13:58:16 Sysinfo plugin loaded
+Jun 03 13:58:16 FiSHLiM plugin loaded
+Jun 03 13:58:16 Checksum plugin loaded
+Jun 03 13:58:16 *	Looking up irc.freenode.net
+Jun 03 13:58:16 *	Connecting to chat.freenode.net (162.213.39.42:6697)
+Jun 03 13:58:17 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 03 13:58:17 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 03 13:58:17 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 03 13:58:17 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 03 13:58:17 *	* Subject: /CN=weber.freenode.net
+Jun 03 13:58:17 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 03 13:58:17 *	* Certification info:
+Jun 03 13:58:17 *	  Subject:
+Jun 03 13:58:17 *	    CN=weber.freenode.net
+Jun 03 13:58:17 *	  Issuer:
+Jun 03 13:58:17 *	    C=US
+Jun 03 13:58:17 *	    O=Let's Encrypt
+Jun 03 13:58:17 *	    CN=Let's Encrypt Authority X3
+Jun 03 13:58:17 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 03 13:58:17 *	  Sign algorithm sha256WithRSAEncryption
+Jun 03 13:58:17 *	  Valid since May 11 05:01:10 2020 GM to Aug  9 05:01:10 2020 GM
+Jun 03 13:58:17 *	* Cipher info:
+Jun 03 13:58:17 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 03 13:58:17 *	Connected. Now logging in.
+Jun 03 13:58:17 *	*** Looking up your hostname...
+Jun 03 13:58:17 *	*** Checking Ident
+Jun 03 13:58:17 *	*** Found your hostname
+Jun 03 13:58:23 *	*** No Ident response
+Jun 03 13:58:23 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 03 13:58:23 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 03 13:58:24 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 03 13:58:24 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 03 13:58:25 *	You are now logged in as cinerea0.
+Jun 03 13:58:25 *	SASL authentication successful
+**** ENDING LOGGING AT Wed Jun  3 13:58:25 2020
+
+**** BEGIN LOGGING AT Tue Jun  9 19:42:41 2020
+
+Jun 09 19:42:41 Sysinfo plugin loaded
+Jun 09 19:42:41 FiSHLiM plugin loaded
+Jun 09 19:42:41 Checksum plugin loaded
+Jun 09 19:42:41 *	Looking up irc.freenode.net
+Jun 09 19:42:41 *	Connecting to chat.freenode.net (192.186.157.43:6697)
+Jun 09 19:42:41 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 09 19:42:41 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 09 19:42:41 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 09 19:42:41 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 09 19:42:41 *	* Subject: /CN=tepper.freenode.net
+Jun 09 19:42:41 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 09 19:42:42 *	* Certification info:
+Jun 09 19:42:42 *	  Subject:
+Jun 09 19:42:42 *	    CN=tepper.freenode.net
+Jun 09 19:42:42 *	  Issuer:
+Jun 09 19:42:42 *	    C=US
+Jun 09 19:42:42 *	    O=Let's Encrypt
+Jun 09 19:42:42 *	    CN=Let's Encrypt Authority X3
+Jun 09 19:42:42 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 09 19:42:42 *	  Sign algorithm sha256WithRSAEncryption
+Jun 09 19:42:42 *	  Valid since Apr 27 05:01:09 2020 GM to Jul 26 05:01:09 2020 GM
+Jun 09 19:42:42 *	* Cipher info:
+Jun 09 19:42:42 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 09 19:42:42 *	Connected. Now logging in.
+Jun 09 19:42:42 *	*** Looking up your hostname...
+Jun 09 19:42:42 *	*** Checking Ident
+Jun 09 19:42:42 *	*** Found your hostname
+Jun 09 19:42:50 *	*** No Ident response
+Jun 09 19:42:50 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 09 19:42:50 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 09 19:42:50 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 09 19:42:50 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 09 19:42:51 *	You are now logged in as cinerea0.
+Jun 09 19:42:51 *	SASL authentication successful
+**** ENDING LOGGING AT Tue Jun  9 19:42:51 2020
+
+**** BEGIN LOGGING AT Wed Jun 10 21:19:28 2020
+
+Jun 10 21:19:28 Sysinfo plugin loaded
+Jun 10 21:19:28 FiSHLiM plugin loaded
+Jun 10 21:19:28 Checksum plugin loaded
+Jun 10 21:19:28 *	Looking up irc.freenode.net
+Jun 10 21:19:29 *	Connecting to chat.freenode.net (149.56.134.238:6697)
+Jun 10 21:19:29 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 10 21:19:29 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 10 21:19:29 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 10 21:19:29 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 10 21:19:29 *	* Subject: /CN=cherryh.freenode.net
+Jun 10 21:19:29 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 10 21:19:30 *	* Certification info:
+Jun 10 21:19:30 *	  Subject:
+Jun 10 21:19:30 *	    CN=cherryh.freenode.net
+Jun 10 21:19:30 *	  Issuer:
+Jun 10 21:19:30 *	    C=US
+Jun 10 21:19:30 *	    O=Let's Encrypt
+Jun 10 21:19:30 *	    CN=Let's Encrypt Authority X3
+Jun 10 21:19:30 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 10 21:19:30 *	  Sign algorithm sha256WithRSAEncryption
+Jun 10 21:19:30 *	  Valid since Apr 13 05:04:10 2020 GM to Jul 12 05:04:10 2020 GM
+Jun 10 21:19:30 *	* Cipher info:
+Jun 10 21:19:30 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 10 21:19:30 *	Connected. Now logging in.
+Jun 10 21:19:30 *	*** Looking up your hostname...
+Jun 10 21:19:30 *	*** Checking Ident
+Jun 10 21:19:30 *	*** Found your hostname
+Jun 10 21:19:35 *	*** No Ident response
+Jun 10 21:19:35 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 10 21:19:35 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 10 21:19:35 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 10 21:19:35 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 10 21:19:35 *	You are now logged in as cinerea0.
+Jun 10 21:19:35 *	SASL authentication successful
+**** ENDING LOGGING AT Wed Jun 10 21:19:36 2020
+
+**** BEGIN LOGGING AT Thu Jun 11 09:14:26 2020
+
+Jun 11 09:14:26 Sysinfo plugin loaded
+Jun 11 09:14:26 FiSHLiM plugin loaded
+Jun 11 09:14:26 Checksum plugin loaded
+Jun 11 09:14:26 *	Looking up irc.freenode.net
+Jun 11 09:14:27 *	Connecting to chat.freenode.net (204.225.96.251:6697)
+Jun 11 09:14:27 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 11 09:14:27 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 11 09:14:27 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 11 09:14:27 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 11 09:14:27 *	* Subject: /CN=tolkien.freenode.net
+Jun 11 09:14:27 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 11 09:14:28 *	* Certification info:
+Jun 11 09:14:28 *	  Subject:
+Jun 11 09:14:28 *	    CN=tolkien.freenode.net
+Jun 11 09:14:28 *	  Issuer:
+Jun 11 09:14:28 *	    C=US
+Jun 11 09:14:28 *	    O=Let's Encrypt
+Jun 11 09:14:28 *	    CN=Let's Encrypt Authority X3
+Jun 11 09:14:28 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 11 09:14:28 *	  Sign algorithm sha256WithRSAEncryption
+Jun 11 09:14:28 *	  Valid since Jun  8 05:04:04 2020 GM to Sep  6 05:04:04 2020 GM
+Jun 11 09:14:28 *	* Cipher info:
+Jun 11 09:14:28 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 11 09:14:28 *	Connected. Now logging in.
+Jun 11 09:14:28 *	*** Looking up your hostname...
+Jun 11 09:14:28 *	*** Checking Ident
+Jun 11 09:14:28 *	*** Found your hostname
+Jun 11 09:14:36 *	*** No Ident response
+Jun 11 09:14:36 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 11 09:14:36 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 11 09:14:36 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 11 09:14:36 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 11 09:14:37 *	You are now logged in as cinerea0.
+Jun 11 09:14:37 *	SASL authentication successful
+**** ENDING LOGGING AT Thu Jun 11 09:14:37 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 11:17:03 2020
+
+Jun 26 11:17:03 Sysinfo plugin loaded
+Jun 26 11:17:03 FiSHLiM plugin loaded
+Jun 26 11:17:03 Checksum plugin loaded
+Jun 26 11:17:03 *	Looking up irc.freenode.net
+Jun 26 11:17:03 *	Connecting to chat.freenode.net (185.30.166.38:6697)
+Jun 26 11:17:04 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 26 11:17:04 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 26 11:17:04 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 26 11:17:04 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 26 11:17:04 *	* Subject: /CN=verne.freenode.net
+Jun 26 11:17:04 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 26 11:17:04 *	* Certification info:
+Jun 26 11:17:04 *	  Subject:
+Jun 26 11:17:04 *	    CN=verne.freenode.net
+Jun 26 11:17:04 *	  Issuer:
+Jun 26 11:17:04 *	    C=US
+Jun 26 11:17:04 *	    O=Let's Encrypt
+Jun 26 11:17:04 *	    CN=Let's Encrypt Authority X3
+Jun 26 11:17:04 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 26 11:17:04 *	  Sign algorithm sha256WithRSAEncryption
+Jun 26 11:17:04 *	  Valid since May 11 05:01:59 2020 GM to Aug  9 05:01:59 2020 GM
+Jun 26 11:17:04 *	* Cipher info:
+Jun 26 11:17:04 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 26 11:17:04 *	Connected. Now logging in.
+Jun 26 11:17:04 *	*** Looking up your hostname...
+Jun 26 11:17:04 *	*** Checking Ident
+Jun 26 11:17:04 *	*** Found your hostname
+Jun 26 11:17:13 *	*** No Ident response
+Jun 26 11:17:13 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 26 11:17:13 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 26 11:17:14 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 26 11:17:14 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 26 11:17:15 *	You are now logged in as cinerea0.
+Jun 26 11:17:15 *	SASL authentication successful
+**** ENDING LOGGING AT Fri Jun 26 11:17:15 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:13:20 2020
+
+Jun 27 21:13:20 Sysinfo plugin loaded
+Jun 27 21:13:20 FiSHLiM plugin loaded
+Jun 27 21:13:20 Checksum plugin loaded
+Jun 27 21:13:20 *	Looking up irc.freenode.net
+Jun 27 21:13:20 *	Connecting to chat.freenode.net (38.229.70.22:6697)
+Jun 27 21:13:22 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:13:22 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:13:22 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:13:22 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:13:22 *	* Subject: /CN=card.freenode.net
+Jun 27 21:13:22 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:13:22 *	* Certification info:
+Jun 27 21:13:22 *	  Subject:
+Jun 27 21:13:22 *	    CN=card.freenode.net
+Jun 27 21:13:22 *	  Issuer:
+Jun 27 21:13:22 *	    C=US
+Jun 27 21:13:22 *	    O=Let's Encrypt
+Jun 27 21:13:22 *	    CN=Let's Encrypt Authority X3
+Jun 27 21:13:22 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 27 21:13:22 *	  Sign algorithm sha256WithRSAEncryption
+Jun 27 21:13:22 *	  Valid since Jun 15 05:18:30 2020 GM to Sep 13 05:18:30 2020 GM
+Jun 27 21:13:22 *	* Cipher info:
+Jun 27 21:13:22 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 27 21:13:22 *	Connected. Now logging in.
+Jun 27 21:13:22 *	*** Looking up your hostname...
+Jun 27 21:13:22 *	*** Checking Ident
+Jun 27 21:13:22 *	*** No Ident response
+Jun 27 21:13:22 *	*** Couldn't look up your hostname
+Jun 27 21:13:23 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 27 21:13:23 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:13:23 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:13:24 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 27 21:13:24 *	You are now logged in as cinerea0.
+Jun 27 21:13:24 *	SASL authentication successful
+**** ENDING LOGGING AT Sat Jun 27 21:13:25 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:31:15 2020
+
+Jun 27 21:31:15 Sysinfo plugin loaded
+Jun 27 21:31:15 FiSHLiM plugin loaded
+Jun 27 21:31:15 Checksum plugin loaded
+Jun 27 21:31:15 *	Looking up irc.freenode.net
+Jun 27 21:31:15 *	Connecting to chat.freenode.net (185.30.166.37:6697)
+Jun 27 21:31:16 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:31:16 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:31:16 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:31:16 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:31:16 *	* Subject: /CN=orwell.freenode.net
+Jun 27 21:31:16 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:31:17 *	* Certification info:
+Jun 27 21:31:17 *	  Subject:
+Jun 27 21:31:17 *	    CN=orwell.freenode.net
+Jun 27 21:31:17 *	  Issuer:
+Jun 27 21:31:17 *	    C=US
+Jun 27 21:31:17 *	    O=Let's Encrypt
+Jun 27 21:31:17 *	    CN=Let's Encrypt Authority X3
+Jun 27 21:31:17 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 27 21:31:17 *	  Sign algorithm sha256WithRSAEncryption
+Jun 27 21:31:17 *	  Valid since Jun  1 11:17:49 2020 GM to Aug 30 11:17:49 2020 GM
+Jun 27 21:31:17 *	* Cipher info:
+Jun 27 21:31:17 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 27 21:31:17 *	Connected. Now logging in.
+Jun 27 21:31:17 *	*** Looking up your hostname...
+Jun 27 21:31:17 *	*** Checking Ident
+Jun 27 21:31:17 *	*** Found your hostname
+Jun 27 21:31:26 *	*** No Ident response
+Jun 27 21:31:26 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 27 21:31:26 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:31:26 *	cinerea0 is already in use. Retrying with erebus_...
+Jun 27 21:31:26 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:31:26 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 27 21:31:27 *	You are now logged in as cinerea0.
+Jun 27 21:31:27 *	SASL authentication successful
+**** ENDING LOGGING AT Sat Jun 27 21:31:28 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:36:53 2020
+
+Jun 27 21:36:53 Sysinfo plugin loaded
+Jun 27 21:36:53 FiSHLiM plugin loaded
+Jun 27 21:36:53 Checksum plugin loaded
+Jun 27 21:36:53 *	Looking up irc.freenode.net
+Jun 27 21:36:53 *	Connecting to chat.freenode.net (185.30.166.37:6697)
+Jun 27 21:36:55 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:36:55 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:36:55 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:36:55 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:36:55 *	* Subject: /CN=orwell.freenode.net
+Jun 27 21:36:55 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:36:55 *	* Certification info:
+Jun 27 21:36:55 *	  Subject:
+Jun 27 21:36:55 *	    CN=orwell.freenode.net
+Jun 27 21:36:55 *	  Issuer:
+Jun 27 21:36:55 *	    C=US
+Jun 27 21:36:55 *	    O=Let's Encrypt
+Jun 27 21:36:55 *	    CN=Let's Encrypt Authority X3
+Jun 27 21:36:55 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 27 21:36:55 *	  Sign algorithm sha256WithRSAEncryption
+Jun 27 21:36:55 *	  Valid since Jun  1 11:17:49 2020 GM to Aug 30 11:17:49 2020 GM
+Jun 27 21:36:55 *	* Cipher info:
+Jun 27 21:36:55 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 27 21:36:55 *	Connected. Now logging in.
+Jun 27 21:36:55 *	*** Looking up your hostname...
+Jun 27 21:36:55 *	*** Checking Ident
+Jun 27 21:36:55 *	*** Found your hostname
+Jun 27 21:37:01 *	*** No Ident response
+Jun 27 21:37:01 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 27 21:37:01 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:37:02 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:37:02 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 27 21:37:02 *	You are now logged in as cinerea0.
+Jun 27 21:37:02 *	SASL authentication successful
+**** ENDING LOGGING AT Sat Jun 27 21:37:02 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:53:59 2020
+
+Jun 27 21:53:59 Sysinfo plugin loaded
+Jun 27 21:53:59 FiSHLiM plugin loaded
+Jun 27 21:53:59 Checksum plugin loaded
+Jun 27 21:53:59 *	Looking up irc.freenode.net
+Jun 27 21:53:59 *	Connecting to chat.freenode.net (185.30.166.37:6697)
+Jun 27 21:53:59 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:53:59 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:53:59 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:53:59 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 27 21:53:59 *	* Subject: /CN=orwell.freenode.net
+Jun 27 21:53:59 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 27 21:54:00 *	* Certification info:
+Jun 27 21:54:00 *	  Subject:
+Jun 27 21:54:00 *	    CN=orwell.freenode.net
+Jun 27 21:54:00 *	  Issuer:
+Jun 27 21:54:00 *	    C=US
+Jun 27 21:54:00 *	    O=Let's Encrypt
+Jun 27 21:54:00 *	    CN=Let's Encrypt Authority X3
+Jun 27 21:54:00 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 27 21:54:00 *	  Sign algorithm sha256WithRSAEncryption
+Jun 27 21:54:00 *	  Valid since Jun  1 11:17:49 2020 GM to Aug 30 11:17:49 2020 GM
+Jun 27 21:54:00 *	* Cipher info:
+Jun 27 21:54:00 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 27 21:54:00 *	Connected. Now logging in.
+Jun 27 21:54:00 *	*** Looking up your hostname...
+Jun 27 21:54:00 *	*** Checking Ident
+Jun 27 21:54:00 *	*** Couldn't look up your hostname
+Jun 27 21:54:00 *	*** No Ident response
+Jun 27 21:54:00 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 27 21:54:00 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:54:00 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 27 21:54:00 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 27 21:54:01 *	You are now logged in as cinerea0.
+Jun 27 21:54:01 *	SASL authentication successful
+**** ENDING LOGGING AT Sat Jun 27 21:54:01 2020
+
+**** BEGIN LOGGING AT Mon Jun 29 19:45:50 2020
+
+Jun 29 19:45:50 Sysinfo plugin loaded
+Jun 29 19:45:50 FiSHLiM plugin loaded
+Jun 29 19:45:50 Checksum plugin loaded
+Jun 29 19:45:50 *	Looking up irc.freenode.net
+Jun 29 19:45:51 *	Connecting to chat.freenode.net (162.213.39.42:6697)
+Jun 29 19:45:52 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 29 19:45:52 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 29 19:45:52 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 29 19:45:52 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 29 19:45:52 *	* Subject: /CN=weber.freenode.net
+Jun 29 19:45:52 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 29 19:45:52 *	* Certification info:
+Jun 29 19:45:52 *	  Subject:
+Jun 29 19:45:52 *	    CN=weber.freenode.net
+Jun 29 19:45:52 *	  Issuer:
+Jun 29 19:45:52 *	    C=US
+Jun 29 19:45:52 *	    O=Let's Encrypt
+Jun 29 19:45:52 *	    CN=Let's Encrypt Authority X3
+Jun 29 19:45:52 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 29 19:45:52 *	  Sign algorithm sha256WithRSAEncryption
+Jun 29 19:45:52 *	  Valid since May 11 05:01:10 2020 GM to Aug  9 05:01:10 2020 GM
+Jun 29 19:45:52 *	* Cipher info:
+Jun 29 19:45:52 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 29 19:45:52 *	Connected. Now logging in.
+Jun 29 19:45:52 *	*** Looking up your hostname...
+Jun 29 19:45:52 *	*** Checking Ident
+Jun 29 19:45:52 *	*** Found your hostname
+Jun 29 19:45:58 *	*** No Ident response
+Jun 29 19:45:58 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 29 19:45:58 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 29 19:45:59 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 29 19:45:59 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 29 19:46:00 *	You are now logged in as cinerea0.
+Jun 29 19:46:00 *	SASL authentication successful
+**** ENDING LOGGING AT Mon Jun 29 19:46:00 2020
+
+**** BEGIN LOGGING AT Mon Jun 29 20:21:09 2020
+
+Jun 29 20:21:09 Sysinfo plugin loaded
+Jun 29 20:21:09 FiSHLiM plugin loaded
+Jun 29 20:21:09 Checksum plugin loaded
+Jun 29 20:21:09 *	Looking up irc.freenode.net
+Jun 29 20:21:10 *	Connecting to chat.freenode.net (38.229.70.22:6697)
+Jun 29 20:21:10 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 29 20:21:10 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 29 20:21:10 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 29 20:21:10 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 29 20:21:10 *	* Subject: /CN=card.freenode.net
+Jun 29 20:21:10 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 29 20:21:11 *	* Certification info:
+Jun 29 20:21:11 *	  Subject:
+Jun 29 20:21:11 *	    CN=card.freenode.net
+Jun 29 20:21:11 *	  Issuer:
+Jun 29 20:21:11 *	    C=US
+Jun 29 20:21:11 *	    O=Let's Encrypt
+Jun 29 20:21:11 *	    CN=Let's Encrypt Authority X3
+Jun 29 20:21:11 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 29 20:21:11 *	  Sign algorithm sha256WithRSAEncryption
+Jun 29 20:21:11 *	  Valid since Jun 15 05:18:30 2020 GM to Sep 13 05:18:30 2020 GM
+Jun 29 20:21:11 *	* Cipher info:
+Jun 29 20:21:11 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 29 20:21:11 *	Connected. Now logging in.
+Jun 29 20:21:11 *	*** Looking up your hostname...
+Jun 29 20:21:11 *	*** Checking Ident
+Jun 29 20:21:11 *	*** Found your hostname
+Jun 29 20:21:19 *	*** No Ident response
+Jun 29 20:21:19 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 29 20:21:19 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 29 20:21:19 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 29 20:21:20 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 29 20:21:20 *	You are now logged in as cinerea0.
+Jun 29 20:21:20 *	SASL authentication successful
+**** ENDING LOGGING AT Mon Jun 29 20:21:21 2020
+
+**** BEGIN LOGGING AT Tue Jun 30 20:20:40 2020
+
+Jun 30 20:20:40 Sysinfo plugin loaded
+Jun 30 20:20:40 FiSHLiM plugin loaded
+Jun 30 20:20:40 Checksum plugin loaded
+Jun 30 20:20:40 *	Looking up irc.freenode.net
+Jun 30 20:20:40 *	Connecting to chat.freenode.net (149.56.134.238:6697)
+Jun 30 20:20:41 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 30 20:20:41 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 30 20:20:41 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 30 20:20:41 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jun 30 20:20:41 *	* Subject: /CN=cherryh.freenode.net
+Jun 30 20:20:41 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jun 30 20:20:41 *	* Certification info:
+Jun 30 20:20:41 *	  Subject:
+Jun 30 20:20:41 *	    CN=cherryh.freenode.net
+Jun 30 20:20:41 *	  Issuer:
+Jun 30 20:20:41 *	    C=US
+Jun 30 20:20:41 *	    O=Let's Encrypt
+Jun 30 20:20:41 *	    CN=Let's Encrypt Authority X3
+Jun 30 20:20:41 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jun 30 20:20:41 *	  Sign algorithm sha256WithRSAEncryption
+Jun 30 20:20:41 *	  Valid since Jun 15 04:35:33 2020 GM to Sep 13 04:35:33 2020 GM
+Jun 30 20:20:41 *	* Cipher info:
+Jun 30 20:20:41 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jun 30 20:20:41 *	Connected. Now logging in.
+Jun 30 20:20:41 *	*** Looking up your hostname...
+Jun 30 20:20:41 *	*** Checking Ident
+Jun 30 20:20:41 *	*** Found your hostname
+Jun 30 20:20:49 *	*** No Ident response
+Jun 30 20:20:49 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jun 30 20:20:49 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 30 20:20:50 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jun 30 20:20:50 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jun 30 20:20:50 *	You are now logged in as cinerea0.
+Jun 30 20:20:50 *	SASL authentication successful
+**** ENDING LOGGING AT Tue Jun 30 20:20:51 2020
+
+**** BEGIN LOGGING AT Sat Jul  4 21:45:04 2020
+
+Jul 04 21:45:04 Sysinfo plugin loaded
+Jul 04 21:45:04 FiSHLiM plugin loaded
+Jul 04 21:45:04 Checksum plugin loaded
+Jul 04 21:45:04 *	Looking up irc.freenode.net
+Jul 04 21:45:04 *	Connecting to chat.freenode.net (185.30.166.37:6697)
+Jul 04 21:45:05 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 04 21:45:05 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 04 21:45:05 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jul 04 21:45:05 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 04 21:45:05 *	* Subject: /CN=orwell.freenode.net
+Jul 04 21:45:05 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jul 04 21:45:05 *	* Certification info:
+Jul 04 21:45:05 *	  Subject:
+Jul 04 21:45:05 *	    CN=orwell.freenode.net
+Jul 04 21:45:05 *	  Issuer:
+Jul 04 21:45:05 *	    C=US
+Jul 04 21:45:05 *	    O=Let's Encrypt
+Jul 04 21:45:05 *	    CN=Let's Encrypt Authority X3
+Jul 04 21:45:05 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jul 04 21:45:05 *	  Sign algorithm sha256WithRSAEncryption
+Jul 04 21:45:05 *	  Valid since Jun  1 11:17:49 2020 GM to Aug 30 11:17:49 2020 GM
+Jul 04 21:45:05 *	* Cipher info:
+Jul 04 21:45:05 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jul 04 21:45:05 *	Connected. Now logging in.
+Jul 04 21:45:05 *	*** Looking up your hostname...
+Jul 04 21:45:05 *	*** Checking Ident
+Jul 04 21:45:06 *	*** Found your hostname
+Jul 04 21:45:14 *	*** No Ident response
+Jul 04 21:45:14 *	Capabilities supported: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl tls
+Jul 04 21:45:14 *	Capabilities requested: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jul 04 21:45:14 *	Capabilities acknowledged: account-notify away-notify cap-notify chghost extended-join identify-msg multi-prefix sasl 
+Jul 04 21:45:14 *	Authenticating via SASL as cinerea0 (PLAIN)
+Jul 04 21:45:15 *	You are now logged in as cinerea0.
+Jul 04 21:45:15 *	SASL authentication successful
+**** ENDING LOGGING AT Sat Jul  4 21:45:15 2020
+

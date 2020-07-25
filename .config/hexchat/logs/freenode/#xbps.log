@@ -1,0 +1,1007 @@
+**** BEGIN LOGGING AT Thu Mar 12 20:42:09 2020
+
+Mar 12 20:42:09 *	Now talking on #xbps
+Mar 12 20:42:09 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Mar 12 20:42:09 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Mar 12 20:42:10 *	Channel #xbps url: https://voidlinux.org
+**** ENDING LOGGING AT Thu Mar 12 20:42:19 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 20:42:54 2020
+
+Mar 12 20:42:54 *	Now talking on #xbps
+Mar 12 20:42:54 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Mar 12 20:42:54 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Mar 12 20:42:54 *	Channel #xbps url: https://voidlinux.org
+**** ENDING LOGGING AT Thu Mar 12 20:44:24 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 20:49:49 2020
+
+Mar 12 20:49:49 *	Now talking on #xbps
+Mar 12 20:49:49 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Mar 12 20:49:49 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Mar 12 20:49:49 *	Channel #xbps url: https://voidlinux.org
+Mar 12 21:04:19 *	Disconnected ()
+**** ENDING LOGGING AT Thu Mar 12 21:04:19 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 21:04:44 2020
+
+Mar 12 21:04:44 *	Now talking on #xbps
+Mar 12 21:04:44 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Mar 12 21:04:44 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Mar 12 21:04:44 *	Channel #xbps url: https://voidlinux.org
+Mar 12 21:06:14 *	DracoSentien has quit (Ping timeout: 258 seconds)
+Mar 12 21:19:45 *	DracoSentien (~cypherpun@pool-173-62-30-239.pghkny.fios.verizon.net) has joined
+Mar 12 21:29:18 *	DracoSentien has quit (Ping timeout: 268 seconds)
+Mar 12 22:31:07 *	Disconnected ()
+**** ENDING LOGGING AT Thu Mar 12 22:31:07 2020
+
+**** BEGIN LOGGING AT Tue Apr 21 15:15:16 2020
+
+Apr 21 15:15:16 *	Now talking on #xbps
+Apr 21 15:15:16 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Apr 21 15:15:16 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Apr 21 15:15:16 *	Channel #xbps url: https://voidlinux.org
+Apr 21 15:15:17 <Vaelatern>	if it never built cross you can nocross="Build is crazy"
+Apr 21 15:16:09 *	well_laid_lawn has quit (Ping timeout: 250 seconds)
+Apr 21 15:16:22 <nilsson>	the only thing that depends on it is cura, and I'm not sure if that cross builds
+Apr 21 15:17:34 <nilsson>	I thought it build previous, but idk
+Apr 21 15:20:33 <ahesford>	https://github.com/leahneukirchen/xtools/pull/178
+Apr 21 15:20:48 <cinerea0>	Doesn anyone know what the deal is with the texlive license? The one that was being previously used in the templates is no longer valid (GPL-2)
+Apr 21 15:21:08 <ahesford>	^ I've added an xlint rule to look for '#unverified' after python_version so we can shake out problematic packages faster
+Apr 21 15:22:40 <ahesford>	cinerea0: what do you mean "no longer valid"
+Apr 21 15:23:15 <aedinius>	Why are stupid things like tar missing
+Apr 21 15:23:42 <ahesford>	from what?
+Apr 21 15:24:52 <cinerea0>	ahesford: GPL-2 is not in the list of acceptable licenses here https://github.com/void-linux/void-packages/blob/master/common/travis/license.lst; as such updates to texlive packages are being rejected by Travis
+Apr 21 15:25:19 <aedinius>	cinerea0: should be either GPL-2.0-only or GPL-2.0-or-later, depending on which it is.
+Apr 21 15:25:20 <ahesford>	Tangentially, that is not the texlive license
+Apr 21 15:25:26 <ahesford>	but what aedinius said
+Apr 21 15:25:35 <ahesford>	https://tug.org/texlive/LICENSE.TL
+Apr 21 15:25:41 <aedinius>	If it's neither of those, it should be what it is.
+Apr 21 15:25:53 <ahesford>	Should be "custom:texlive" or something, and vlicense the text into the package
+Apr 21 15:28:10 <cinerea0>	Ah, I see. I'll do that. As a side question, is it best practice to try to get the person who has the open pull request to make this change, or should I open my own pull request?
+Apr 21 15:28:37 <ahesford>	Probably best to add a comment or review
+Apr 21 15:29:24 <ahesford>	In any case, leah2 is working on texlive-bin
+Apr 21 15:29:51 <Vaelatern>	+1 for that xtools pr
+Apr 21 15:30:05 <leah2>	am i
+Apr 21 15:30:10 <ahesford>	weren't you?
+Apr 21 15:30:20 <leah2>	i guess we can move it to 2020
+Apr 21 15:30:31 <ahesford>	you mentioned you were testing tl2020 last week
+Apr 21 15:30:36 <leah2>	yeah
+Apr 21 15:31:29 <cinerea0>	I'll leave a review on the open pull request. Thank you!
+Apr 21 15:32:37 *	anansi has quit (Ping timeout: 250 seconds)
+Apr 21 15:35:19 <leah2>	GPL2 sounds correct, the package only contains the installer?
+Apr 21 15:35:59 <ahesford>	When I unpack install-tl-unx.tar.gz, it has the LICENSE.TL from the link above
+Apr 21 15:36:10 <leah2>	but we are not distributing texlive
+Apr 21 15:36:43 <aedinius>	GPL-2.0-or-later
+Apr 21 15:37:08 <aedinius>	Wait I looked at the wrong file
+Apr 21 15:37:15 <Piraty>	5.4.33_2 just crashed on me durin initramfs/init
+Apr 21 15:37:25 <aedinius>	I do not change my answer.
+Apr 21 15:37:32 <ahesford>	GPL-2.0-or-later could work
+Apr 21 15:37:39 <ahesford>	but that seems like a technicality
+Apr 21 15:38:20 <ahesford>	the package contains the installer, but automatically invokes it on install
+Apr 21 15:38:36 <leah2>	it's about what binaries we redistribute imo
+Apr 21 15:38:44 <aedinius>	Right
+Apr 21 15:39:05 <ahesford>	I guess the installer puts /opt/texlive/2020/LICENSE.TL in place, so that ought to be good enough
+Apr 21 15:39:08 <Vaelatern>	if xbps-reconfigure runs it instead of xbps-install, we didn't distribute it.
+Apr 21 15:39:38 <ahesford>	Either way, the right license is left on disk, I retract my objection
+Apr 21 15:39:54 <not-chicken>	https://github.com/void-linux/void-packages/pull/21146#issuecomment-617321632
+Apr 21 15:39:54 <not-chicken>	Guys I am a bit confused by this, I have kept my previous packages lowercase, matching the executable. Also coz I am too lazy to hit shift while installing :p
+Apr 21 15:39:54 <not-chicken>	How do others do this, switch the case or keep the laziness?
+Apr 21 15:40:10 -void-packages/#xbps-	leahneukirchen pushed https://is.gd/HIhgyo
+Apr 21 15:41:18 <cinerea0>	So in this case, since the installer is licensed under GPL-2, the correct license should be GPL-2.0-or-later?
+Apr 21 15:41:53 <ahesford>	not-chicken: you are supposed to honor the case of the package repo
+Apr 21 15:42:04 <ahesford>	Komikku
+Apr 21 15:43:22 -void-packages/#xbps-	jnbr closed pull request #21213 “hcloud: update to 1.16.2.” https://is.gd/Rvmpum
+Apr 21 15:43:42 <not-chicken>	oopsie. Then I messed it up my previous packages :D
+Apr 21 15:44:15 <not-chicken>	Btw is this convention documented somewhere?
+Apr 21 15:44:28 <not-chicken>	iirc I didn't saw it in the manual
+Apr 21 15:44:59 <Vaelatern>	 239 For those packages the upstream packages name should be used. Remember that
+Apr 21 15:45:02 <Vaelatern>	 240 in contrast to many other distributions, void doesn't lowercase package names.
+Apr 21 15:45:04 *	anansi (~samedi@cpe-96-28-172-36.kya.res.rr.com) has joined
+Apr 21 15:45:04 <not-chicken>	s/my/in my/
+Apr 21 15:45:04 <Vaelatern>	Manual.md
+Apr 21 15:46:00 <ahesford>	I named all of the rocm packages lowercase, AMD's naming scheme is a total disaster
+Apr 21 15:46:31 <ahesford>	The github repos are things like ROCm-OpenCL-Runtime
+Apr 21 15:46:45 <ahesford>	but the tarballs are things like "rocm-3.3.0.tar.gz" and "roc-3.3.0.tar.gz"
+Apr 21 15:47:19 <not-chicken>	Vaelatern:  Ah yes. It's there. Guess I am blind lol.
+Apr 21 15:47:40 <Vaelatern>	Reading is hard, especially when it's a large document so people can search quickly
+Apr 21 15:47:58 <ahesford>	Reading is Fundamental (TM)
+Apr 21 15:48:23 <ahesford>	that was an educational compaign in the US back in the 80s and early 90s
+Apr 21 15:51:19 -void-packages/#xbps-	abenson opened pull request #21214 “Gnustep 1.28” https://is.gd/RXqDjz
+Apr 21 15:51:33 <ahesford>	More gnustep fun, eh?
+Apr 21 15:51:48 <aedinius>	Yeah. Someone contacted me about a bug with it
+Apr 21 15:51:57 <aedinius>	And while fixing the bug, might as well update it.
+Apr 21 15:52:27 <ahesford>	I should play with that some day
+Apr 21 19:02:07 *	Disconnected ()
+**** ENDING LOGGING AT Tue Apr 21 19:02:07 2020
+
+**** BEGIN LOGGING AT Tue Apr 21 19:02:31 2020
+
+Apr 21 19:02:31 *	Now talking on #xbps
+Apr 21 19:02:31 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Apr 21 19:02:31 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Apr 21 19:02:32 *	Channel #xbps url: https://voidlinux.org
+Apr 21 19:05:19 <ahesford>	looks like konversation failed to build; all I did was fix the description!
+Apr 21 19:14:10 -void-packages/#xbps-	Joey152 opened pull request #21228 “herbstluftwm: update to 0.8.1” https://is.gd/hzoomU
+Apr 21 19:22:17 -void-packages/#xbps-	Piraty closed pull request #21210 “Cura 4.6” https://is.gd/AfM9TV
+Apr 21 19:22:27 -void-packages/#xbps-	ahesford opened pull request #21229 “konversation: add missing build dependendencies” https://is.gd/FH8sMr
+Apr 21 19:29:22 -void-packages/#xbps-	tibequadorian closed pull request #21133 “New package: gcc4ti-0.96b11” https://is.gd/K9n1rX
+Apr 21 19:40:40 <ahesford>	Wow, the xlint python_version check is already on Travis
+Apr 21 19:42:00 -void-packages/#xbps-	emacsomancer opened pull request #21230 “Picom v8” https://is.gd/FfwAh4
+Apr 21 19:42:20 <Johnnynator>	ahesford: Travis just takes the head of xtools and not the xbps package
+Apr 21 19:42:52 -void-packages/#xbps-	pullmoll pushed https://is.gd/c6Rhz8
+Apr 21 19:43:53 <ahesford>	Anybody want to merge https://github.com/void-linux/void-packages/pull/21229 for me?
+Apr 21 19:44:04 <ahesford>	It should fix the konversation build failures on the builders
+Apr 21 19:52:32 -void-packages/#xbps-	Johnnynator pushed https://is.gd/WcAW2P
+Apr 21 19:52:48 <ahesford>	thanks
+Apr 21 20:00:28 *	xelxebar has quit (Remote host closed the connection)
+Apr 21 20:00:38 *	q66 has quit (Quit: WeeChat 2.8)
+Apr 21 20:00:52 *	xelxebar (~xelxebar@gateway/tor-sasl/xelxebar) has joined
+Apr 21 20:04:44 *	q66 (~q66@enlightenment/developer/q66) has joined
+Apr 21 20:08:20 -void-packages/#xbps-	emacsomancer closed pull request #21230 “picom: update to v8” https://is.gd/FfwAh4
+Apr 21 20:14:54 -void-packages/#xbps-	emacsomancer opened pull request #21231 “picom: update to v8” https://is.gd/fkjfFd
+Apr 21 20:32:06 *	johnnywho has quit (Ping timeout: 265 seconds)
+Apr 21 20:33:58 -void-packages/#xbps-	fosslinux closed issue #21163 “m4, texinfo build failure” https://is.gd/7u4HTK
+Apr 21 20:36:19 -void-packages/#xbps-	fosslinux opened issue #21232 “Manual.md: Add list of packages that should be rebuilt after bootstrap.” https://is.gd/iW3Gso
+Apr 21 20:41:12 -void-packages/#xbps-	sgn pushed https://is.gd/bmDlgt
+Apr 21 20:44:01 *	cipres has quit (Ping timeout: 264 seconds)
+Apr 21 21:11:29 *	stevelitt has quit (Ping timeout: 250 seconds)
+**** ENDING LOGGING AT Tue Apr 21 21:59:15 2020
+
+**** BEGIN LOGGING AT Fri May 22 21:56:44 2020
+
+May 22 21:56:44 *	Now talking on #xbps
+May 22 21:56:44 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+May 22 21:56:44 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+May 22 21:56:44 *	Channel #xbps url: https://voidlinux.org
+**** ENDING LOGGING AT Fri May 22 21:56:47 2020
+
+**** BEGIN LOGGING AT Fri May 22 21:56:47 2020
+
+May 22 21:56:52 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Fri May 22 21:56:52 2020
+
+**** BEGIN LOGGING AT Tue Jun  2 16:52:17 2020
+
+Jun 02 16:52:17 *	Now talking on #xbps
+Jun 02 16:52:17 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 02 16:52:17 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 02 16:52:17 *	Channel #xbps url: https://voidlinux.org
+Jun 02 16:55:59 *	petrvelicka has quit (Read error: Connection reset by peer)
+Jun 02 17:17:55 *	rjpower4 (~rpower@2601:249:4280:4c80::e406) has joined
+Jun 02 17:26:55 -void-packages/#xbps-	leahneukirchen pushed https://is.gd/2Bh4sa
+**** ENDING LOGGING AT Tue Jun  2 17:41:41 2020
+
+**** BEGIN LOGGING AT Tue Jun  2 19:52:13 2020
+
+Jun 02 19:52:13 *	Now talking on #xbps
+Jun 02 19:52:13 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 02 19:52:13 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 02 19:52:13 *	Channel #xbps url: https://voidlinux.org
+Jun 02 20:12:34 *	ifreund has quit (Ping timeout: 265 seconds)
+Jun 02 20:26:29 *	gangstacat has quit (Quit: Ĝis!)
+Jun 02 20:29:54 *	gangstacat (~gangstaca@unaffiliated/gangstacat) has joined
+Jun 02 20:45:20 -void-packages/#xbps-	sgn pushed https://is.gd/ByqrQ1
+Jun 02 20:50:40 *	travankor (~travankor@gateway/tor-sasl/travankor) has joined
+Jun 02 21:12:23 *	travankor has quit (Ping timeout: 240 seconds)
+Jun 02 21:13:37 -void-packages/#xbps-	sgn pushed https://is.gd/N0T9Cz
+Jun 02 21:17:40 *	travankor (~travankor@gateway/tor-sasl/travankor) has joined
+Jun 02 21:36:23 -void-packages/#xbps-	NeelChotai opened pull request #22539 “bottom: update to 0.4.3.” https://is.gd/Ia7OLQ
+Jun 02 21:38:23 *	travankor has quit (Ping timeout: 240 seconds)
+Jun 02 22:20:52 *	Disconnected ()
+**** ENDING LOGGING AT Tue Jun  2 22:20:52 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 13:58:32 2020
+
+Jun 03 13:58:32 *	Now talking on #xbps
+Jun 03 13:58:32 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 03 13:58:32 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 03 13:58:32 *	Channel #xbps url: https://voidlinux.org
+Jun 03 14:03:59 -void-packages/#xbps-	rndevfx closed pull request #22551 “nghttp2: update to 1.41.0” https://is.gd/dzLBbC
+Jun 03 14:06:04 -void-packages/#xbps-	karl-nilsson opened pull request #22555 “python3-trimesh: update to 3.6.43.” https://is.gd/R0aIOk
+Jun 03 14:10:29 <hadet>	ahesford: you talking about Frontier the Elite sequel?
+Jun 03 14:11:03 <hadet>	If so i wish FDev would OS that game, i never got a chance to finish it because the version i had was so buggy and crashed so often
+Jun 03 14:14:41 -void-packages/#xbps-	Hoshpak closed pull request #22552 “zoom: update to 5.0.418682.0603” https://is.gd/NbNqm4
+Jun 03 14:14:59 -void-packages/#xbps-	Hoshpak closed pull request #22550 “vim: update to 8.2.0891.” https://is.gd/408fvo
+Jun 03 14:15:41 -void-packages/#xbps-	Hoshpak pushed https://is.gd/idKG5p
+Jun 03 14:15:51 -void-packages/#xbps-	Hoshpak closed pull request #22546 “io.elementary.videos: update to 2.7.1.” https://is.gd/OST4XI
+Jun 03 14:16:22 -void-packages/#xbps-	Hoshpak closed pull request #22544 “rclone: update to 1.52.0.” https://is.gd/OXYoTO
+Jun 03 14:16:43 -void-packages/#xbps-	Hoshpak pushed https://is.gd/L7Zeai
+Jun 03 14:17:26 -void-packages/#xbps-	Hoshpak pushed https://is.gd/rrYWjO
+Jun 03 14:18:02 -void-packages/#xbps-	Hoshpak closed pull request #22543 “AppStream: update to 0.12.11” https://is.gd/KhRyrb
+Jun 03 14:18:19 <v0idkr4ft>	seem to be having an issue with libxml2 being broken
+Jun 03 14:18:23 *	chiastre has quit (Ping timeout: 240 seconds)
+Jun 03 14:18:24 -void-packages/#xbps-	Hoshpak pushed https://is.gd/Tc4Rt4
+Jun 03 14:18:34 -void-packages/#xbps-	Hoshpak closed pull request #22529 “gajim-omemo: update to 2.6.30.” https://is.gd/KnHzZq
+Jun 03 14:18:46 -void-packages/#xbps-	Hoshpak pushed https://is.gd/VeYlK8
+Jun 03 14:18:57 -void-packages/#xbps-	Hoshpak closed pull request #22533 “dua-cli: update to 2.6.1.” https://is.gd/om4j5x
+Jun 03 14:19:23 <ahesford>	hadet: I am. Great game, much better than Elite
+Jun 03 14:20:27 -void-packages/#xbps-	Hoshpak closed pull request #22526 “grafana: update to 7.0.1.” https://is.gd/4BCoKX
+Jun 03 14:20:49 *	chiastre (~chiastre@gateway/tor-sasl/chiastre) has joined
+Jun 03 14:21:01 -void-packages/#xbps-	Hoshpak closed pull request #22525 “jack: remove update file” https://is.gd/N5I8iy
+Jun 03 14:21:10 -void-packages/#xbps-	Hoshpak pushed https://is.gd/wwmd6P
+Jun 03 14:22:11 -void-packages/#xbps-	Hoshpak closed pull request #22521 “nghttp2: update to 1.41.0.” https://is.gd/QI9Y9t
+Jun 03 14:22:29 *	natrys (~natrys@116.206.252.68) has joined
+Jun 03 14:22:53 -void-packages/#xbps-	Hoshpak closed pull request #22516 “electrum-ltc: update to 3.3.8.1.” https://is.gd/TXX01L
+Jun 03 14:24:08 -void-packages/#xbps-	Hoshpak closed issue #21732 “FTBTS Error: Plex Media Server” https://is.gd/U3bvCI
+Jun 03 14:24:34 -void-packages/#xbps-	Hoshpak closed pull request #22507 “kanshi: update to 1.1.0.” https://is.gd/MJa8mW
+Jun 03 14:25:06 -void-packages/#xbps-	Hoshpak closed pull request #22505 “protonvpn-cli: update to 2.2.4.” https://is.gd/F0RdZH
+Jun 03 14:25:28 -void-packages/#xbps-	Hoshpak pushed https://is.gd/sJxZLQ
+Jun 03 14:25:39 -void-packages/#xbps-	Hoshpak pushed https://is.gd/J1mTT3
+Jun 03 14:25:57 -void-packages/#xbps-	Hoshpak closed pull request #22503 “font-cozette: update to 1.8.2.” https://is.gd/FraLfc
+Jun 03 14:26:05 -void-packages/#xbps-	Hoshpak pushed https://is.gd/0xISJx
+Jun 03 14:26:46 -void-packages/#xbps-	Hoshpak closed pull request #22501 “qutebrowser: update to 1.12.0.” https://is.gd/pmcmU2
+Jun 03 14:27:47 -void-packages/#xbps-	Hoshpak closed pull request #22497 “python3-pytools: update to 2020.2.” https://is.gd/FcJZ6R
+Jun 03 14:27:56 -void-packages/#xbps-	Hoshpak pushed https://is.gd/CGUk5j
+Jun 03 14:28:12 -void-packages/#xbps-	Hoshpak closed pull request #22495 “gradle: update to 6.4.1.” https://is.gd/blAbAJ
+Jun 03 14:28:42 -void-packages/#xbps-	Hoshpak closed pull request #22494 “poezio update+deps” https://is.gd/e7KPKD
+Jun 03 14:29:03 -void-packages/#xbps-	Hoshpak pushed https://is.gd/Rr3sM7
+Jun 03 14:29:04 -7GHABOJO2/#xbps-	Hoshpak closed pull request #22493 “exeline and s6-portable-utils update” https://is.gd/GgadmE
+Jun 03 14:29:39 -void-packages/#xbps-	Hoshpak closed pull request #22490 “monolith: update to 2.2.7.” https://is.gd/7g2kzC
+Jun 03 14:30:48 -void-packages/#xbps-	Hoshpak pushed https://is.gd/TIBDfj
+Jun 03 14:31:45 -void-packages/#xbps-	Hoshpak closed pull request #22478 “vte3: update to 0.60.3.” https://is.gd/YD0VEb
+Jun 03 14:32:40 -void-packages/#xbps-	Hoshpak closed pull request #22472 “json-c: update to 0.14.” https://is.gd/LUUbp3
+Jun 03 14:33:45 -void-packages/#xbps-	Hoshpak closed pull request #22364 “protobuf23 and protobuf: update to 3.12.3” https://is.gd/Nsex6U
+Jun 03 14:34:19 -void-packages/#xbps-	Hoshpak closed pull request #22308 “apache-ant: add explicit python_version” https://is.gd/ADsHZL
+Jun 03 14:34:48 -void-packages/#xbps-	Hoshpak pushed https://is.gd/cG4UGW
+Jun 03 14:35:54 -void-packages/#xbps-	Hoshpak closed pull request #22553 “apache-htpasswd: add manpage” https://is.gd/9NP5dp
+Jun 03 14:37:13 -void-packages/#xbps-	Hoshpak closed pull request #22535 “roxterm: update to 3.9.4.” https://is.gd/gqek8Z
+Jun 03 14:37:50 -void-packages/#xbps-	Hoshpak closed pull request #22522 “arc-theme: update to 20200513.” https://is.gd/zSUae3
+Jun 03 14:39:12 -void-packages/#xbps-	Hoshpak closed issue #22548 “apache-htpasswd does not contain a manpage” https://is.gd/d0k53v
+Jun 03 14:39:25 -void-packages/#xbps-	Hoshpak closed issue #22514 “docker-compose broken after latest update” https://is.gd/LqKIjH
+Jun 03 14:40:12 -void-packages/#xbps-	Hoshpak closed issue #22158 “Package Request: libsane-hpaio” https://is.gd/1B6bLz
+Jun 03 14:43:01 -void-packages/#xbps-	Chocimier pushed https://is.gd/BgGtvf
+Jun 03 14:45:15 -void-packages/#xbps-	HadetTheUndying opened pull request #22556 “minitube: update to 3.4.” https://is.gd/4NzVCj
+Jun 03 14:46:30 <hadet>	Someone was reporting having problems getting that to build, but I just replaced the version number and checksum and it built fine. They wouldn't produce logs, so I'm of the impression they just wanted someone to do it for them but you never know
+Jun 03 14:46:59 <hadet>	Guess we'll see if the CI pops up any issues
+Jun 03 14:47:05 <hadet>	I told them to open an issue next time
+Jun 03 14:49:39 *	natrys has quit (Quit: natrys)
+Jun 03 14:52:00 *	rjpower4 has quit (Ping timeout: 256 seconds)
+Jun 03 14:53:25 <aedinius>	lame
+Jun 03 14:54:47 *	v0idkr4ft has quit (Ping timeout: 246 seconds)
+Jun 03 14:55:25 *	d31irium has quit (Ping timeout: 264 seconds)
+Jun 03 14:56:28 -void-packages/#xbps-	q66 pushed https://is.gd/5jYS7N
+Jun 03 14:57:04 *	v0idkr4ft (~v0idkr4ft@185.153.179.81) has joined
+Jun 03 14:57:11 *	d31irium (~d31irium@185.153.179.81) has joined
+Jun 03 15:07:40 <hadet>	Yeah
+Jun 03 15:17:02 -void-packages/#xbps-	pullmoll pushed https://is.gd/rdnJ8h
+Jun 03 15:18:43 <Nilium>	Hm, Travis build resulting in "git-2.27.0_1: not found", so it tries to rebuild a bunch of stuff.
+Jun 03 15:21:35 <Nilium>	Looks like it hasn't been built yet.
+Jun 03 15:21:55 *	Nilium goes to rebase his fork onto a pre-git-2.27.0 commit
+Jun 03 15:22:15 <ahesford>	I don't think git takes that long to build
+Jun 03 15:22:41 <Nilium>	It was committed yesterday. I suspect something else is wrong.
+Jun 03 15:22:57 <ericonr>	does that make a difference for CI? The void-docs CI uses what the repo would look like after rebasing a certain PR.
+Jun 03 15:23:00 <Nilium>	The main problem is perl also got updated, and I'm not waiting to build perl.
+Jun 03 15:23:22 <ahesford>	I noticed the git issue when rebuilding protobuf23
+Jun 03 15:23:25 <Nilium>	It does, if builds are far enough behind on commits to packages that are important to multiple things
+Jun 03 15:25:38 <Nilium>	x86_64 builder doesn't look like it's behind by much
+Jun 03 15:28:53 <st3r4g[m]>	> travis fail because alpha.us is not synchronized
+Jun 03 15:28:53 <st3r4g[m]>	 Nilium ^
+Jun 03 15:29:05 <Nilium>	That would explain it.
+Jun 03 15:29:26 <Nilium>	Was just checking alpha.de too.
+Jun 03 15:48:19 *	well_laid_lawn (~Jean-luc@60-240-126-85.tpgi.com.au) has joined
+Jun 03 15:56:56 <q66>	aedinius: what were you building mruby on/for?
+Jun 03 16:06:51 -void-packages/#xbps-	LinArcX opened issue #22557 “Package request: invidious” https://is.gd/QEUlni
+Jun 03 16:10:08 *	rjpower4 (~rpower@2601:249:4280:4c80::1690) has joined
+Jun 03 16:14:05 -void-packages/#xbps-	rmccask opened pull request #22558 “iptables: update to 1.8.5.” https://is.gd/J3qGMl
+Jun 03 16:16:34 *	travankor (~travankor@gateway/tor-sasl/travankor) has joined
+Jun 03 16:18:50 -void-packages/#xbps-	cinerea0 opened pull request #22559 “[WIP] New package: proton-bridge-1.2.7” https://is.gd/xxugeC
+Jun 03 16:22:03 *	Ingvix has quit (Quit: öh)
+Jun 03 16:24:14 *	Ingvix (~Ingvix@213.232.87.108) has joined
+Jun 03 16:41:33 -void-packages/#xbps-	Chocimier pushed https://is.gd/QoZ7qI
+Jun 03 16:44:59 *	gangstacat has quit (Quit: Ĝis!)
+Jun 03 16:47:43 *	gangstacat (~gangstaca@unaffiliated/gangstacat) has joined
+Jun 03 16:49:59 -void-packages/#xbps-	ProjectMoon opened pull request #22560 “New package: snixembed-0.2.2” https://is.gd/o9EmA8
+Jun 03 16:50:11 -void-packages/#xbps-	Chocimier pushed https://is.gd/m0OS7v
+Jun 03 17:10:39 -void-packages/#xbps-	teldra opened pull request #22561 “blender: update to 2.83” https://is.gd/Ue8Nb0
+Jun 03 17:19:04 -void-packages/#xbps-	teldra closed pull request #21644 “Openimagedenoise update” https://is.gd/seLa23
+Jun 03 17:20:33 -void-packages/#xbps-	teldra opened pull request #22562 “openimagedenoise: update to 1.2.0” https://is.gd/NDps2p
+Jun 03 17:32:05 *	travankor has quit (Remote host closed the connection)
+Jun 03 17:35:58 *	travankor (~travankor@gateway/tor-sasl/travankor) has joined
+Jun 03 18:40:26 *	Disconnected ()
+**** ENDING LOGGING AT Wed Jun  3 18:40:26 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 18:40:57 2020
+
+Jun 03 18:40:57 *	Now talking on #xbps
+Jun 03 18:40:57 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 03 18:40:57 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 03 18:40:57 *	Channel #xbps url: https://voidlinux.org
+Jun 03 18:45:25 -void-packages/#xbps-	rmccask opened pull request #22564 “dbus: update to 1.12.18.” https://is.gd/Lb0aME
+Jun 03 18:55:19 -void-packages/#xbps-	rmccask opened pull request #22565 “libcap: update to 2.36.” https://is.gd/nQbz5f
+Jun 03 19:01:12 <malice>	ahesford: rocm 3.5 released, have fun :D
+Jun 03 19:02:12 <malice>	What happened to upstreaming it anyway
+Jun 03 19:03:13 <Johnnynator>	 And no Navi support :D. How old is navi now? Like a year?
+Jun 03 19:03:22 *	well_laid_lawn has quit (Quit: WeeChat 2.8)
+Jun 03 19:14:37 <ericonr>	Navi is exclusively a gaming card
+Jun 03 19:14:40 <ericonr>	or something
+Jun 03 19:14:53 <ericonr>	you could do Vulkan compute :p
+Jun 03 19:47:08 <ahesford>	malice: thanks for the heads up. I haven't been thinking about ROCm enough to submit the cmake patches upstream.
+Jun 03 19:47:37 <ahesford>	They probably need some cleanup to make sure the prefix changes still work with their preferred /opt installation
+Jun 03 19:48:19 <ahesford>	There's been enough resistance to merging my templates that I put it on the back burner
+Jun 03 19:52:13 -void-packages/#xbps-	rmccask opened pull request #22566 “msmtp: update to 1.8.11.” https://is.gd/UIDSDg
+Jun 03 19:55:52 -void-packages/#xbps-	sgn pushed https://is.gd/bdwN4z
+Jun 03 20:01:14 *	d31irium has quit (Ping timeout: 240 seconds)
+Jun 03 20:02:16 *	v0idkr4ft has quit (Ping timeout: 265 seconds)
+Jun 03 20:03:00 *	travankor (~travankor@gateway/tor-sasl/travankor) has joined
+Jun 03 20:03:35 *	d31irium (~d31irium@pool-108-34-251-7.prvdri.fios.verizon.net) has joined
+Jun 03 20:03:51 *	v0idkr4ft (~v0idkr4ft@pool-108-34-251-7.prvdri.fios.verizon.net) has joined
+Jun 03 20:13:55 <hadet>	Would someone be willing to take a look at this build log? https://travis-ci.org/github/void-linux/void-packages/jobs/694460046 I have expat-devel in the makedepends, should it be in hostmakedepends?
+Jun 03 20:14:59 <sgn>	Next time, please paste raw log :)
+Jun 03 20:15:24 <sgn>	I meant this link: https://api.travis-ci.org/v3/job/694460046/log.txt
+Jun 03 20:17:59 <sgn>	The log only talks about ncurses?
+Jun 03 20:18:41 <aedinius>	=> ERROR: cmake-3.17.3_1: failed to install 'expat-devel-2.2.9_1' dependency! (error 19)
+Jun 03 20:18:50 <aedinius>	It's the same travis+mirror issue someone brought up earlier
+Jun 03 20:19:54 <hadet>	Oh okay
+Jun 03 20:20:38 <hadet>	I didn't think it even depended on expat. Should I remove the dependency it built on my host system and in my vm and chroot without it.
+Jun 03 20:21:25 <hadet>	aedinius: so the CI is just failing right now?
+Jun 03 20:23:39 <aedinius>	apparently
+Jun 03 20:24:48 <hadet>	Alright i'm gonna just remove that then. Weird
+Jun 03 20:43:38 *	Disconnected ()
+**** ENDING LOGGING AT Wed Jun  3 20:43:38 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 20:44:01 2020
+
+Jun 03 20:44:01 *	Now talking on #xbps
+Jun 03 20:44:01 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 03 20:44:01 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 03 20:44:02 *	Channel #xbps url: https://voidlinux.org
+Jun 03 20:45:13 *	anansi has quit (Ping timeout: 240 seconds)
+Jun 03 20:45:54 <ericonr>	duncaen: I reviewed the whole services PR, I think it makes a lot more sense now :D
+Jun 03 20:46:14 <ericonr>	made a new PR for it because I didn't re-use a single commit either
+Jun 03 20:47:36 *	anansi (~samedi@64.44.81.52) has joined
+Jun 03 20:47:57 <aedinius>	Heh. Sometimes it really is *sigh* branch -D pr ...
+Jun 03 20:48:50 <aedinius>	alternatively, git reset --hard
+Jun 03 20:54:00 *	anansi has quit (Ping timeout: 256 seconds)
+Jun 03 20:55:57 *	anansi (~samedi@184.170.240.112) has joined
+Jun 03 21:01:12 *	ifreund has quit (Ping timeout: 256 seconds)
+Jun 03 21:05:35 *	anansi has quit (Ping timeout: 265 seconds)
+Jun 03 21:07:17 *	anansi (~samedi@102.129.239.177) has joined
+Jun 03 21:13:37 *	Disconnected ()
+**** ENDING LOGGING AT Wed Jun  3 21:13:37 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 21:14:02 2020
+
+Jun 03 21:14:02 *	Now talking on #xbps
+Jun 03 21:14:02 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 03 21:14:02 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 03 21:14:02 *	Channel #xbps url: https://voidlinux.org
+Jun 03 21:36:25 -void-packages/#xbps-	caioraposo opened pull request #22567 “telegram-desktop: update to 2.1.7.” https://is.gd/jqMMYq
+Jun 03 22:48:05 *	Disconnected ()
+**** ENDING LOGGING AT Wed Jun  3 22:48:05 2020
+
+**** BEGIN LOGGING AT Tue Jun  9 19:42:57 2020
+
+Jun 09 19:42:57 *	Now talking on #xbps
+Jun 09 19:42:57 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 09 19:42:57 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 09 19:42:58 *	Channel #xbps url: https://voidlinux.org
+Jun 09 19:47:41 *	_barcode_ (~bc@14.81-167-76.customer.lyse.net) has joined
+Jun 09 19:56:52 *	johnnyhostile has quit (Quit: leaving)
+Jun 09 19:59:37 *	johnnyhostile (~irssi@castlevania.bhgdo.com) has joined
+Jun 09 20:04:31 *	well_laid_lawn has quit (Quit: WeeChat 2.8)
+Jun 09 20:08:04 *	_barcode_ has quit (Quit: leaving)
+Jun 09 20:12:45 *	branon (~branon@2601:5cc:8200:f4::100) has joined
+Jun 09 20:15:46 *	_barcode_ (~bc@14.81-167-76.customer.lyse.net) has joined
+Jun 09 21:09:56 *	KindTwo (kindone@freenode/father-christmas/kindone) has joined
+Jun 09 21:10:07 *	KindOne has quit (Ping timeout: 272 seconds)
+Jun 09 21:14:16 *	KindTwo is now known as KindOne
+Jun 09 21:17:42 *	KindTwo (kindone@freenode/father-christmas/kindone) has joined
+Jun 09 21:19:36 *	KindOne has quit (Ping timeout: 272 seconds)
+Jun 09 21:21:56 *	KindTwo is now known as KindOne
+Jun 09 22:04:14 *	Disconnected ()
+**** ENDING LOGGING AT Tue Jun  9 22:04:14 2020
+
+**** BEGIN LOGGING AT Tue Jun  9 22:04:42 2020
+
+Jun 09 22:04:42 *	Now talking on #xbps
+Jun 09 22:04:42 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 09 22:04:42 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 09 22:04:42 *	Channel #xbps url: https://voidlinux.org
+Jun 09 22:10:25 -void-packages/#xbps-	zdykstra opened pull request #22748 “zfsbootmenu: update to 1.1.” https://is.gd/F4zPbH
+Jun 09 22:24:30 *	KindTwo (kindone@freenode/father-christmas/kindone) has joined
+Jun 09 22:26:07 *	KindOne has quit (Ping timeout: 272 seconds)
+Jun 09 22:28:52 *	KindTwo is now known as KindOne
+Jun 09 22:34:06 *	KindOne has quit (Ping timeout: 265 seconds)
+Jun 09 22:36:40 *	KindOne (kindone@freenode/father-christmas/kindone) has joined
+Jun 09 23:13:39 -void-packages/#xbps-	q66 closed issue #22742 “Tester wanted: cross*musl* toolchains” https://is.gd/l8o64z
+**** ENDING LOGGING AT Tue Jun  9 23:46:07 2020
+
+**** BEGIN LOGGING AT Wed Jun 10 21:19:42 2020
+
+Jun 10 21:19:42 *	Now talking on #xbps
+Jun 10 21:19:42 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 10 21:19:42 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 10 21:19:42 *	Channel #xbps url: https://voidlinux.org
+Jun 10 21:23:23 *	KindTwo (kindone@freenode/father-christmas/kindone) has joined
+Jun 10 21:23:53 <ericonr>	heh, sdcc docs are a single 75k lines file
+Jun 10 21:25:31 *	KindOne has quit (Ping timeout: 272 seconds)
+Jun 10 21:27:42 *	KindTwo is now known as KindOne
+Jun 10 21:33:15 <ericonr>	any disadvantages to introducing a `gc` dep?
+Jun 10 21:43:35 <ahesford>	hah, I just misread the description for sdcc as "Regrettable ANSI C compiler"
+Jun 10 21:54:32 -void-packages/#xbps-	sgn pushed https://is.gd/9jsVRY
+**** ENDING LOGGING AT Wed Jun 10 22:01:01 2020
+
+**** BEGIN LOGGING AT Thu Jun 11 09:14:43 2020
+
+Jun 11 09:14:43 *	Now talking on #xbps
+Jun 11 09:14:43 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 11 09:14:43 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 11 09:14:43 *	Channel #xbps url: https://voidlinux.org
+Jun 11 09:18:43 -void-packages/#xbps-	abenson opened pull request #22800 “Amass: update to 3.7.0.” https://is.gd/CTWkuK
+Jun 11 09:19:18 -void-packages/#xbps-	abenson opened pull request #22801 “New package: python3-pwntools-4.1.2” https://is.gd/a1iSa4
+Jun 11 09:59:45 *	biniar is now known as bin
+Jun 11 10:10:38 *	mobinmob has quit (Quit: Connection closed for inactivity)
+**** ENDING LOGGING AT Thu Jun 11 10:13:45 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 11:17:22 2020
+
+Jun 26 11:17:22 *	Now talking on #xbps
+Jun 26 11:17:22 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 26 11:17:22 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 26 11:17:22 *	Channel #xbps url: https://voidlinux.org
+Jun 26 11:18:21 *	GreenTea999 has quit (Read error: Connection reset by peer)
+Jun 26 11:19:37 <ahesford>	Does anybody here know of a way to incorporate mdns into the musl resolver?
+Jun 26 11:23:23 <duncaen>	not really into musl
+Jun 26 11:23:24 <duncaen>	https://skarnet.org/software/nsss/
+Jun 26 11:23:51 <duncaen>	nvm thats only for pw/usr/groups stuff
+Jun 26 11:23:57 <ahesford>	thanks
+Jun 26 11:24:12 <ahesford>	I'm seeing another problem that is more annoying
+Jun 26 11:24:36 <ahesford>	musl broadcasts to all configured nameservers simultaneously and accepts the first response
+Jun 26 11:24:40 <duncaen>	a dns resolver that does both would be nice
+Jun 26 11:25:18 <Piraty>	ahesford: musl even fails to do dns when there's an ipv6 entry in resolv.conf but kernel isn't capable of ipv6
+Jun 26 11:26:01 <ahesford>	my company VPN uses a secondary, private domain for its intranet
+Jun 26 11:26:08 <Piraty>	(sure, it's wrong to have an ipv6 dns in resolv.conf when ipv6 is disabled, but it's also wrong to try to resolve that and fail
+Jun 26 11:26:20 <ahesford>	when I join the VPN it adds the company name servers to the top of the list
+Jun 26 11:26:30 <ahesford>	this works on glibc because it will try those first and get a valid answer
+Jun 26 11:26:36 <Piraty>	which vpn proto?
+Jun 26 11:27:22 <ahesford>	musl tries all of my nameservers and quickly gets a non-resolve error from public DNS
+Jun 26 11:27:30 <ahesford>	so it doesn't wait for the record
+Jun 26 11:28:07 <ahesford>	Piraty: PAN GlobalProtect
+Jun 26 11:28:13 <ahesford>	I use openconnect
+Jun 26 11:28:40 <ahesford>	If I route all DNS through the company, I could make it work, but don't want to do that
+Jun 26 12:49:00 *	Disconnected ()
+**** ENDING LOGGING AT Fri Jun 26 12:49:00 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 12:49:25 2020
+
+Jun 26 12:49:25 *	Now talking on #xbps
+Jun 26 12:49:25 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 26 12:49:25 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 26 12:49:25 *	Channel #xbps url: https://voidlinux.org
+Jun 26 12:50:15 *	runningdroid has quit (Quit: going on vacation)
+Jun 26 12:55:34 <ahesford>	Piraty: I do openconnect --protocol=gp -i $TUNDEV --csd-wrapper=/usr/libexec/openconnect/hipreport.sh -s "sudo -E /usr/libexec/vpnc-scripts/vpnc-script" $VPNHOST
+Jun 26 12:56:18 <aedinius>	Piraty: teams is not distributable, the MIT LICENSE is to comply for a component shipped with it
+Jun 26 13:10:02 *	anansi has quit (Ping timeout: 258 seconds)
+Jun 26 13:11:50 *	anansi (~samedi@64.44.80.164) has joined
+Jun 26 13:20:29 <Piraty>	is there another file that should be vlicense'd ?
+Jun 26 13:21:49 <aedinius>	I mentioned it on the PR
+Jun 26 13:22:19 <aedinius>	ReadmeFirstTermsofUse.txt
+Jun 26 13:22:43 <Piraty>	how did i miss this
+Jun 26 13:22:56 <Piraty>	will take care tomorrow
+Jun 26 13:23:12 <Piraty>	if you don't object to my template i will merge then
+Jun 26 13:23:33 <aedinius>	I prefer the -bin suffix for it, but otherwise your template is nearly identical to mine
+Jun 26 13:25:11 <Piraty>	i looked at -bin, but a lot of other precompiler packages don't have it , and i don't expect a nameclash by M$ releasseing the sources some day
+Jun 26 13:25:23 <Piraty>	but you're right, no reason to follow bad practices
+Jun 26 13:26:38 *	GreenTea999 has quit (Ping timeout: 260 seconds)
+Jun 26 13:27:19 *	GreenTea999 (~GreenTea9@106.206.60.207) has joined
+Jun 26 13:39:43 *	GreenTea999 has quit (Read error: Connection reset by peer)
+Jun 26 13:40:38 *	GreenTea999 (~GreenTea9@106.201.100.208) has joined
+Jun 26 13:44:59 *	GreenTea999 has quit (Ping timeout: 260 seconds)
+Jun 26 13:46:08 *	GreenTea999 (~GreenTea9@2401:4900:16e0:51fb:15e1:cf75:6ebd:3ed1) has joined
+Jun 26 14:13:36 *	Disconnected ()
+**** ENDING LOGGING AT Fri Jun 26 14:13:36 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 14:14:01 2020
+
+Jun 26 14:14:01 *	Now talking on #xbps
+Jun 26 14:14:01 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 26 14:14:01 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 26 14:14:02 *	Channel #xbps url: https://voidlinux.org
+Jun 26 14:16:41 *	flotsam (~lonw@2001:2002:5fc7:9fc6::1) has joined
+Jun 26 14:23:19 <bougyman>	https://github.com/team-video/aviary.sh
+Jun 26 14:23:20 <bougyman>	hrm
+Jun 26 14:32:16 *	flotsam_ (~lonw@2001:2002:5fc7:80ef::1) has joined
+Jun 26 14:33:53 *	flotsam has quit (Ping timeout: 260 seconds)
+Jun 26 14:42:43 -void-packages/#xbps-	Piraty closed pull request #23217 “exiftool: update to 12.01.” https://is.gd/yIN3Xh
+Jun 26 14:48:17 -void-packages/#xbps-	Piraty pushed https://is.gd/xwUre0
+Jun 26 14:49:07 -void-packages/#xbps-	Piraty closed pull request #23213 “remmina: update to 1.4.7.” https://is.gd/heDwxZ
+Jun 26 14:53:50 -void-packages/#xbps-	Piraty closed pull request #23234 “umoci: update to 0.4.6.” https://is.gd/rlteuf
+Jun 26 14:56:57 -void-packages/#xbps-	Piraty pushed https://is.gd/uxNk3v
+Jun 26 14:58:22 *	GreenTea999 has quit (Ping timeout: 260 seconds)
+Jun 26 14:59:01 -void-packages/#xbps-	Piraty closed pull request #23245 “rakudo: update to 2020.06.” https://is.gd/bLGXte
+Jun 26 15:00:29 -void-packages/#xbps-	Piraty closed pull request #23244 “xxHash: update to 0.7.4.” https://is.gd/PY4hyq
+Jun 26 15:05:00 <leah2>	foxlet: ping
+Jun 26 15:07:51 -void-packages/#xbps-	jnbr pushed https://is.gd/77gq5S
+Jun 26 15:08:10 -void-packages/#xbps-	jnbr closed pull request #23237 “nebula: update to 1.2.0.” https://is.gd/AHtA9J
+Jun 26 15:08:36 -void-packages/#xbps-	jnbr pushed https://is.gd/1eCpzR
+Jun 26 15:09:30 -void-packages/#xbps-	jnbr closed pull request #23191 “zfsbootmenu: update to 1.2.” https://is.gd/crN5P8
+Jun 26 15:12:43 -void-packages/#xbps-	jnbr closed pull request #23212 “python3-bokeh: update to 2.1.1.” https://is.gd/N0Zc1J
+Jun 26 15:12:54 -void-packages/#xbps-	jnbr pushed https://is.gd/7YTAuq
+Jun 26 15:13:05 <leah2>	oO we dont have jinja2 packaged?
+Jun 26 15:13:27 <leah2>	ah darn uppercase
+Jun 26 15:13:34 <aedinius>	python3-Jinja2 ?
+Jun 26 15:13:36 <aedinius>	yeah
+Jun 26 15:13:43 *	GreenTea999 (~GreenTea9@2401:4900:4bb7:88c7:ee12:9a01:500c:b92f) has joined
+Jun 26 15:14:29 <aedinius>	Someone recently asked why xbps was case-sensitive. I didn't have a better answer than "because it is"
+Jun 26 15:14:46 <leah2>	it's silly :p
+Jun 26 15:14:54 <leah2>	i wouldnt do it again :p
+Jun 26 15:16:06 -void-packages/#xbps-	jnbr pushed https://is.gd/jKWn8y
+Jun 26 15:16:25 -void-packages/#xbps-	jnbr pushed https://is.gd/tj9USW
+Jun 26 15:17:34 -void-packages/#xbps-	jnbr pushed https://is.gd/PUP97J
+Jun 26 15:20:38 -void-packages/#xbps-	jnbr closed pull request #23181 “nvme-cli: update to 1.12.” https://is.gd/fUqb8g
+Jun 26 15:22:09 -void-packages/#xbps-	jnbr closed pull request #23186 “sudo: update to 1.9.1.” https://is.gd/QEgSYU
+Jun 26 15:23:23 -void-packages/#xbps-	jnbr closed pull request #23049 “foliate: update to 2.3.0.” https://is.gd/YtWJJc
+Jun 26 15:23:40 <ericonr>	leah2: it's all worth it to be able to install R with a package named R
+Jun 26 15:23:46 <ericonr>	I don't even use R tho
+Jun 26 15:24:15 <leah2>	calling it r wouldnt hurt either :p
+Jun 26 15:24:25 <ericonr>	Piraty: I'm not sure if my fix is dirtier than sgn's, but it works :p
+Jun 26 15:26:58 *	flotsam_ has quit (Ping timeout: 260 seconds)
+Jun 26 15:29:18 *	GreenTea999 has quit (Ping timeout: 260 seconds)
+Jun 26 15:29:49 <jnbr>	speaking of R, version 4 is released
+Jun 26 15:30:09 *	jcgruenhage (janchristi@gateway/shell/matrix.org/x-knvymuafzjeslfvl) has joined
+Jun 26 15:30:09 <jcgruenhage>	Does anyone know that the current state of vscode on arm is? The template says that it's x86 only due to electron, but does electron really not work on arm at all? That doesn't sound likely
+Jun 26 15:30:53 <jnbr>	afaik, it's a precompiled electron
+Jun 26 15:31:30 <jnbr>	in general, electron works on arm
+Jun 26 15:33:46 <jcgruenhage>	<jnbr "afaik, it's a precompiled electr"> wow, that sounds ugly...
+Jun 26 15:34:36 <aedinius>	I don't think its precompiled
+Jun 26 15:35:17 *	GreenTea999 (~GreenTea9@106.201.100.208) has joined
+Jun 26 15:43:57 *	Disconnected ()
+**** ENDING LOGGING AT Fri Jun 26 15:43:57 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 15:44:22 2020
+
+Jun 26 15:44:22 *	Now talking on #xbps
+Jun 26 15:44:22 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 26 15:44:22 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 26 15:44:22 *	Channel #xbps url: https://voidlinux.org
+Jun 26 15:44:27 *	GreenTea999 has quit (Ping timeout: 260 seconds)
+Jun 26 15:45:29 *	GreenTea999 (~GreenTea9@106.201.100.208) has joined
+Jun 26 15:47:11 <ericonr>	does Rust have some equivalent to ccache?
+Jun 26 15:47:45 <ericonr>	could be interesting to include in xbps-src for building related projects, since everything has a million non shared dependencies
+Jun 26 15:48:04 <ifreund>	I think cargo does caching on a per-project basis
+Jun 26 15:48:14 <ifreund>	iirc there is some way to use a global cache though
+Jun 26 15:48:21 <Johnnynator>	ericonr: sccache.
+Jun 26 15:48:50 <Johnnynator>	But you need to get it to work on smth like unix sockets instead of ipv4
+Jun 26 15:49:13 <ericonr>	I see we already cache the index, right?
+Jun 26 15:49:20 <Johnnynator>	Yes.
+Jun 26 15:49:25 *	GreenTea999 has quit (Read error: Connection reset by peer)
+Jun 26 15:49:47 *	GreenTea999 (~GreenTea9@106.201.100.208) has joined
+Jun 26 15:57:27 -void-packages/#xbps-	ericonr opened pull request #23248 “mdBook and mdbook-linkcheck updates” https://is.gd/Mfwir2
+Jun 26 15:58:35 *	GreenTea999 has quit (Quit: Quit)
+Jun 26 15:58:59 <ericonr>	Johnnynator: oh sccache is a server
+Jun 26 15:59:33 <ericonr>	dang why would they do this
+Jun 26 16:01:06 <jnbr>	for development teams or a distributed build infrastructure, having a central server could make sense
+Jun 26 16:01:26 <ericonr>	yeah, fair enough
+Jun 26 16:01:58 <ericonr>	having a simpler caching compiler would be cool tho
+Jun 26 16:02:19 <Johnnynator>	It does make since if you do not run builds in different enviroment with the same ipv address
+Jun 26 16:06:48 *	well_laid_lawn (~Jean-luc@202.168.11.200) has joined
+Jun 26 16:10:16 *	GreenTea999 (uid452002@gateway/web/irccloud.com/x-wbkauhfpcpptlhnh) has joined
+Jun 26 16:10:54 *	anansi has quit (Ping timeout: 240 seconds)
+Jun 26 16:11:20 <aedinius>	Johnnynator: nice, I just assumed MS would be MS ;]
+Jun 26 16:13:08 *	anansi (~samedi@199.58.187.138) has joined
+Jun 26 18:30:02 *	Disconnected ()
+**** ENDING LOGGING AT Fri Jun 26 18:30:02 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 18:30:31 2020
+
+Jun 26 18:30:31 *	Now talking on #xbps
+Jun 26 18:30:31 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 26 18:30:31 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 26 18:30:31 *	Channel #xbps url: https://voidlinux.org
+Jun 26 18:30:37 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Fri Jun 26 18:30:37 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:13:32 2020
+
+Jun 27 21:13:32 *	Now talking on #xbps
+Jun 27 21:13:32 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 27 21:13:32 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 27 21:13:32 *	Channel #xbps url: https://voidlinux.org
+Jun 27 21:24:06 <fossy>	Johnnynator: were you the one using I686 musl?
+Jun 27 21:30:24 *	Disconnected ()
+**** ENDING LOGGING AT Sat Jun 27 21:30:24 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:30:49 2020
+
+Jun 27 21:30:49 *	Now talking on #xbps
+Jun 27 21:30:49 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 27 21:30:49 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 27 21:30:49 *	Channel #xbps url: https://voidlinux.org
+Jun 27 21:30:57 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Sat Jun 27 21:30:57 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:31:34 2020
+
+Jun 27 21:31:34 *	Now talking on #xbps
+Jun 27 21:31:34 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 27 21:31:34 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 27 21:31:34 *	Channel #xbps url: https://voidlinux.org
+Jun 27 21:32:53 *	cinerea0 has quit (Ping timeout: 240 seconds)
+**** ENDING LOGGING AT Sat Jun 27 21:36:31 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:37:08 2020
+
+Jun 27 21:37:08 *	Now talking on #xbps
+Jun 27 21:37:08 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 27 21:37:08 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 27 21:37:09 *	Channel #xbps url: https://voidlinux.org
+Jun 27 21:40:20 <ericonr>	fossy: pullmoll has a whole repo for it, and you can probably run from inside a chroot
+Jun 27 21:40:28 <fossy>	oh!
+Jun 27 21:40:29 <ericonr>	if you need to test something
+Jun 27 21:40:34 <fossy>	link?
+Jun 27 21:40:46 <fossy>	does someone have an armv5 one?
+Jun 27 21:41:05 <ericonr>	pullmoll too
+Jun 27 21:41:25 <ericonr>	https://repo.voidlinux.de/ here
+Jun 27 21:42:40 <fossy>	wowowowow
+Jun 27 21:42:48 <fossy>	this is very great
+Jun 27 21:43:39 <fossy>	do u know what pkgs he builds?
+Jun 27 21:50:14 <ericonr>	no idea, sorry
+Jun 27 21:50:23 *	Disconnected ()
+**** ENDING LOGGING AT Sat Jun 27 21:50:23 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:50:44 2020
+
+Jun 27 21:50:44 *	Now talking on #xbps
+Jun 27 21:50:44 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 27 21:50:44 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 27 21:50:45 *	Channel #xbps url: https://voidlinux.org
+**** ENDING LOGGING AT Sat Jun 27 21:52:54 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:54:07 2020
+
+Jun 27 21:54:07 *	Now talking on #xbps
+Jun 27 21:54:07 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 27 21:54:07 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 27 21:54:08 *	Channel #xbps url: https://voidlinux.org
+Jun 27 21:55:28 *	ericonr has quit (Ping timeout: 256 seconds)
+Jun 27 21:56:22 <cinerea0>	Hey, I'm having some trouble figuring out the xbps-src patching process. Could someone help me out? I think I'm misunderstanding where files have to be placed when the patch is created or where the patch file itself has to be placed in the template directory.
+Jun 27 22:05:04 <cinerea0>	I've been creating patches by placing the modified version of the file I want to patch in the wrksrc level directory, with the file I want to patch being in a lower directory. I then store the resulting patch file in a patch directory within the template directory. Is that correct?
+Jun 27 22:05:09 <Skirmisher>	cinerea0: you'll have to elaborate on what you're trying to do
+Jun 27 22:05:44 <Skirmisher>	in general though, you just put patches in srcpkgs/pkgname/patches/
+Jun 27 22:06:04 <Skirmisher>	look at the linux packages (linux5.6 etc.) for an example
+Jun 27 22:07:58 <Skirmisher>	cinerea0: wait, so what you're asking is how to *create* patches, not where to put them
+Jun 27 22:09:32 <cinerea0>	Skirmisher: Okay, that means I'm putting the patches in the correct directory, that's good. And yes, I guess I'm probably creating them wrong. I keep getting a "File to patch:" error where it looks like it can't find the file.
+Jun 27 22:12:15 <cinerea0>	Do the modified and original files need to be in the same directory when executing diff -u to create a successful patch?
+Jun 27 22:14:34 <cinerea0>	It's also entirely possible I'm misinterpreting the error found here: https://travis-ci.org/github/void-linux/void-packages/jobs/700470845
+Jun 27 22:15:01 <Skirmisher>	cinerea0: I usually use git to generate patches, if you have experience with that I would suggest using that instead
+Jun 27 22:15:21 *	ericonr (~ericonr@177.194.64.215) has joined
+Jun 27 22:15:22 <Skirmisher>	and again, look at other packages for examples of what the patch file should look like
+Jun 27 22:22:45 <aedinius>	If its git, I do: git diff --no-prefix
+Jun 27 22:23:30 <ericonr>	oh god
+Jun 27 22:23:34 <aedinius>	Otherise, I use leah2's unpatch https://leahneukirchen.org/dotfiles/bin/unpatch
+Jun 27 22:23:41 <ericonr>	I always remove those manuallu
+Jun 27 22:23:47 <ericonr>	manually
+Jun 27 22:23:48 <aedinius>	ericonr: lol
+Jun 27 22:24:36 <ericonr>	out of curiosity, what has leah2 not written a tool for?
+Jun 27 22:25:18 <aedinius>	I'm sure there's something
+Jun 27 22:31:58 -void-packages/#xbps-	chili-b opened pull request #23277 “Update to verison 2.4.2” https://is.gd/DKdg8s
+Jun 27 22:40:04 -void-packages/#xbps-	chili-b closed pull request #23277 “Update to verison 2.4.2” https://is.gd/DKdg8s
+Jun 27 23:21:24 *	ericonr has quit (Remote host closed the connection)
+Jun 27 23:21:44 *	ericonr (~ericonr@177.194.64.215) has joined
+Jun 28 00:16:04 <Vaelatern>	wait, how did pfetch get in to the repo
+Jun 28 00:17:46 <ericonr>	magic in 2019-10-01, possibly
+Jun 28 00:18:06 <Vaelatern>	apparently
+Jun 28 00:22:05 -void-packages/#xbps-	lampmerchant opened issue #23278 “lxd-lts complains of undefined symbol in libdqlite.so.0” https://is.gd/vYqNKk
+Jun 28 00:24:27 <maldridge>	Vaelatern: if you happen to have time, I'd appreciate if you could comment on my minimal docker container PR
+Jun 28 00:24:41 <Vaelatern>	link?
+Jun 28 00:25:00 <maldridge>	https://github.com/void-linux/void-mklive/pull/129
+Jun 28 00:25:06 <Vaelatern>	:+1:
+Jun 28 00:26:17 <Vaelatern>	ok, I'm going to assume they are good if I can use the resulting container to run software
+Jun 28 00:26:28 <maldridge>	to a point
+Jun 28 00:26:42 <maldridge>	I'm not sure if there are assumptions in xbps-triggers that require packages I have not provideed
+Jun 28 00:30:19 <ericonr>	maldridge: from the issues sgn and I were finding, due to base-files adding the `kvm` group, it needs groupadd
+Jun 28 00:30:27 <ericonr>	which doesn't seem to be included there
+Jun 28 00:30:45 <maldridge>	yeah, I was going for minimalism, this appears to not be as easy as I wanted
+Jun 28 00:30:56 <maldridge>	if we had a functional busybox package maybe, but clearly not here
+Jun 28 00:31:00 <ericonr>	you can probably noextract the `/usr/libexec/xbps-triggers/system-accounts` file
+Jun 28 00:31:20 <ericonr>	I think that would fix the dependency
+Jun 28 00:31:27 <ericonr>	but it starts to get messy
+Jun 28 00:32:06 <maldridge>	I don't think that helps
+Jun 28 00:32:13 <maldridge>	since then you have packages that want a user but it isn't there
+Jun 28 00:32:39 <ericonr>	oh yeah
+Jun 28 00:32:51 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Sun Jun 28 00:32:51 2020
+
+**** BEGIN LOGGING AT Mon Jun 29 19:46:07 2020
+
+Jun 29 19:46:07 *	Now talking on #xbps
+Jun 29 19:46:07 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 29 19:46:07 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 29 19:46:07 *	Channel #xbps url: https://voidlinux.org
+Jun 29 19:51:53 <ericonr>	ahesford: hmm fair enough
+Jun 29 19:53:07 *	leah2 has quit (Ping timeout: 260 seconds)
+Jun 29 20:05:00 -void-packages/#xbps-	sgn closed pull request #23189 “New package: wren-cli” https://is.gd/ppDnwJ
+Jun 29 20:10:25 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Mon Jun 29 20:10:25 2020
+
+**** BEGIN LOGGING AT Mon Jun 29 20:21:27 2020
+
+Jun 29 20:21:27 *	Now talking on #xbps
+Jun 29 20:21:27 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 29 20:21:27 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 29 20:21:27 *	Channel #xbps url: https://voidlinux.org
+Jun 29 20:22:20 -void-packages/#xbps-	sgn pushed https://is.gd/ihYGPK
+Jun 29 20:26:07 <ahesford>	sgn: are you satisfied with scipy as it is now?
+Jun 29 20:26:35 <sgn>	I haven't checked again :) Maybe tonight
+Jun 29 20:27:39 <ahesford>	ok
+Jun 29 20:27:51 <ahesford>	thanks
+Jun 29 20:28:25 <sgn>	I'm out for work, soon
+Jun 29 20:28:28 *	Hoshpak (~Hoshpak@2001:16b8:1cec:e400:b495:5e14:a5db:6caa) has joined
+Jun 29 20:35:43 *	d31irium_ (~d31irium@107.152.104.243) has joined
+Jun 29 20:35:43 *	v0idkr4f1 (~v0idkr4ft@107.152.104.243) has joined
+Jun 29 20:36:13 *	d31irium has quit (Ping timeout: 264 seconds)
+Jun 29 20:36:34 *	v0idkr4ft has quit (Ping timeout: 240 seconds)
+Jun 29 20:37:23 -void-packages/#xbps-	sgn pushed https://is.gd/xPRtIl
+Jun 29 21:19:14 *	Disconnected ()
+**** ENDING LOGGING AT Mon Jun 29 21:19:14 2020
+
+**** BEGIN LOGGING AT Mon Jun 29 21:19:42 2020
+
+Jun 29 21:19:42 *	Now talking on #xbps
+Jun 29 21:19:42 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 29 21:19:42 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 29 21:19:42 *	Channel #xbps url: https://voidlinux.org
+Jun 29 21:43:03 *	mobinmob has quit (Quit: Connection closed for inactivity)
+Jun 29 21:47:45 *	Ingvix has quit (Quit: öh)
+Jun 29 21:48:14 *	Ingvix (~Ingvix@213.232.87.108) has joined
+**** ENDING LOGGING AT Mon Jun 29 21:51:24 2020
+
+**** BEGIN LOGGING AT Tue Jun 30 20:20:57 2020
+
+Jun 30 20:20:57 *	Now talking on #xbps
+Jun 30 20:20:57 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jun 30 20:20:57 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jun 30 20:20:57 *	Channel #xbps url: https://voidlinux.org
+Jun 30 20:23:27 -void-packages/#xbps-	misuchiru03 opened pull request #23335 “python3-zope.testrunner: update to 5.2” https://is.gd/idHAw4
+Jun 30 20:27:10 *	allan0 has quit (Ping timeout: 260 seconds)
+Jun 30 20:27:35 *	allan0 (~allan0@77-58-99-23.dclient.hispeed.ch) has joined
+Jun 30 20:30:35 <ericonr>	sgn: do we have other Japanese fonts?
+Jun 30 20:31:08 <sgn>	ericonr: I don't know, let me reopen then
+Jun 30 20:31:30 *	Hoshpak has quit (Ping timeout: 244 seconds)
+Jun 30 20:31:37 <ericonr>	that one was badly explained by the commiter too
+Jun 30 20:34:34 <sgn>	ericonr: I'm using DejaVu, it can render Japanese just fine. There're ipafont-fonts-otf, too
+Jun 30 20:37:54 *	d31irium_ has quit (Ping timeout: 240 seconds)
+Jun 30 20:38:49 *	v0idkr4f1 has quit (Ping timeout: 265 seconds)
+Jun 30 20:45:09 *	Hoshpak (~Hoshpak@2001:16b8:1c25:6300:b495:5e14:a5db:6caa) has joined
+Jun 30 20:45:25 *	d31irium_ (~d31irium@pool-108-34-251-7.prvdri.fios.verizon.net) has joined
+Jun 30 20:45:52 *	v0idkr4f1 (~v0idkr4ft@pool-108-34-251-7.prvdri.fios.verizon.net) has joined
+Jun 30 20:49:39 <flexibeast>	https://www.reddit.com/r/voidlinux/comments/hizldf/void_linux_update_issue/
+Jun 30 20:51:19 <ericonr>	sgn: if you think we have fonts for japanese, that's fine by me c:
+Jun 30 20:51:23 <ericonr>	just wanted to be sure
+Jun 30 20:52:10 <ericonr>	flexibeast: I think they should check the actual time, not the timezone
+Jun 30 20:52:29 <aedinius>	That's what I said
+Jun 30 20:53:01 <flexibeast>	i'm getting those errors too.
+Jun 30 20:53:13 <aedinius>	I'm not
+Jun 30 20:53:13 -void-packages/#xbps-	ifreund opened pull request #23336 “New package: kristall-0.3” https://is.gd/gdOI4M
+Jun 30 20:53:15 <aedinius>	What's the output of date?
+Jun 30 20:53:19 <aedinius>	date -u
+Jun 30 20:53:23 <aedinius>	Wed 01 Jul 2020 12:53:17 AM UTC
+Jun 30 20:53:38 <flexibeast>	Wed Jul  1 00:53:30 UTC 2020
+Jun 30 20:53:58 <aedinius>	That seem soff.
+Jun 30 20:54:02 <aedinius>	BY an hour
+Jun 30 20:54:16 <ericonr>	hmm error in timezone database?
+Jun 30 20:54:32 <aedinius>	shouldn't be, timezone would be wrong, not UTC
+Jun 30 20:54:41 <aedinius>	flexibeast: do you use ntp?
+Jun 30 20:54:51 <flexibeast>	Yes.
+Jun 30 20:54:59 <ericonr>	wait
+Jun 30 20:55:07 <ericonr>	aren't those times the same?
+Jun 30 20:55:13 <aedinius>	Yes
+Jun 30 20:55:18 <aedinius>	Those are both UTC
+Jun 30 20:55:37 <aedinius>	Some one of our clocks is wrong
+Jun 30 20:56:00 <flexibeast>	Bare `date` is showing the correct time.
+Jun 30 20:56:17 <ericonr>	but but 00 and 12 are the same thing in 24h and 12h format
+Jun 30 20:56:17 <aedinius>	Tue 30 Jun 2020 07:56:05 PM CDT
+Jun 30 20:56:22 <aedinius>	oh right
+Jun 30 20:56:42 <aedinius>	My brain translated to 11:53
+Jun 30 20:56:44 <aedinius>	shit.
+Jun 30 20:56:45 <aedinius>	well.
+Jun 30 20:56:48 <aedinius>	NEXT
+Jun 30 20:56:55 <aedinius>	flexibeast: does it give a reason? ;]
+Jun 30 20:57:14 <flexibeast>	Sorry, i don't understand the question .... ?
+Jun 30 20:57:43 <aedinius>	Visit in firefox, does it give an error for the cert and so what?
+Jun 30 20:58:14 <aedinius>	I just realized why I was confused -- US locale uses AM/PM
+Jun 30 20:58:18 <aedinius>	i need a better locale
+Jun 30 20:58:41 <flexibeast>	i can open https://alpha.de.repo.voidlinux.org/ fine in FF.
+Jun 30 20:58:42 <ericonr>	24h format <3
+Jun 30 20:59:22 <aedinius>	ericonr: it's what we use at work, so much easier on my brain
+Jun 30 21:00:09 <flexibeast>	.... and now xbps-install isn't reporting the error.
+Jun 30 21:00:20 <ericonr>	oops
+Jun 30 21:00:33 <flexibeast>	i.e. it's working fine.
+Jun 30 21:00:43 <ericonr>	that's weird
+Jun 30 21:00:50 <ericonr>	obviously
+Jun 30 21:04:25 <flexibeast>	OP is saying it's still down for them.
+Jun 30 21:05:41 <ericonr>	leah2: do you have anything against including an udev rules file in openocd? They have it in the contrib folder of the tarball
+Jun 30 21:06:36 <ericonr>	flexibeast: perhaps we need to wait a bit more? idk
+Jun 30 21:07:19 <ericonr>	wait, their clock is wrong
+Jun 30 21:07:39 <ericonr>	ask them if they dual boot windows
+Jun 30 21:07:55 <ericonr>	I can't access my reddit account rn D:
+Jun 30 21:08:42 <ericonr>	they are 4 hours behind, which fits for people living in aedinius's timezone
+Jun 30 21:09:54 <aedinius>	no
+Jun 30 21:09:55 <aedinius>	Tue, 30 Jun 2020 20:09:51 -0500
+Jun 30 21:10:14 <ericonr>	oof confused myself
+Jun 30 21:10:42 <ericonr>	anyway, their timezone must be UTC-4
+Jun 30 21:10:52 <ahesford>	that's mine
+Jun 30 21:10:53 <ericonr>	then windows goes and changes the system clock to that
+Jun 30 21:11:15 <ericonr>	then they probably misconfigured ntp somehow and their system isn't getting back in sync
+Jun 30 21:11:21 <ahesford>	there are ways in the registry to tell win to use the system clock in UTC
+Jun 30 21:11:41 <ahesford>	ntp generally refuses to adjust massive differences like that
+Jun 30 21:11:50 <ericonr>	it's easier to change in linux tho
+Jun 30 21:11:56 <ahesford>	no
+Jun 30 21:12:06 <ahesford>	UTC sysclock is the right way
+Jun 30 21:12:13 <ahesford>	make windows accomodate it
+Jun 30 21:12:15 <ericonr>	well yeah
+Jun 30 21:12:18 <ericonr>	but windows sucks
+Jun 30 21:12:34 <ericonr>	and I can change it in linux without searching an article
+Jun 30 21:12:40 <ahesford>	the fix is eminently google-able
+Jun 30 21:12:54 <ericonr>	imagine no google at all tho
+Jun 30 21:13:02 <ahesford>	or, for people like me, ddg-able
+Jun 30 21:13:04 <ericonr>	it's definitely an ugly fix
+Jun 30 21:13:16 <ericonr>	but that's the price you pay
+Jun 30 21:13:18 <ahesford>	it's one registry change
+Jun 30 21:13:30 <aedinius>	ahesford: that's what I did when I dual booted
+Jun 30 21:13:33 <ericonr>	those windows clean up scripts should make this change too
+Jun 30 21:13:44 <aedinius>	You can do it easy (set linux to localtime hwclock) or do it right (bend windows to your will)
+Jun 30 21:13:49 <ericonr>	y'all are too willing to mess with the registry
+Jun 30 21:13:56 <aedinius>	fuck the registry
+Jun 30 21:13:59 <aedinius>	KILL IT
+Jun 30 21:14:19 <ahesford>	Just run windows in qemu/kvm and don't worry about it
+Jun 30 21:14:41 <ahesford>	I haven't dual-booted since 1999
+Jun 30 21:14:42 <ericonr>	does qemu detect the host and perform the proper translation?
+Jun 30 21:14:50 <ericonr>	or do you just run windows with an offset?
+Jun 30 21:15:19 <ericonr>	also the third option of qemu/libvirt having a pretty option to set it
+Jun 30 21:15:19 <ahesford>	ericonr: I think you can configure it; there's seomething in the libvirt XML
+Jun 30 21:16:07 <ahesford>	so, in other words, the last time I dual booted, ericonr sprung forth from his mother's womb
+Jun 30 21:17:02 <ericonr>	did you even have them fancy virtualization technologies back then?
+Jun 30 21:17:40 <aedinius>	my guess is they have /etc/localtime set to UTC and just set the clock to their timezone
+Jun 30 21:17:43 <aedinius>	unofficial theory
+Jun 30 21:18:14 <ahesford>	no fancy svm or vt-x back then
+Jun 30 21:18:16 <ericonr>	they said they checked timezone, though. I blame windows-linux relations
+Jun 30 21:18:33 <ahesford>	just good old BIOS and two partitons on MBR
+Jun 30 21:18:39 *	mobinmob has quit (Quit: Connection closed for inactivity)
+Jun 30 21:19:32 <ahesford>	if you wanted to boot... you used lilo
+Jun 30 21:19:46 <ericonr>	in our defense, this whole thing is explained in the "Date and Time" page of the handbook
+Jun 30 21:19:54 *	Ingvix has quit (Ping timeout: 240 seconds)
+Jun 30 21:20:14 <ahesford>	ericonr: you assume people read
+Jun 30 21:20:43 <ericonr>	ahesford: lilo has mostly disappeared, hasn't it? You see mentions ever so often, but overall I don't ever see it recommended
+Jun 30 21:20:51 <flexibeast>	lilo! That's not something i've thought about in a while.
+Jun 30 21:21:00 *	Ingvix (~Ingvix@n7e0rcitou9rv9dih-2.v6.elisa-mobile.fi) has joined
+Jun 30 21:21:10 <ahesford>	I've thought about Lolo more recently than lilo
+Jun 30 21:21:36 <ericonr>	ahesford: > Trying to go on the void linux handbook
+Jun 30 21:21:52 <ahesford>	there was elilo for EFI, but I had my head elsewhere then
+Jun 30 21:21:53 <ericonr>	we should redirect SSL errors in void docs to the Time and Date page
+Jun 30 21:21:57 <ericonr>	in http://
+Jun 30 21:22:29 <ericonr>	is this even doable?
+Jun 30 21:22:45 <ericonr>	I kind of want it now
+Jun 30 21:22:53 <ahesford>	dunno, I'm not much of a web guy
+Jun 30 21:24:14 <ericonr>	aedinius: can you link them to the handbook page, please?
+Jun 30 21:24:32 <ericonr>	they are trying to go about solving it the wrong way
+Jun 30 21:24:55 <cinerea0>	Anyone know what standard procedure is for packaging software that draws in dependencies via git submodules?
+Jun 30 21:25:19 <ericonr>	usually a bunch of distfiles
+Jun 30 21:27:08 <cinerea0>	Gotcha. Is it then a situation where it would be acceptable to draw in non-release git versions of those dependencies?
+Jun 30 21:28:15 <ericonr>	yes, you should find out what commits were being used when the main application got a release
+Jun 30 21:30:16 <fossy>	pretty easy to git checkout the version and to list the submodules
+Jun 30 21:30:30 <ifreund>	welp, i have no idea why QT can't find the modules when cross compiling, I did add qt5-host-tools to the hostmakedepends
+Jun 30 21:30:38 <aedinius>	ericonr: They're not far off
+Jun 30 21:30:48 <aedinius>	ericonr: Just need to pick a timezone in Canada, not Canada itself.
+Jun 30 21:30:50 <ifreund>	probably just need to go to sleep and look again in the morning
+Jun 30 21:31:09 <aedinius>	"What timezone are you?" "Oh, Canada."
+Jun 30 21:31:13 <aedinius>	Not even if flipped on its side
+Jun 30 21:32:13 <ericonr>	ifreund: if you don't want to sleep yet, some packages have makedepends in hostmakedepends for cross
+Jun 30 21:32:27 <ericonr>	aedinius: lol
+Jun 30 21:33:28 <ifreund>	ericonr: got an example?
+Jun 30 21:34:40 <ifreund>	huh, looks like that made it work for aarch64 cross at least
+Jun 30 21:35:18 <ifreund>	spoke too soon, it failed at linking
+Jun 30 21:35:27 <ericonr>	ifreund: it went by the void feed recently
+Jun 30 21:36:21 <ericonr>	I can't find it now
+Jun 30 21:41:22 <ahesford>	ifreund: hikari uses wayland-devel in both *makedepends for cross
+Jun 30 21:41:41 <ahesford>	because the host has to run wayland-scanner
+Jun 30 21:42:02 <ahesford>	my scipy fix uses python-numpy
+Jun 30 21:42:24 <ahesford>	...in both because setup.py fails on the host if it is missing
+Jun 30 21:42:44 <ahesford>	but then I have to jump throuhh hoops to use the target headers and libs
+Jun 30 21:45:34 *	anansi1 has quit (Ping timeout: 240 seconds)
+Jun 30 21:47:42 *	anansi1 (~samedi@107.158.96.99) has joined
+Jun 30 21:48:11 <ericonr>	I had to do this to get guix dependencies to work too
+Jun 30 21:48:17 <ericonr>	stupid runtime checks
+Jun 30 21:49:07 <ericonr>	it unfortunately only works for 64bit platforms, at least for now
+Jun 30 21:59:26 *	d31irium_ has quit (Ping timeout: 246 seconds)
+Jun 30 22:00:30 *	v0idkr4f1 has quit (Ping timeout: 265 seconds)
+Jun 30 22:16:44 <flexibeast>	Hah, now freedesktop.org is down.
+Jun 30 22:16:55 <flexibeast>	Oh, no, it's resolving now.
+Jun 30 22:19:21 *	anansi1 has quit (Ping timeout: 265 seconds)
+Jun 30 22:21:02 *	anansi1 (~samedi@107.158.96.99) has joined
+Jun 30 22:35:27 -void-packages/#xbps-	q66 pushed https://is.gd/3SWMVq
+Jun 30 22:56:40 -void-packages/#xbps-	not-chicken opened pull request #23337 “gjs: update to 1.65.3;  mozjs68: update to 68.10.0” https://is.gd/zMY1Sd
+Jun 30 23:09:36 -void-packages/#xbps-	q66 pushed https://is.gd/iS6sBA
+Jun 30 23:23:19 <cinerea0>	What would you say is the best way to move the contents of one distfile into another? I'm trying a method with "mv *" right now and xbps-src is telling me the files I want to move don't exist, even though they do.
+Jun 30 23:25:23 <ericonr>	with multiple distfiles you should use create_wrksrc=yes, and move files around in post_extract()
+Jun 30 23:26:27 <ericonr>	try to run `./xbps-src extract <package>` to see what the file layout is looking like
+Jun 30 23:27:19 <ericonr>	and with create_wrksrc you will probably need to set build_wrksrc=<folder-main-tarball-was-decompressed-into>
+Jun 30 23:48:35 -void-packages/#xbps-	karl-nilsson opened pull request #23338 “python3-trimesh: update to 3.7.5.” https://is.gd/r3u7PQ
+Jun 30 23:54:04 <cinerea0>	Hmm, still doesn't seem to be working. Is it a glob problem? Am I not allowed to use wildcards during post_extract for some reason?
+Jun 30 23:59:47 <ericonr>	it should work just fine
+Jul 01 00:00:03 <ericonr>	try to run `ls` in post_extract so you can see how the filesystem looks like
+Jul 01 00:02:45 <maldridge>	Gottox: do you know off the top of your head what the slack is in a-lej-de?
+Jul 01 00:02:56 <maldridge>	could I fit 3 more VMs on it about the size of vm2?
+Jul 01 00:32:49 <cinerea0>	ericonr: Fixed it, turns out I was just quoting excessively.
+Jul 01 00:39:43 <ericonr>	oh lol
+**** ENDING LOGGING AT Wed Jul  1 01:00:46 2020
+
+**** BEGIN LOGGING AT Sat Jul  4 21:45:21 2020
+
+Jul 04 21:45:21 *	Now talking on #xbps
+Jul 04 21:45:21 *	Topic for #xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+Jul 04 21:45:21 *	Topic for #xbps set by maldridge (Sun Feb 10 01:34:29 2019)
+Jul 04 21:45:22 *	Channel #xbps url: https://voidlinux.org
+Jul 04 21:48:47 <ericonr>	ahesford: it's a bit wild that there were 90 PRs/issues opened in the three days I took from opening the issue to finding the fix
+Jul 04 21:49:01 <ericonr>	thanks for merging them together c:
+Jul 04 21:50:12 -void-packages/#xbps-	ericonr closed pull request #23214 “dkms: fix post-install hook.” https://is.gd/EHciFk
+Jul 04 21:52:39 <fossy>	q66: ok, will fix
+Jul 04 22:23:05 *	anansi has quit (Ping timeout: 244 seconds)
+Jul 04 22:25:05 *	anansi (~samedi@64.44.80.204) has joined
+Jul 04 22:37:32 *	flotsam has quit (Ping timeout: 256 seconds)
+Jul 04 23:05:39 <cinerea0>	Just as a general question, how long should I wait before making the assumption that my request for a new version tag will go unanswered forever?
+Jul 04 23:07:29 <q66>	?
+Jul 04 23:09:39 <cinerea0>	There's something I want to package, but a vital commit occurred after the last official release. The dev hasn't made any commits to the project in 3 months, and hasn't been active on GitHub at all in a month. I opened an issue in the repo a few days ago asking about a new release including that vital commit I mentioned before.
+Jul 04 23:14:38 <ahesford>	However long you think to wait, wait three months longer
+Jul 04 23:14:50 <q66>	i see
+Jul 04 23:14:57 <q66>	well i don't think there's any specific time
+Jul 04 23:15:02 <q66>	it depends on the person managing the project
+Jul 04 23:15:03 <ahesford>	By induction, just wait forever
+Jul 04 23:15:52 <ahesford>	What is the vital commit?
+Jul 04 23:16:43 <ahesford>	You can always just add a patch to your package. I doubt anybody will complain if you note that the patch is already upstream and you are just waiting for a release
+Jul 04 23:17:47 <cinerea0>	>By induction, just wait forever
+Jul 04 23:17:57 <cinerea0>	lol, that actually made me chuckle
+Jul 04 23:18:26 <cinerea0>	The commit adds proper PAM support to the project, which is a display manager.
+Jul 04 23:18:54 <ericonr>	cinerea0: I feel like that's Ly
+Jul 04 23:18:57 <ericonr>	is it Ly?
+Jul 04 23:20:29 <cinerea0>	ericonr: It's Ly. I found a fork of the project that included the proper runit service files, changed them to use tty7, and it works.
+Jul 04 23:20:56 <ericonr>	nice
+Jul 04 23:21:11 <ericonr>	one of the oldest open PRs are for Ly
+Jul 04 23:21:37 <ericonr>	https://github.com/void-linux/void-packages/pull/13649
+Jul 04 23:21:46 <ericonr>	s/are/is/
+Jul 04 23:23:11 <ericonr>	the author of Ly works in bursts. they come in every once in a while, accept PRs and close issues, then release a new version and vanish for a bit
+Jul 04 23:23:33 <ericonr>	I managed to get 2 PRs in the middle of all that though
+Jul 04 23:23:55 <cinerea0>	Oh yeah, I saw you in the contributor's list.
+Jul 04 23:25:25 *	Socke has quit (Ping timeout: 264 seconds)
+Jul 04 23:25:49 <ericonr>	but yeah, if you want to add the patch for now it should be fine. I have a WIP I was making too https://github.com/ericonr/void-packages/tree/ly-0.5.0
+Jul 04 23:26:02 <ericonr>	never put the patch in though
+Jul 04 23:26:36 *	Socke (~socke@dslb-188-096-137-084.188.096.pools.vodafone-ip.de) has joined
+Jul 04 23:28:22 <cinerea0>	Ok, so I think I'm going to continue working on my currently open PR. When I'm finished with that, I'll check back in on Ly and see if a new version has been pushed. If not, I'll make the package using 0.5.0 and bring it up to speed using patches.
+Jul 04 23:28:38 <cinerea0>	Adding in all those distfiles sure is a pain in the ass, huh?
+Jul 04 23:29:44 <ericonr>	heh, that's what we get with submodules
+Jul 04 23:32:36 <cinerea0>	ericonr: For some reason that reminds me, I've been meaning to ask you, what's the deal with that crocodile in your GitHub profile pic?
+Jul 04 23:34:54 <ericonr>	heh, just a photo I took on vacation once and ended up deciding to use as online identity
+Jul 04 23:35:21 <ericonr>	I just really liked the pic :p
+Jul 04 23:36:42 <cinerea0>	It is a very dapper croc, so I understand.
+Jul 04 23:37:17 <ericonr>	:)
+Jul 04 23:41:26 <maldridge>	well, I now have my desktop and one of void's servers talking via a VPN link
+Jul 04 23:41:38 <ericonr>	btw, can I open a PR to update musl to 1.2.0 so we can track discussion there?
+Jul 04 23:42:56 <maldridge>	feel free
+Jul 04 23:43:01 <maldridge>	though I think it is not on the immediate horizon
+Jul 04 23:43:24 <ericonr>	fair enough
+Jul 04 23:43:44 <ericonr>	I will daily drive it and see if I spot any issues
+Jul 04 23:44:00 <ericonr>	though it will likely be subtle breakage, but oh well
+Jul 04 23:47:35 <maldridge>	its likely very subtle breakage, and the problem is that updating the C library like that is going to be a universe rebuild
+Jul 04 23:53:34 <ericonr>	yeah
+Jul 04 23:54:00 <ericonr>	and from the conversation I've seen on #musl, it seems like PHP isn't solved yet
+Jul 04 23:54:11 <ericonr>	or at least it required some specific configuration
+Jul 04 23:55:15 <ericonr>	I will do a proper reading of https://musl.libc.org/time64.html and all the associated links before making a PR
+Jul 04 23:56:56 <ericonr>	we might need to update kernel-libc-headers as well, if I understand the issue correctly
+Jul 05 00:01:06 <maldridge>	total aside, even if you're not american or have interest in US history, the musical Hamilton is on Disney+ and its some of the best musical theatre I've ever seen filmed.  still not quite as good as live performance, but well worth watching
+Jul 05 00:04:48 <ericonr>	maldridge: you probably have some pull with disney, can you ask them about when Disney+ is going to be made available here?
+Jul 05 00:07:24 *	b has quit (Quit: Lost terminal)
+Jul 05 00:11:10 <maldridge>	south america or Brazil in general?
+Jul 05 00:11:22 <maldridge>	Brazil has some funky rules around data residency, that's why Google has a DC there
+Jul 05 00:19:25 <ericonr>	hmm idk about the rest of SA
+Jul 05 00:19:40 <ericonr>	but here in Brazil it just asks for my email so they can send me news about the service :p
+Jul 05 00:20:57 <maldridge>	well, if you're in a major city or near a pop for a major network, you could always just VPN to the US
+Jul 05 00:31:17 <ericonr>	using a VPN to browse to a paid service in another country feels like half-assing illegality
+Jul 05 00:31:41 <ericonr>	I might download it somehow or wait for it to land here some other way, because it does seem like a good watch
+Jul 05 00:31:44 <ericonr>	thanks for the rec c:
+Jul 05 00:35:43 <maldridge>	meh
+Jul 05 00:36:44 *	_yopito has quit (Quit: Leaving)
+Jul 05 00:50:42 *	yopito (~yopito@lns-bzn-58-82-251-220-57.adsl.proxad.net) has joined
+Jul 05 01:02:54 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Sun Jul  5 01:02:54 2020
+

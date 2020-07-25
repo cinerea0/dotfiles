@@ -1,0 +1,4 @@
+T 1584060052 19*	Now talking on 22##unavailable
+T 1584060052 22*	Topic for 22##unavailable is: You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network ( http://freenode.net/policies#off-topic-use ). Check their website for more information. Your client may be flapping in and out of the channel; in this case, check with channel ops. The channel may be clone-infested; please consult freenode network staff.
+T 1584060052 22*	Topic for 22##unavailable set by 26c (24Sat Apr 23 20:35:36 2016)
+T 1584060053 -18ChanServ-	[##unavailable] You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network. Check their website for more information. Your client may be flapping in and out of channel; in this case, check with channel staff. The channel may be clone-infested; please consult freenode network staff.

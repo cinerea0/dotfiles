@@ -1,0 +1,892 @@
+T 1584060129 19*	Now talking on 22#xbps
+T 1584060129 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1584060129 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1584060130 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1584060174 19*	Now talking on 22#xbps
+T 1584060174 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1584060174 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1584060174 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1584060589 19*	Now talking on 22#xbps
+T 1584060589 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1584060589 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1584060589 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1584061459 20*	Disconnected (20)
+T 1584061484 19*	Now talking on 22#xbps
+T 1584061484 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1584061484 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1584061484 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1584061574 24*	DracoSentien has quit (Ping timeout: 258 seconds)
+T 1584062385 23*	DracoSentien (~cypherpun@pool-173-62-30-239.pghkny.fios.verizon.net23) has joined
+T 1584062958 24*	DracoSentien has quit (Ping timeout: 268 seconds)
+T 1584066667 20*	Disconnected (20)
+T 1587496516 19*	Now talking on 22#xbps
+T 1587496516 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1587496516 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1587496516 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1587496517 18<Vaelatern18>	if it never built cross you can nocross="Build is crazy"
+T 1587496569 24*	well_laid_lawn has quit (Ping timeout: 250 seconds)
+T 1587496582 18<nilsson18>	the only thing that depends on it is cura, and I'm not sure if that cross builds
+T 1587496654 18<nilsson18>	I thought it build previous, but idk
+T 1587496833 18<ahesford18>	https://github.com/leahneukirchen/xtools/pull/178
+T 1587496848 20<cinerea0>30	Doesn anyone know what the deal is with the texlive license? The one that was being previously used in the templates is no longer valid (GPL-2)
+T 1587496868 18<ahesford18>	^ I've added an xlint rule to look for '#unverified' after python_version so we can shake out problematic packages faster
+T 1587496960 19<ahesford>	cinerea0: what do you mean "no longer valid"
+T 1587496995 18<aedinius18>	Why are stupid things like tar missing
+T 1587497022 18<ahesford18>	from what?
+T 1587497092 20<cinerea0>30	ahesford: GPL-2 is not in the list of acceptable licenses here https://github.com/void-linux/void-packages/blob/master/common/travis/license.lst; as such updates to texlive packages are being rejected by Travis
+T 1587497119 19<aedinius>	cinerea0: should be either GPL-2.0-only or GPL-2.0-or-later, depending on which it is.
+T 1587497120 18<ahesford18>	Tangentially, that is not the texlive license
+T 1587497126 18<ahesford18>	but what aedinius said
+T 1587497135 18<ahesford18>	https://tug.org/texlive/LICENSE.TL
+T 1587497141 18<aedinius18>	If it's neither of those, it should be what it is.
+T 1587497153 18<ahesford18>	Should be "custom:texlive" or something, and vlicense the text into the package
+T 1587497290 20<cinerea0>30	Ah, I see. I'll do that. As a side question, is it best practice to try to get the person who has the open pull request to make this change, or should I open my own pull request?
+T 1587497317 18<ahesford18>	Probably best to add a comment or review
+T 1587497364 18<ahesford18>	In any case, leah2 is working on texlive-bin
+T 1587497391 18<Vaelatern18>	+1 for that xtools pr
+T 1587497405 18<leah218>	am i
+T 1587497410 18<ahesford18>	weren't you?
+T 1587497420 18<leah218>	i guess we can move it to 2020
+T 1587497431 18<ahesford18>	you mentioned you were testing tl2020 last week
+T 1587497436 18<leah218>	yeah
+T 1587497489 20<cinerea0>30	I'll leave a review on the open pull request. Thank you!
+T 1587497557 24*	anansi has quit (Ping timeout: 250 seconds)
+T 1587497719 18<leah218>	GPL2 sounds correct, the package only contains the installer?
+T 1587497759 18<ahesford18>	When I unpack install-tl-unx.tar.gz, it has the LICENSE.TL from the link above
+T 1587497770 18<leah218>	but we are not distributing texlive
+T 1587497803 18<aedinius18>	GPL-2.0-or-later
+T 1587497828 18<aedinius18>	Wait I looked at the wrong file
+T 1587497835 18<Piraty18>	5.4.33_2 just crashed on me durin initramfs/init
+T 1587497845 18<aedinius18>	I do not change my answer.
+T 1587497852 18<ahesford18>	GPL-2.0-or-later could work
+T 1587497859 18<ahesford18>	but that seems like a technicality
+T 1587497900 18<ahesford18>	the package contains the installer, but automatically invokes it on install
+T 1587497916 18<leah218>	it's about what binaries we redistribute imo
+T 1587497924 18<aedinius18>	Right
+T 1587497945 18<ahesford18>	I guess the installer puts /opt/texlive/2020/LICENSE.TL in place, so that ought to be good enough
+T 1587497948 18<Vaelatern18>	if xbps-reconfigure runs it instead of xbps-install, we didn't distribute it.
+T 1587497978 18<ahesford18>	Either way, the right license is left on disk, I retract my objection
+T 1587497994 18<not-chicken18>	https://github.com/void-linux/void-packages/pull/21146#issuecomment-617321632
+T 1587497994 18<not-chicken18>	Guys I am a bit confused by this, I have kept my previous packages lowercase, matching the executable. Also coz I am too lazy to hit shift while installing :p
+T 1587497994 18<not-chicken18>	How do others do this, switch the case or keep the laziness?
+T 1587498010 -18void-packages/22#xbps-	leahneukirchen pushed https://is.gd/HIhgyo
+T 1587498078 20<cinerea0>30	So in this case, since the installer is licensed under GPL-2, the correct license should be GPL-2.0-or-later?
+T 1587498113 18<ahesford18>	not-chicken: you are supposed to honor the case of the package repo
+T 1587498124 18<ahesford18>	Komikku
+T 1587498202 -18void-packages/22#xbps-	jnbr closed pull request #21213 “hcloud: update to 1.16.2.” https://is.gd/Rvmpum
+T 1587498222 18<not-chicken18>	oopsie. Then I messed it up my previous packages :D
+T 1587498255 18<not-chicken18>	Btw is this convention documented somewhere?
+T 1587498268 18<not-chicken18>	iirc I didn't saw it in the manual
+T 1587498299 18<Vaelatern18>	 239 For those packages the upstream packages name should be used. Remember that
+T 1587498302 18<Vaelatern18>	 240 in contrast to many other distributions, void doesn't lowercase package names.
+T 1587498304 23*	anansi (~samedi@cpe-96-28-172-36.kya.res.rr.com23) has joined
+T 1587498304 18<not-chicken18>	s/my/in my/
+T 1587498304 18<Vaelatern18>	Manual.md
+T 1587498360 18<ahesford18>	I named all of the rocm packages lowercase, AMD's naming scheme is a total disaster
+T 1587498391 18<ahesford18>	The github repos are things like ROCm-OpenCL-Runtime
+T 1587498405 18<ahesford18>	but the tarballs are things like "rocm-3.3.0.tar.gz" and "roc-3.3.0.tar.gz"
+T 1587498439 18<not-chicken18>	Vaelatern:  Ah yes. It's there. Guess I am blind lol.
+T 1587498460 18<Vaelatern18>	Reading is hard, especially when it's a large document so people can search quickly
+T 1587498478 18<ahesford18>	Reading is Fundamental (TM)
+T 1587498503 18<ahesford18>	that was an educational compaign in the US back in the 80s and early 90s
+T 1587498679 -18void-packages/22#xbps-	abenson opened pull request #21214 “Gnustep 1.28” https://is.gd/RXqDjz
+T 1587498693 18<ahesford18>	More gnustep fun, eh?
+T 1587498708 18<aedinius18>	Yeah. Someone contacted me about a bug with it
+T 1587498717 18<aedinius18>	And while fixing the bug, might as well update it.
+T 1587498747 18<ahesford18>	I should play with that some day
+T 1587510127 20*	Disconnected (20)
+T 1587510146 22*	26cinerea0 sets mode 24+Z on 22cinerea0
+T 1587510146 22*	26cinerea0 sets mode 24+i on 22cinerea0
+T 1587510151 19*	Now talking on 22#xbps
+T 1587510151 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1587510151 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1587510152 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1587510319 18<ahesford18>	looks like konversation failed to build; all I did was fix the description!
+T 1587510850 -18void-packages/22#xbps-	Joey152 opened pull request #21228 “herbstluftwm: update to 0.8.1” https://is.gd/hzoomU
+T 1587511337 -18void-packages/22#xbps-	Piraty closed pull request #21210 “Cura 4.6” https://is.gd/AfM9TV
+T 1587511347 -18void-packages/22#xbps-	ahesford opened pull request #21229 “konversation: add missing build dependendencies” https://is.gd/FH8sMr
+T 1587511762 -18void-packages/22#xbps-	tibequadorian closed pull request #21133 “New package: gcc4ti-0.96b11” https://is.gd/K9n1rX
+T 1587512440 18<ahesford18>	Wow, the xlint python_version check is already on Travis
+T 1587512520 -18void-packages/22#xbps-	emacsomancer opened pull request #21230 “Picom v8” https://is.gd/FfwAh4
+T 1587512540 18<Johnnynator18>	ahesford: Travis just takes the head of xtools and not the xbps package
+T 1587512572 -18void-packages/22#xbps-	pullmoll pushed https://is.gd/c6Rhz8
+T 1587512633 18<ahesford18>	Anybody want to merge https://github.com/void-linux/void-packages/pull/21229 for me?
+T 1587512644 18<ahesford18>	It should fix the konversation build failures on the builders
+T 1587513152 -18void-packages/22#xbps-	Johnnynator pushed https://is.gd/WcAW2P
+T 1587513168 18<ahesford18>	thanks
+T 1587513628 24*	xelxebar has quit (Remote host closed the connection)
+T 1587513638 24*	q66 has quit (Quit: WeeChat 2.8)
+T 1587513652 23*	xelxebar (~xelxebar@gateway/tor-sasl/xelxebar23) has joined
+T 1587513884 23*	q66 (~q66@enlightenment/developer/q6623) has joined
+T 1587514100 -18void-packages/22#xbps-	emacsomancer closed pull request #21230 “picom: update to v8” https://is.gd/FfwAh4
+T 1587514494 -18void-packages/22#xbps-	emacsomancer opened pull request #21231 “picom: update to v8” https://is.gd/fkjfFd
+T 1587515526 24*	johnnywho has quit (Ping timeout: 265 seconds)
+T 1587515638 -18void-packages/22#xbps-	fosslinux closed issue #21163 “m4, texinfo build failure” https://is.gd/7u4HTK
+T 1587515779 -18void-packages/22#xbps-	fosslinux opened issue #21232 “Manual.md: Add list of packages that should be rebuilt after bootstrap.” https://is.gd/iW3Gso
+T 1587516072 -18void-packages/22#xbps-	sgn pushed https://is.gd/bmDlgt
+T 1587516241 24*	cipres has quit (Ping timeout: 264 seconds)
+T 1587517889 24*	stevelitt has quit (Ping timeout: 250 seconds)
+T 1590199004 19*	Now talking on 22#xbps
+T 1590199004 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1590199004 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1590199004 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1590199012 FiSHLiM plugin unloaded
+T 1591131137 19*	Now talking on 22#xbps
+T 1591131137 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591131137 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591131137 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591131359 24*	petrvelicka has quit (Read error: Connection reset by peer)
+T 1591132675 23*	rjpower4 (~rpower@2601:249:4280:4c80::e40623) has joined
+T 1591133215 -18void-packages/22#xbps-	leahneukirchen pushed https://is.gd/2Bh4sa
+T 1591141933 19*	Now talking on 22#xbps
+T 1591141933 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591141933 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591141933 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591143154 24*	ifreund has quit (Ping timeout: 265 seconds)
+T 1591143989 24*	gangstacat has quit (Quit: Ĝis!)
+T 1591144194 23*	gangstacat (~gangstaca@unaffiliated/gangstacat23) has joined
+T 1591145120 -18void-packages/22#xbps-	sgn pushed https://is.gd/ByqrQ1
+T 1591145440 23*	travankor (~travankor@gateway/tor-sasl/travankor23) has joined
+T 1591146743 24*	travankor has quit (Ping timeout: 240 seconds)
+T 1591146817 -18void-packages/22#xbps-	sgn pushed https://is.gd/N0T9Cz
+T 1591147060 23*	travankor (~travankor@gateway/tor-sasl/travankor23) has joined
+T 1591148183 -18void-packages/22#xbps-	NeelChotai opened pull request #22539 “bottom: update to 0.4.3.” https://is.gd/Ia7OLQ
+T 1591148303 24*	travankor has quit (Ping timeout: 240 seconds)
+T 1591150852 20*	Disconnected (20)
+T 1591207112 19*	Now talking on 22#xbps
+T 1591207112 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591207112 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591207112 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591207439 -18void-packages/22#xbps-	rndevfx closed pull request #22551 “nghttp2: update to 1.41.0” https://is.gd/dzLBbC
+T 1591207564 -18void-packages/22#xbps-	karl-nilsson opened pull request #22555 “python3-trimesh: update to 3.6.43.” https://is.gd/R0aIOk
+T 1591207829 18<hadet18>	ahesford: you talking about Frontier the Elite sequel?
+T 1591207863 18<hadet18>	If so i wish FDev would OS that game, i never got a chance to finish it because the version i had was so buggy and crashed so often
+T 1591208081 -18void-packages/22#xbps-	Hoshpak closed pull request #22552 “zoom: update to 5.0.418682.0603” https://is.gd/NbNqm4
+T 1591208099 -18void-packages/22#xbps-	Hoshpak closed pull request #22550 “vim: update to 8.2.0891.” https://is.gd/408fvo
+T 1591208141 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/idKG5p
+T 1591208151 -18void-packages/22#xbps-	Hoshpak closed pull request #22546 “io.elementary.videos: update to 2.7.1.” https://is.gd/OST4XI
+T 1591208182 -18void-packages/22#xbps-	Hoshpak closed pull request #22544 “rclone: update to 1.52.0.” https://is.gd/OXYoTO
+T 1591208203 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/L7Zeai
+T 1591208246 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/rrYWjO
+T 1591208282 -18void-packages/22#xbps-	Hoshpak closed pull request #22543 “AppStream: update to 0.12.11” https://is.gd/KhRyrb
+T 1591208299 18<v0idkr4ft18>	seem to be having an issue with libxml2 being broken
+T 1591208303 24*	chiastre has quit (Ping timeout: 240 seconds)
+T 1591208304 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/Tc4Rt4
+T 1591208314 -18void-packages/22#xbps-	Hoshpak closed pull request #22529 “gajim-omemo: update to 2.6.30.” https://is.gd/KnHzZq
+T 1591208326 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/VeYlK8
+T 1591208337 -18void-packages/22#xbps-	Hoshpak closed pull request #22533 “dua-cli: update to 2.6.1.” https://is.gd/om4j5x
+T 1591208363 18<ahesford18>	hadet: I am. Great game, much better than Elite
+T 1591208427 -18void-packages/22#xbps-	Hoshpak closed pull request #22526 “grafana: update to 7.0.1.” https://is.gd/4BCoKX
+T 1591208449 23*	chiastre (~chiastre@gateway/tor-sasl/chiastre23) has joined
+T 1591208461 -18void-packages/22#xbps-	Hoshpak closed pull request #22525 “jack: remove update file” https://is.gd/N5I8iy
+T 1591208470 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/wwmd6P
+T 1591208531 -18void-packages/22#xbps-	Hoshpak closed pull request #22521 “nghttp2: update to 1.41.0.” https://is.gd/QI9Y9t
+T 1591208549 23*	natrys (~natrys@116.206.252.6823) has joined
+T 1591208573 -18void-packages/22#xbps-	Hoshpak closed pull request #22516 “electrum-ltc: update to 3.3.8.1.” https://is.gd/TXX01L
+T 1591208648 -18void-packages/22#xbps-	Hoshpak closed issue #21732 “FTBTS Error: Plex Media Server” https://is.gd/U3bvCI
+T 1591208674 -18void-packages/22#xbps-	Hoshpak closed pull request #22507 “kanshi: update to 1.1.0.” https://is.gd/MJa8mW
+T 1591208706 -18void-packages/22#xbps-	Hoshpak closed pull request #22505 “protonvpn-cli: update to 2.2.4.” https://is.gd/F0RdZH
+T 1591208728 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/sJxZLQ
+T 1591208739 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/J1mTT3
+T 1591208757 -18void-packages/22#xbps-	Hoshpak closed pull request #22503 “font-cozette: update to 1.8.2.” https://is.gd/FraLfc
+T 1591208765 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/0xISJx
+T 1591208806 -18void-packages/22#xbps-	Hoshpak closed pull request #22501 “qutebrowser: update to 1.12.0.” https://is.gd/pmcmU2
+T 1591208867 -18void-packages/22#xbps-	Hoshpak closed pull request #22497 “python3-pytools: update to 2020.2.” https://is.gd/FcJZ6R
+T 1591208876 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/CGUk5j
+T 1591208892 -18void-packages/22#xbps-	Hoshpak closed pull request #22495 “gradle: update to 6.4.1.” https://is.gd/blAbAJ
+T 1591208922 -18void-packages/22#xbps-	Hoshpak closed pull request #22494 “poezio update+deps” https://is.gd/e7KPKD
+T 1591208943 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/Rr3sM7
+T 1591208944 -187GHABOJO2/22#xbps-	Hoshpak closed pull request #22493 “exeline and s6-portable-utils update” https://is.gd/GgadmE
+T 1591208979 -18void-packages/22#xbps-	Hoshpak closed pull request #22490 “monolith: update to 2.2.7.” https://is.gd/7g2kzC
+T 1591209048 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/TIBDfj
+T 1591209105 -18void-packages/22#xbps-	Hoshpak closed pull request #22478 “vte3: update to 0.60.3.” https://is.gd/YD0VEb
+T 1591209160 -18void-packages/22#xbps-	Hoshpak closed pull request #22472 “json-c: update to 0.14.” https://is.gd/LUUbp3
+T 1591209225 -18void-packages/22#xbps-	Hoshpak closed pull request #22364 “protobuf23 and protobuf: update to 3.12.3” https://is.gd/Nsex6U
+T 1591209259 -18void-packages/22#xbps-	Hoshpak closed pull request #22308 “apache-ant: add explicit python_version” https://is.gd/ADsHZL
+T 1591209288 -18void-packages/22#xbps-	Hoshpak pushed https://is.gd/cG4UGW
+T 1591209354 -18void-packages/22#xbps-	Hoshpak closed pull request #22553 “apache-htpasswd: add manpage” https://is.gd/9NP5dp
+T 1591209433 -18void-packages/22#xbps-	Hoshpak closed pull request #22535 “roxterm: update to 3.9.4.” https://is.gd/gqek8Z
+T 1591209470 -18void-packages/22#xbps-	Hoshpak closed pull request #22522 “arc-theme: update to 20200513.” https://is.gd/zSUae3
+T 1591209552 -18void-packages/22#xbps-	Hoshpak closed issue #22548 “apache-htpasswd does not contain a manpage” https://is.gd/d0k53v
+T 1591209565 -18void-packages/22#xbps-	Hoshpak closed issue #22514 “docker-compose broken after latest update” https://is.gd/LqKIjH
+T 1591209612 -18void-packages/22#xbps-	Hoshpak closed issue #22158 “Package Request: libsane-hpaio” https://is.gd/1B6bLz
+T 1591209781 -18void-packages/22#xbps-	Chocimier pushed https://is.gd/BgGtvf
+T 1591209915 -18void-packages/22#xbps-	HadetTheUndying opened pull request #22556 “minitube: update to 3.4.” https://is.gd/4NzVCj
+T 1591209990 18<hadet18>	Someone was reporting having problems getting that to build, but I just replaced the version number and checksum and it built fine. They wouldn't produce logs, so I'm of the impression they just wanted someone to do it for them but you never know
+T 1591210019 18<hadet18>	Guess we'll see if the CI pops up any issues
+T 1591210025 18<hadet18>	I told them to open an issue next time
+T 1591210179 24*	natrys has quit (Quit: natrys)
+T 1591210320 24*	rjpower4 has quit (Ping timeout: 256 seconds)
+T 1591210405 18<aedinius18>	lame
+T 1591210487 24*	v0idkr4ft has quit (Ping timeout: 246 seconds)
+T 1591210525 24*	d31irium has quit (Ping timeout: 264 seconds)
+T 1591210588 -18void-packages/22#xbps-	q66 pushed https://is.gd/5jYS7N
+T 1591210624 23*	v0idkr4ft (~v0idkr4ft@185.153.179.8123) has joined
+T 1591210631 23*	d31irium (~d31irium@185.153.179.8123) has joined
+T 1591211260 18<hadet18>	Yeah
+T 1591211822 -18void-packages/22#xbps-	pullmoll pushed https://is.gd/rdnJ8h
+T 1591211923 18<Nilium18>	Hm, Travis build resulting in "git-2.27.0_1: not found", so it tries to rebuild a bunch of stuff.
+T 1591212095 18<Nilium18>	Looks like it hasn't been built yet.
+T 1591212115 18*	Nilium goes to rebase his fork onto a pre-git-2.27.0 commit
+T 1591212135 18<ahesford18>	I don't think git takes that long to build
+T 1591212161 18<Nilium18>	It was committed yesterday. I suspect something else is wrong.
+T 1591212177 18<ericonr18>	does that make a difference for CI? The void-docs CI uses what the repo would look like after rebasing a certain PR.
+T 1591212180 18<Nilium18>	The main problem is perl also got updated, and I'm not waiting to build perl.
+T 1591212202 18<ahesford18>	I noticed the git issue when rebuilding protobuf23
+T 1591212205 18<Nilium18>	It does, if builds are far enough behind on commits to packages that are important to multiple things
+T 1591212338 18<Nilium18>	x86_64 builder doesn't look like it's behind by much
+T 1591212533 18<st3r4g[m]18>	> travis fail because alpha.us is not synchronized
+T 1591212533 18<st3r4g[m]18>	 Nilium ^
+T 1591212545 18<Nilium18>	That would explain it.
+T 1591212566 18<Nilium18>	Was just checking alpha.de too.
+T 1591213699 23*	well_laid_lawn (~Jean-luc@60-240-126-85.tpgi.com.au23) has joined
+T 1591214216 18<q6618>	aedinius: what were you building mruby on/for?
+T 1591214811 -18void-packages/22#xbps-	LinArcX opened issue #22557 “Package request: invidious” https://is.gd/QEUlni
+T 1591215008 23*	rjpower4 (~rpower@2601:249:4280:4c80::169023) has joined
+T 1591215245 -18void-packages/22#xbps-	rmccask opened pull request #22558 “iptables: update to 1.8.5.” https://is.gd/J3qGMl
+T 1591215394 23*	travankor (~travankor@gateway/tor-sasl/travankor23) has joined
+T 1591215530 -18void-packages/22#xbps-	cinerea0 opened pull request #22559 “[WIP] New package: proton-bridge-1.2.7” https://is.gd/xxugeC
+T 1591215723 24*	Ingvix has quit (Quit: öh)
+T 1591215854 23*	Ingvix (~Ingvix@213.232.87.10823) has joined
+T 1591216893 -18void-packages/22#xbps-	Chocimier pushed https://is.gd/QoZ7qI
+T 1591217099 24*	gangstacat has quit (Quit: Ĝis!)
+T 1591217263 23*	gangstacat (~gangstaca@unaffiliated/gangstacat23) has joined
+T 1591217399 -18void-packages/22#xbps-	ProjectMoon opened pull request #22560 “New package: snixembed-0.2.2” https://is.gd/o9EmA8
+T 1591217411 -18void-packages/22#xbps-	Chocimier pushed https://is.gd/m0OS7v
+T 1591218639 -18void-packages/22#xbps-	teldra opened pull request #22561 “blender: update to 2.83” https://is.gd/Ue8Nb0
+T 1591219144 -18void-packages/22#xbps-	teldra closed pull request #21644 “Openimagedenoise update” https://is.gd/seLa23
+T 1591219233 -18void-packages/22#xbps-	teldra opened pull request #22562 “openimagedenoise: update to 1.2.0” https://is.gd/NDps2p
+T 1591219925 24*	travankor has quit (Remote host closed the connection)
+T 1591220158 23*	travankor (~travankor@gateway/tor-sasl/travankor23) has joined
+T 1591224026 20*	Disconnected (20)
+T 1591224057 19*	Now talking on 22#xbps
+T 1591224057 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591224057 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591224057 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591224325 -18void-packages/22#xbps-	rmccask opened pull request #22564 “dbus: update to 1.12.18.” https://is.gd/Lb0aME
+T 1591224919 -18void-packages/22#xbps-	rmccask opened pull request #22565 “libcap: update to 2.36.” https://is.gd/nQbz5f
+T 1591225272 18<malice18>	ahesford: rocm 3.5 released, have fun :D
+T 1591225332 18<malice18>	What happened to upstreaming it anyway
+T 1591225393 18<Johnnynator18>	 And no Navi support :D. How old is navi now? Like a year?
+T 1591225402 24*	well_laid_lawn has quit (Quit: WeeChat 2.8)
+T 1591226077 18<ericonr18>	Navi is exclusively a gaming card
+T 1591226080 18<ericonr18>	or something
+T 1591226093 18<ericonr18>	you could do Vulkan compute :p
+T 1591228028 18<ahesford18>	malice: thanks for the heads up. I haven't been thinking about ROCm enough to submit the cmake patches upstream.
+T 1591228057 18<ahesford18>	They probably need some cleanup to make sure the prefix changes still work with their preferred /opt installation
+T 1591228099 18<ahesford18>	There's been enough resistance to merging my templates that I put it on the back burner
+T 1591228333 -18void-packages/22#xbps-	rmccask opened pull request #22566 “msmtp: update to 1.8.11.” https://is.gd/UIDSDg
+T 1591228552 -18void-packages/22#xbps-	sgn pushed https://is.gd/bdwN4z
+T 1591228874 24*	d31irium has quit (Ping timeout: 240 seconds)
+T 1591228936 24*	v0idkr4ft has quit (Ping timeout: 265 seconds)
+T 1591228980 23*	travankor (~travankor@gateway/tor-sasl/travankor23) has joined
+T 1591229015 23*	d31irium (~d31irium@pool-108-34-251-7.prvdri.fios.verizon.net23) has joined
+T 1591229031 23*	v0idkr4ft (~v0idkr4ft@pool-108-34-251-7.prvdri.fios.verizon.net23) has joined
+T 1591229635 18<hadet18>	Would someone be willing to take a look at this build log? https://travis-ci.org/github/void-linux/void-packages/jobs/694460046 I have expat-devel in the makedepends, should it be in hostmakedepends?
+T 1591229699 18<sgn18>	Next time, please paste raw log :)
+T 1591229724 18<sgn18>	I meant this link: https://api.travis-ci.org/v3/job/694460046/log.txt
+T 1591229879 18<sgn18>	The log only talks about ncurses?
+T 1591229921 18<aedinius18>	=> ERROR: cmake-3.17.3_1: failed to install 'expat-devel-2.2.9_1' dependency! (error 19)
+T 1591229930 18<aedinius18>	It's the same travis+mirror issue someone brought up earlier
+T 1591229994 18<hadet18>	Oh okay
+T 1591230038 18<hadet18>	I didn't think it even depended on expat. Should I remove the dependency it built on my host system and in my vm and chroot without it.
+T 1591230085 18<hadet18>	aedinius: so the CI is just failing right now?
+T 1591230219 18<aedinius18>	apparently
+T 1591230288 18<hadet18>	Alright i'm gonna just remove that then. Weird
+T 1591231418 20*	Disconnected (20)
+T 1591231436 22*	26cinerea0 sets mode 24+Z on 22cinerea0
+T 1591231436 22*	26cinerea0 sets mode 24+i on 22cinerea0
+T 1591231441 19*	Now talking on 22#xbps
+T 1591231441 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591231441 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591231442 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591231513 24*	anansi has quit (Ping timeout: 240 seconds)
+T 1591231554 18<ericonr18>	duncaen: I reviewed the whole services PR, I think it makes a lot more sense now :D
+T 1591231574 18<ericonr18>	made a new PR for it because I didn't re-use a single commit either
+T 1591231656 23*	anansi (~samedi@64.44.81.5223) has joined
+T 1591231677 18<aedinius18>	Heh. Sometimes it really is *sigh* branch -D pr ...
+T 1591231730 18<aedinius18>	alternatively, git reset --hard
+T 1591232040 24*	anansi has quit (Ping timeout: 256 seconds)
+T 1591232157 23*	anansi (~samedi@184.170.240.11223) has joined
+T 1591232472 24*	ifreund has quit (Ping timeout: 256 seconds)
+T 1591232735 24*	anansi has quit (Ping timeout: 265 seconds)
+T 1591232837 23*	anansi (~samedi@102.129.239.17723) has joined
+T 1591233217 20*	Disconnected (20)
+T 1591233242 19*	Now talking on 22#xbps
+T 1591233242 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591233242 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591233242 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591234585 -18void-packages/22#xbps-	caioraposo opened pull request #22567 “telegram-desktop: update to 2.1.7.” https://is.gd/jqMMYq
+T 1591238885 20*	Disconnected (20)
+T 1591238890 FiSHLiM plugin unloaded
+T 1591746177 19*	Now talking on 22#xbps
+T 1591746177 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591746177 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591746178 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591746461 23*	_barcode_ (~bc@14.81-167-76.customer.lyse.net23) has joined
+T 1591747012 24*	johnnyhostile has quit (Quit: leaving)
+T 1591747177 23*	johnnyhostile (~irssi@castlevania.bhgdo.com23) has joined
+T 1591747471 24*	well_laid_lawn has quit (Quit: WeeChat 2.8)
+T 1591747684 24*	_barcode_ has quit (Quit: leaving)
+T 1591747965 23*	branon (~branon@2601:5cc:8200:f4::10023) has joined
+T 1591748146 23*	_barcode_ (~bc@14.81-167-76.customer.lyse.net23) has joined
+T 1591751396 23*	KindTwo (kindone@freenode/father-christmas/kindone23) has joined
+T 1591751407 24*	KindOne has quit (Ping timeout: 272 seconds)
+T 1591751656 24*	28KindTwo is now known as 18KindOne
+T 1591751862 23*	KindTwo (kindone@freenode/father-christmas/kindone23) has joined
+T 1591751976 24*	KindOne has quit (Ping timeout: 272 seconds)
+T 1591752116 24*	28KindTwo is now known as 18KindOne
+T 1591754654 20*	Disconnected (20)
+T 1591754682 19*	Now talking on 22#xbps
+T 1591754682 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591754682 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591754682 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591755025 -18void-packages/22#xbps-	zdykstra opened pull request #22748 “zfsbootmenu: update to 1.1.” https://is.gd/F4zPbH
+T 1591755870 23*	KindTwo (kindone@freenode/father-christmas/kindone23) has joined
+T 1591755967 24*	KindOne has quit (Ping timeout: 272 seconds)
+T 1591756132 24*	28KindTwo is now known as 18KindOne
+T 1591756446 24*	KindOne has quit (Ping timeout: 265 seconds)
+T 1591756600 23*	KindOne (kindone@freenode/father-christmas/kindone23) has joined
+T 1591758819 -18void-packages/22#xbps-	q66 closed issue #22742 “Tester wanted: cross*musl* toolchains” https://is.gd/l8o64z
+T 1591838382 19*	Now talking on 22#xbps
+T 1591838382 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591838382 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591838382 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591838603 23*	KindTwo (kindone@freenode/father-christmas/kindone23) has joined
+T 1591838633 18<ericonr18>	heh, sdcc docs are a single 75k lines file
+T 1591838731 24*	KindOne has quit (Ping timeout: 272 seconds)
+T 1591838862 24*	28KindTwo is now known as 18KindOne
+T 1591839195 18<ericonr18>	any disadvantages to introducing a `gc` dep?
+T 1591839815 18<ahesford18>	hah, I just misread the description for sdcc as "Regrettable ANSI C compiler"
+T 1591840472 -18void-packages/22#xbps-	sgn pushed https://is.gd/9jsVRY
+T 1591881283 19*	Now talking on 22#xbps
+T 1591881283 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1591881283 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1591881283 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1591881523 -18void-packages/22#xbps-	abenson opened pull request #22800 “Amass: update to 3.7.0.” https://is.gd/CTWkuK
+T 1591881558 -18void-packages/22#xbps-	abenson opened pull request #22801 “New package: python3-pwntools-4.1.2” https://is.gd/a1iSa4
+T 1591883985 24*	28biniar is now known as 18bin
+T 1591884638 24*	mobinmob has quit (Quit: Connection closed for inactivity)
+T 1593184642 19*	Now talking on 22#xbps
+T 1593184642 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593184642 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593184642 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593184701 24*	GreenTea999 has quit (Read error: Connection reset by peer)
+T 1593184777 18<ahesford18>	Does anybody here know of a way to incorporate mdns into the musl resolver?
+T 1593185003 18<duncaen18>	not really into musl
+T 1593185004 18<duncaen18>	https://skarnet.org/software/nsss/
+T 1593185031 18<duncaen18>	nvm thats only for pw/usr/groups stuff
+T 1593185037 18<ahesford18>	thanks
+T 1593185052 18<ahesford18>	I'm seeing another problem that is more annoying
+T 1593185076 18<ahesford18>	musl broadcasts to all configured nameservers simultaneously and accepts the first response
+T 1593185080 18<duncaen18>	a dns resolver that does both would be nice
+T 1593185118 18<Piraty18>	ahesford: musl even fails to do dns when there's an ipv6 entry in resolv.conf but kernel isn't capable of ipv6
+T 1593185161 18<ahesford18>	my company VPN uses a secondary, private domain for its intranet
+T 1593185168 18<Piraty18>	(sure, it's wrong to have an ipv6 dns in resolv.conf when ipv6 is disabled, but it's also wrong to try to resolve that and fail
+T 1593185180 18<ahesford18>	when I join the VPN it adds the company name servers to the top of the list
+T 1593185190 18<ahesford18>	this works on glibc because it will try those first and get a valid answer
+T 1593185196 18<Piraty18>	which vpn proto?
+T 1593185242 18<ahesford18>	musl tries all of my nameservers and quickly gets a non-resolve error from public DNS
+T 1593185250 18<ahesford18>	so it doesn't wait for the record
+T 1593185287 18<ahesford18>	Piraty: PAN GlobalProtect
+T 1593185293 18<ahesford18>	I use openconnect
+T 1593185320 18<ahesford18>	If I route all DNS through the company, I could make it work, but don't want to do that
+T 1593190140 20*	Disconnected (20)
+T 1593190159 22*	26cinerea0 sets mode 24+Z on 22cinerea0
+T 1593190159 22*	26cinerea0 sets mode 24+i on 22cinerea0
+T 1593190165 19*	Now talking on 22#xbps
+T 1593190165 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593190165 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593190165 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593190215 24*	runningdroid has quit (Quit: going on vacation)
+T 1593190534 18<ahesford18>	Piraty: I do openconnect --protocol=gp -i $TUNDEV --csd-wrapper=/usr/libexec/openconnect/hipreport.sh -s "sudo -E /usr/libexec/vpnc-scripts/vpnc-script" $VPNHOST
+T 1593190578 18<aedinius18>	Piraty: teams is not distributable, the MIT LICENSE is to comply for a component shipped with it
+T 1593191402 24*	anansi has quit (Ping timeout: 258 seconds)
+T 1593191510 23*	anansi (~samedi@64.44.80.16423) has joined
+T 1593192029 18<Piraty18>	is there another file that should be vlicense'd ?
+T 1593192109 18<aedinius18>	I mentioned it on the PR
+T 1593192139 18<aedinius18>	ReadmeFirstTermsofUse.txt
+T 1593192163 18<Piraty18>	how did i miss this
+T 1593192176 18<Piraty18>	will take care tomorrow
+T 1593192192 18<Piraty18>	if you don't object to my template i will merge then
+T 1593192213 18<aedinius18>	I prefer the -bin suffix for it, but otherwise your template is nearly identical to mine
+T 1593192311 18<Piraty18>	i looked at -bin, but a lot of other precompiler packages don't have it , and i don't expect a nameclash by M$ releasseing the sources some day
+T 1593192323 18<Piraty18>	but you're right, no reason to follow bad practices
+T 1593192398 24*	GreenTea999 has quit (Ping timeout: 260 seconds)
+T 1593192439 23*	GreenTea999 (~GreenTea9@106.206.60.20723) has joined
+T 1593193183 24*	GreenTea999 has quit (Read error: Connection reset by peer)
+T 1593193238 23*	GreenTea999 (~GreenTea9@106.201.100.20823) has joined
+T 1593193499 24*	GreenTea999 has quit (Ping timeout: 260 seconds)
+T 1593193568 23*	GreenTea999 (~GreenTea9@2401:4900:16e0:51fb:15e1:cf75:6ebd:3ed123) has joined
+T 1593195216 20*	Disconnected (20)
+T 1593195235 22*	26cinerea0 sets mode 24+Z on 22cinerea0
+T 1593195235 22*	26cinerea0 sets mode 24+i on 22cinerea0
+T 1593195241 19*	Now talking on 22#xbps
+T 1593195241 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593195241 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593195242 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593195401 23*	flotsam (~lonw@2001:2002:5fc7:9fc6::123) has joined
+T 1593195799 18<bougyman18>	https://github.com/team-video/aviary.sh
+T 1593195800 18<bougyman18>	hrm
+T 1593196336 23*	flotsam_ (~lonw@2001:2002:5fc7:80ef::123) has joined
+T 1593196433 24*	flotsam has quit (Ping timeout: 260 seconds)
+T 1593196963 -18void-packages/22#xbps-	Piraty closed pull request #23217 “exiftool: update to 12.01.” https://is.gd/yIN3Xh
+T 1593197297 -18void-packages/22#xbps-	Piraty pushed https://is.gd/xwUre0
+T 1593197347 -18void-packages/22#xbps-	Piraty closed pull request #23213 “remmina: update to 1.4.7.” https://is.gd/heDwxZ
+T 1593197630 -18void-packages/22#xbps-	Piraty closed pull request #23234 “umoci: update to 0.4.6.” https://is.gd/rlteuf
+T 1593197817 -18void-packages/22#xbps-	Piraty pushed https://is.gd/uxNk3v
+T 1593197902 24*	GreenTea999 has quit (Ping timeout: 260 seconds)
+T 1593197941 -18void-packages/22#xbps-	Piraty closed pull request #23245 “rakudo: update to 2020.06.” https://is.gd/bLGXte
+T 1593198029 -18void-packages/22#xbps-	Piraty closed pull request #23244 “xxHash: update to 0.7.4.” https://is.gd/PY4hyq
+T 1593198300 18<leah218>	foxlet: ping
+T 1593198471 -18void-packages/22#xbps-	jnbr pushed https://is.gd/77gq5S
+T 1593198490 -18void-packages/22#xbps-	jnbr closed pull request #23237 “nebula: update to 1.2.0.” https://is.gd/AHtA9J
+T 1593198516 -18void-packages/22#xbps-	jnbr pushed https://is.gd/1eCpzR
+T 1593198570 -18void-packages/22#xbps-	jnbr closed pull request #23191 “zfsbootmenu: update to 1.2.” https://is.gd/crN5P8
+T 1593198763 -18void-packages/22#xbps-	jnbr closed pull request #23212 “python3-bokeh: update to 2.1.1.” https://is.gd/N0Zc1J
+T 1593198774 -18void-packages/22#xbps-	jnbr pushed https://is.gd/7YTAuq
+T 1593198785 18<leah218>	oO we dont have jinja2 packaged?
+T 1593198807 18<leah218>	ah darn uppercase
+T 1593198814 18<aedinius18>	python3-Jinja2 ?
+T 1593198816 18<aedinius18>	yeah
+T 1593198823 23*	GreenTea999 (~GreenTea9@2401:4900:4bb7:88c7:ee12:9a01:500c:b92f23) has joined
+T 1593198869 18<aedinius18>	Someone recently asked why xbps was case-sensitive. I didn't have a better answer than "because it is"
+T 1593198886 18<leah218>	it's silly :p
+T 1593198894 18<leah218>	i wouldnt do it again :p
+T 1593198966 -18void-packages/22#xbps-	jnbr pushed https://is.gd/jKWn8y
+T 1593198985 -18void-packages/22#xbps-	jnbr pushed https://is.gd/tj9USW
+T 1593199054 -18void-packages/22#xbps-	jnbr pushed https://is.gd/PUP97J
+T 1593199238 -18void-packages/22#xbps-	jnbr closed pull request #23181 “nvme-cli: update to 1.12.” https://is.gd/fUqb8g
+T 1593199329 -18void-packages/22#xbps-	jnbr closed pull request #23186 “sudo: update to 1.9.1.” https://is.gd/QEgSYU
+T 1593199403 -18void-packages/22#xbps-	jnbr closed pull request #23049 “foliate: update to 2.3.0.” https://is.gd/YtWJJc
+T 1593199420 18<ericonr18>	leah2: it's all worth it to be able to install R with a package named R
+T 1593199426 18<ericonr18>	I don't even use R tho
+T 1593199455 18<leah218>	calling it r wouldnt hurt either :p
+T 1593199465 18<ericonr18>	Piraty: I'm not sure if my fix is dirtier than sgn's, but it works :p
+T 1593199618 24*	flotsam_ has quit (Ping timeout: 260 seconds)
+T 1593199758 24*	GreenTea999 has quit (Ping timeout: 260 seconds)
+T 1593199789 18<jnbr18>	speaking of R, version 4 is released
+T 1593199809 23*	jcgruenhage (janchristi@gateway/shell/matrix.org/x-knvymuafzjeslfvl23) has joined
+T 1593199809 18<jcgruenhage18>	Does anyone know that the current state of vscode on arm is? The template says that it's x86 only due to electron, but does electron really not work on arm at all? That doesn't sound likely
+T 1593199853 18<jnbr18>	afaik, it's a precompiled electron
+T 1593199890 18<jnbr18>	in general, electron works on arm
+T 1593200026 18<jcgruenhage18>	<jnbr "afaik, it's a precompiled electr"> wow, that sounds ugly...
+T 1593200076 18<aedinius18>	I don't think its precompiled
+T 1593200117 23*	GreenTea999 (~GreenTea9@106.201.100.20823) has joined
+T 1593200637 20*	Disconnected (20)
+T 1593200656 22*	26cinerea0 sets mode 24+Z on 22cinerea0
+T 1593200656 22*	26cinerea0 sets mode 24+i on 22cinerea0
+T 1593200662 19*	Now talking on 22#xbps
+T 1593200662 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593200662 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593200662 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593200667 24*	GreenTea999 has quit (Ping timeout: 260 seconds)
+T 1593200729 23*	GreenTea999 (~GreenTea9@106.201.100.20823) has joined
+T 1593200831 18<ericonr18>	does Rust have some equivalent to ccache?
+T 1593200865 18<ericonr18>	could be interesting to include in xbps-src for building related projects, since everything has a million non shared dependencies
+T 1593200884 18<ifreund18>	I think cargo does caching on a per-project basis
+T 1593200894 18<ifreund18>	iirc there is some way to use a global cache though
+T 1593200901 18<Johnnynator18>	ericonr: sccache.
+T 1593200930 18<Johnnynator18>	But you need to get it to work on smth like unix sockets instead of ipv4
+T 1593200953 18<ericonr18>	I see we already cache the index, right?
+T 1593200960 18<Johnnynator18>	Yes.
+T 1593200965 24*	GreenTea999 has quit (Read error: Connection reset by peer)
+T 1593200987 23*	GreenTea999 (~GreenTea9@106.201.100.20823) has joined
+T 1593201447 -18void-packages/22#xbps-	ericonr opened pull request #23248 “mdBook and mdbook-linkcheck updates” https://is.gd/Mfwir2
+T 1593201515 24*	GreenTea999 has quit (Quit: Quit)
+T 1593201539 18<ericonr18>	Johnnynator: oh sccache is a server
+T 1593201573 18<ericonr18>	dang why would they do this
+T 1593201666 18<jnbr18>	for development teams or a distributed build infrastructure, having a central server could make sense
+T 1593201686 18<ericonr18>	yeah, fair enough
+T 1593201718 18<ericonr18>	having a simpler caching compiler would be cool tho
+T 1593201739 18<Johnnynator18>	It does make since if you do not run builds in different enviroment with the same ipv address
+T 1593202008 23*	well_laid_lawn (~Jean-luc@202.168.11.20023) has joined
+T 1593202216 23*	GreenTea999 (uid452002@gateway/web/irccloud.com/x-wbkauhfpcpptlhnh23) has joined
+T 1593202254 24*	anansi has quit (Ping timeout: 240 seconds)
+T 1593202280 18<aedinius18>	Johnnynator: nice, I just assumed MS would be MS ;]
+T 1593202388 23*	anansi (~samedi@199.58.187.13823) has joined
+T 1593210602 20*	Disconnected (20)
+T 1593210625 22*	26cinerea0 sets mode 24+Z on 22cinerea0
+T 1593210625 22*	26cinerea0 sets mode 24+i on 22cinerea0
+T 1593210631 19*	Now talking on 22#xbps
+T 1593210631 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593210631 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593210631 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593210637 FiSHLiM plugin unloaded
+T 1593306812 19*	Now talking on 22#xbps
+T 1593306812 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593306812 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593306812 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593307446 18<fossy18>	Johnnynator: were you the one using I686 musl?
+T 1593307824 20*	Disconnected (20)
+T 1593307841 23*	28cinerea0 is already in use. Retrying with 18erebus_...
+T 1593307843 22*	26erebus_ sets mode 24+Z on 22erebus_
+T 1593307843 22*	26erebus_ sets mode 24+i on 22erebus_
+T 1593307849 19*	Now talking on 22#xbps
+T 1593307849 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593307849 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593307849 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593307857 FiSHLiM plugin unloaded
+T 1593307894 19*	Now talking on 22#xbps
+T 1593307894 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593307894 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593307894 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593307973 24*	cinerea0 has quit (Ping timeout: 240 seconds)
+T 1593308228 19*	Now talking on 22#xbps
+T 1593308228 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593308228 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593308229 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593308420 18<ericonr18>	fossy: pullmoll has a whole repo for it, and you can probably run from inside a chroot
+T 1593308428 18<fossy18>	oh!
+T 1593308429 18<ericonr18>	if you need to test something
+T 1593308434 18<fossy18>	link?
+T 1593308446 18<fossy18>	does someone have an armv5 one?
+T 1593308465 18<ericonr18>	pullmoll too
+T 1593308485 18<ericonr18>	https://repo.voidlinux.de/ here
+T 1593308560 18<fossy18>	wowowowow
+T 1593308568 18<fossy18>	this is very great
+T 1593308619 18<fossy18>	do u know what pkgs he builds?
+T 1593309014 18<ericonr18>	no idea, sorry
+T 1593309023 20*	Disconnected (20)
+T 1593309035 23*	28cinerea0 is already in use. Retrying with 18erebus_...
+T 1593309038 22*	26erebus_ sets mode 24+Z on 22erebus_
+T 1593309038 22*	26erebus_ sets mode 24+i on 22erebus_
+T 1593309044 19*	Now talking on 22#xbps
+T 1593309044 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593309044 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593309045 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593309247 19*	Now talking on 22#xbps
+T 1593309247 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593309247 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593309248 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593309328 24*	ericonr has quit (Ping timeout: 256 seconds)
+T 1593309382 20<cinerea0>30	Hey, I'm having some trouble figuring out the xbps-src patching process. Could someone help me out? I think I'm misunderstanding where files have to be placed when the patch is created or where the patch file itself has to be placed in the template directory.
+T 1593309904 20<cinerea0>30	I've been creating patches by placing the modified version of the file I want to patch in the wrksrc level directory, with the file I want to patch being in a lower directory. I then store the resulting patch file in a patch directory within the template directory. Is that correct?
+T 1593309909 19<Skirmisher>	cinerea0: you'll have to elaborate on what you're trying to do
+T 1593309944 18<Skirmisher18>	in general though, you just put patches in srcpkgs/pkgname/patches/
+T 1593309964 18<Skirmisher18>	look at the linux packages (linux5.6 etc.) for an example
+T 1593310078 19<Skirmisher>	cinerea0: wait, so what you're asking is how to *create* patches, not where to put them
+T 1593310172 20<cinerea0>30	Skirmisher: Okay, that means I'm putting the patches in the correct directory, that's good. And yes, I guess I'm probably creating them wrong. I keep getting a "File to patch:" error where it looks like it can't find the file.
+T 1593310335 20<cinerea0>30	Do the modified and original files need to be in the same directory when executing diff -u to create a successful patch?
+T 1593310474 20<cinerea0>30	It's also entirely possible I'm misinterpreting the error found here: https://travis-ci.org/github/void-linux/void-packages/jobs/700470845
+T 1593310501 19<Skirmisher>	cinerea0: I usually use git to generate patches, if you have experience with that I would suggest using that instead
+T 1593310521 23*	ericonr (~ericonr@177.194.64.21523) has joined
+T 1593310522 18<Skirmisher18>	and again, look at other packages for examples of what the patch file should look like
+T 1593310965 18<aedinius18>	If its git, I do: git diff --no-prefix
+T 1593311010 18<ericonr18>	oh god
+T 1593311014 18<aedinius18>	Otherise, I use leah2's unpatch https://leahneukirchen.org/dotfiles/bin/unpatch
+T 1593311021 18<ericonr18>	I always remove those manuallu
+T 1593311027 18<ericonr18>	manually
+T 1593311028 18<aedinius18>	ericonr: lol
+T 1593311076 18<ericonr18>	out of curiosity, what has leah2 not written a tool for?
+T 1593311118 18<aedinius18>	I'm sure there's something
+T 1593311518 -18void-packages/22#xbps-	chili-b opened pull request #23277 “Update to verison 2.4.2” https://is.gd/DKdg8s
+T 1593312004 -18void-packages/22#xbps-	chili-b closed pull request #23277 “Update to verison 2.4.2” https://is.gd/DKdg8s
+T 1593314484 24*	ericonr has quit (Remote host closed the connection)
+T 1593314504 23*	ericonr (~ericonr@177.194.64.21523) has joined
+T 1593317764 18<Vaelatern18>	wait, how did pfetch get in to the repo
+T 1593317866 18<ericonr18>	magic in 2019-10-01, possibly
+T 1593317886 18<Vaelatern18>	apparently
+T 1593318125 -18void-packages/22#xbps-	lampmerchant opened issue #23278 “lxd-lts complains of undefined symbol in libdqlite.so.0” https://is.gd/vYqNKk
+T 1593318267 18<maldridge18>	Vaelatern: if you happen to have time, I'd appreciate if you could comment on my minimal docker container PR
+T 1593318281 18<Vaelatern18>	link?
+T 1593318300 18<maldridge18>	https://github.com/void-linux/void-mklive/pull/129
+T 1593318306 18<Vaelatern18>	:+1:
+T 1593318377 18<Vaelatern18>	ok, I'm going to assume they are good if I can use the resulting container to run software
+T 1593318388 18<maldridge18>	to a point
+T 1593318402 18<maldridge18>	I'm not sure if there are assumptions in xbps-triggers that require packages I have not provideed
+T 1593318619 18<ericonr18>	maldridge: from the issues sgn and I were finding, due to base-files adding the `kvm` group, it needs groupadd
+T 1593318627 18<ericonr18>	which doesn't seem to be included there
+T 1593318645 18<maldridge18>	yeah, I was going for minimalism, this appears to not be as easy as I wanted
+T 1593318656 18<maldridge18>	if we had a functional busybox package maybe, but clearly not here
+T 1593318660 18<ericonr18>	you can probably noextract the `/usr/libexec/xbps-triggers/system-accounts` file
+T 1593318680 18<ericonr18>	I think that would fix the dependency
+T 1593318687 18<ericonr18>	but it starts to get messy
+T 1593318726 18<maldridge18>	I don't think that helps
+T 1593318733 18<maldridge18>	since then you have packages that want a user but it isn't there
+T 1593318759 18<ericonr18>	oh yeah
+T 1593318771 FiSHLiM plugin unloaded
+T 1593474367 19*	Now talking on 22#xbps
+T 1593474367 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593474367 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593474367 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593474713 18<ericonr18>	ahesford: hmm fair enough
+T 1593474787 24*	leah2 has quit (Ping timeout: 260 seconds)
+T 1593475500 -18void-packages/22#xbps-	sgn closed pull request #23189 “New package: wren-cli” https://is.gd/ppDnwJ
+T 1593475825 FiSHLiM plugin unloaded
+T 1593476487 19*	Now talking on 22#xbps
+T 1593476487 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593476487 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593476487 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593476540 -18void-packages/22#xbps-	sgn pushed https://is.gd/ihYGPK
+T 1593476767 18<ahesford18>	sgn: are you satisfied with scipy as it is now?
+T 1593476795 18<sgn18>	I haven't checked again :) Maybe tonight
+T 1593476859 18<ahesford18>	ok
+T 1593476871 18<ahesford18>	thanks
+T 1593476905 18<sgn18>	I'm out for work, soon
+T 1593476908 23*	Hoshpak (~Hoshpak@2001:16b8:1cec:e400:b495:5e14:a5db:6caa23) has joined
+T 1593477343 23*	d31irium_ (~d31irium@107.152.104.24323) has joined
+T 1593477343 23*	v0idkr4f1 (~v0idkr4ft@107.152.104.24323) has joined
+T 1593477373 24*	d31irium has quit (Ping timeout: 264 seconds)
+T 1593477394 24*	v0idkr4ft has quit (Ping timeout: 240 seconds)
+T 1593477443 -18void-packages/22#xbps-	sgn pushed https://is.gd/xPRtIl
+T 1593479954 20*	Disconnected (20)
+T 1593479976 22*	26cinerea0 sets mode 24+Z on 22cinerea0
+T 1593479976 22*	26cinerea0 sets mode 24+i on 22cinerea0
+T 1593479982 19*	Now talking on 22#xbps
+T 1593479982 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593479982 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593479982 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593481383 24*	mobinmob has quit (Quit: Connection closed for inactivity)
+T 1593481665 24*	Ingvix has quit (Quit: öh)
+T 1593481694 23*	Ingvix (~Ingvix@213.232.87.10823) has joined
+T 1593562857 19*	Now talking on 22#xbps
+T 1593562857 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593562857 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593562857 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593563007 -18void-packages/22#xbps-	misuchiru03 opened pull request #23335 “python3-zope.testrunner: update to 5.2” https://is.gd/idHAw4
+T 1593563230 24*	allan0 has quit (Ping timeout: 260 seconds)
+T 1593563255 23*	allan0 (~allan0@77-58-99-23.dclient.hispeed.ch23) has joined
+T 1593563435 18<ericonr18>	sgn: do we have other Japanese fonts?
+T 1593563468 18<sgn18>	ericonr: I don't know, let me reopen then
+T 1593563490 24*	Hoshpak has quit (Ping timeout: 244 seconds)
+T 1593563497 18<ericonr18>	that one was badly explained by the commiter too
+T 1593563674 18<sgn18>	ericonr: I'm using DejaVu, it can render Japanese just fine. There're ipafont-fonts-otf, too
+T 1593563874 24*	d31irium_ has quit (Ping timeout: 240 seconds)
+T 1593563929 24*	v0idkr4f1 has quit (Ping timeout: 265 seconds)
+T 1593564309 23*	Hoshpak (~Hoshpak@2001:16b8:1c25:6300:b495:5e14:a5db:6caa23) has joined
+T 1593564325 23*	d31irium_ (~d31irium@pool-108-34-251-7.prvdri.fios.verizon.net23) has joined
+T 1593564352 23*	v0idkr4f1 (~v0idkr4ft@pool-108-34-251-7.prvdri.fios.verizon.net23) has joined
+T 1593564579 18<flexibeast18>	https://www.reddit.com/r/voidlinux/comments/hizldf/void_linux_update_issue/
+T 1593564679 18<ericonr18>	sgn: if you think we have fonts for japanese, that's fine by me c:
+T 1593564683 18<ericonr18>	just wanted to be sure
+T 1593564730 18<ericonr18>	flexibeast: I think they should check the actual time, not the timezone
+T 1593564749 18<aedinius18>	That's what I said
+T 1593564781 18<flexibeast18>	i'm getting those errors too.
+T 1593564793 18<aedinius18>	I'm not
+T 1593564793 -18void-packages/22#xbps-	ifreund opened pull request #23336 “New package: kristall-0.3” https://is.gd/gdOI4M
+T 1593564795 18<aedinius18>	What's the output of date?
+T 1593564799 18<aedinius18>	date -u
+T 1593564803 18<aedinius18>	Wed 01 Jul 2020 12:53:17 AM UTC
+T 1593564818 18<flexibeast18>	Wed Jul  1 00:53:30 UTC 2020
+T 1593564838 18<aedinius18>	That seem soff.
+T 1593564842 18<aedinius18>	BY an hour
+T 1593564856 18<ericonr18>	hmm error in timezone database?
+T 1593564872 18<aedinius18>	shouldn't be, timezone would be wrong, not UTC
+T 1593564881 18<aedinius18>	flexibeast: do you use ntp?
+T 1593564891 18<flexibeast18>	Yes.
+T 1593564899 18<ericonr18>	wait
+T 1593564907 18<ericonr18>	aren't those times the same?
+T 1593564913 18<aedinius18>	Yes
+T 1593564918 18<aedinius18>	Those are both UTC
+T 1593564937 18<aedinius18>	Some one of our clocks is wrong
+T 1593564960 18<flexibeast18>	Bare `date` is showing the correct time.
+T 1593564977 18<ericonr18>	but but 00 and 12 are the same thing in 24h and 12h format
+T 1593564977 18<aedinius18>	Tue 30 Jun 2020 07:56:05 PM CDT
+T 1593564982 18<aedinius18>	oh right
+T 1593565002 18<aedinius18>	My brain translated to 11:53
+T 1593565004 18<aedinius18>	shit.
+T 1593565005 18<aedinius18>	well.
+T 1593565008 18<aedinius18>	NEXT
+T 1593565015 18<aedinius18>	flexibeast: does it give a reason? ;]
+T 1593565034 18<flexibeast18>	Sorry, i don't understand the question .... ?
+T 1593565063 18<aedinius18>	Visit in firefox, does it give an error for the cert and so what?
+T 1593565094 18<aedinius18>	I just realized why I was confused -- US locale uses AM/PM
+T 1593565098 18<aedinius18>	i need a better locale
+T 1593565121 18<flexibeast18>	i can open https://alpha.de.repo.voidlinux.org/ fine in FF.
+T 1593565122 18<ericonr18>	24h format <3
+T 1593565162 18<aedinius18>	ericonr: it's what we use at work, so much easier on my brain
+T 1593565209 18<flexibeast18>	.... and now xbps-install isn't reporting the error.
+T 1593565220 18<ericonr18>	oops
+T 1593565233 18<flexibeast18>	i.e. it's working fine.
+T 1593565243 18<ericonr18>	that's weird
+T 1593565250 18<ericonr18>	obviously
+T 1593565465 18<flexibeast18>	OP is saying it's still down for them.
+T 1593565541 18<ericonr18>	leah2: do you have anything against including an udev rules file in openocd? They have it in the contrib folder of the tarball
+T 1593565596 18<ericonr18>	flexibeast: perhaps we need to wait a bit more? idk
+T 1593565639 18<ericonr18>	wait, their clock is wrong
+T 1593565659 18<ericonr18>	ask them if they dual boot windows
+T 1593565675 18<ericonr18>	I can't access my reddit account rn D:
+T 1593565722 18<ericonr18>	they are 4 hours behind, which fits for people living in aedinius's timezone
+T 1593565794 18<aedinius18>	no
+T 1593565795 18<aedinius18>	Tue, 30 Jun 2020 20:09:51 -0500
+T 1593565814 18<ericonr18>	oof confused myself
+T 1593565842 18<ericonr18>	anyway, their timezone must be UTC-4
+T 1593565852 18<ahesford18>	that's mine
+T 1593565853 18<ericonr18>	then windows goes and changes the system clock to that
+T 1593565875 18<ericonr18>	then they probably misconfigured ntp somehow and their system isn't getting back in sync
+T 1593565881 18<ahesford18>	there are ways in the registry to tell win to use the system clock in UTC
+T 1593565901 18<ahesford18>	ntp generally refuses to adjust massive differences like that
+T 1593565910 18<ericonr18>	it's easier to change in linux tho
+T 1593565916 18<ahesford18>	no
+T 1593565926 18<ahesford18>	UTC sysclock is the right way
+T 1593565933 18<ahesford18>	make windows accomodate it
+T 1593565935 18<ericonr18>	well yeah
+T 1593565938 18<ericonr18>	but windows sucks
+T 1593565954 18<ericonr18>	and I can change it in linux without searching an article
+T 1593565960 18<ahesford18>	the fix is eminently google-able
+T 1593565974 18<ericonr18>	imagine no google at all tho
+T 1593565982 18<ahesford18>	or, for people like me, ddg-able
+T 1593565984 18<ericonr18>	it's definitely an ugly fix
+T 1593565996 18<ericonr18>	but that's the price you pay
+T 1593565998 18<ahesford18>	it's one registry change
+T 1593566010 18<aedinius18>	ahesford: that's what I did when I dual booted
+T 1593566013 18<ericonr18>	those windows clean up scripts should make this change too
+T 1593566024 18<aedinius18>	You can do it easy (set linux to localtime hwclock) or do it right (bend windows to your will)
+T 1593566029 18<ericonr18>	y'all are too willing to mess with the registry
+T 1593566036 18<aedinius18>	fuck the registry
+T 1593566039 18<aedinius18>	KILL IT
+T 1593566059 18<ahesford18>	Just run windows in qemu/kvm and don't worry about it
+T 1593566081 18<ahesford18>	I haven't dual-booted since 1999
+T 1593566082 18<ericonr18>	does qemu detect the host and perform the proper translation?
+T 1593566090 18<ericonr18>	or do you just run windows with an offset?
+T 1593566119 18<ericonr18>	also the third option of qemu/libvirt having a pretty option to set it
+T 1593566119 18<ahesford18>	ericonr: I think you can configure it; there's seomething in the libvirt XML
+T 1593566167 18<ahesford18>	so, in other words, the last time I dual booted, ericonr sprung forth from his mother's womb
+T 1593566222 18<ericonr18>	did you even have them fancy virtualization technologies back then?
+T 1593566260 18<aedinius18>	my guess is they have /etc/localtime set to UTC and just set the clock to their timezone
+T 1593566263 18<aedinius18>	unofficial theory
+T 1593566294 18<ahesford18>	no fancy svm or vt-x back then
+T 1593566296 18<ericonr18>	they said they checked timezone, though. I blame windows-linux relations
+T 1593566313 18<ahesford18>	just good old BIOS and two partitons on MBR
+T 1593566319 24*	mobinmob has quit (Quit: Connection closed for inactivity)
+T 1593566372 18<ahesford18>	if you wanted to boot... you used lilo
+T 1593566386 18<ericonr18>	in our defense, this whole thing is explained in the "Date and Time" page of the handbook
+T 1593566394 24*	Ingvix has quit (Ping timeout: 240 seconds)
+T 1593566414 18<ahesford18>	ericonr: you assume people read
+T 1593566443 18<ericonr18>	ahesford: lilo has mostly disappeared, hasn't it? You see mentions ever so often, but overall I don't ever see it recommended
+T 1593566451 18<flexibeast18>	lilo! That's not something i've thought about in a while.
+T 1593566460 23*	Ingvix (~Ingvix@n7e0rcitou9rv9dih-2.v6.elisa-mobile.fi23) has joined
+T 1593566470 18<ahesford18>	I've thought about Lolo more recently than lilo
+T 1593566496 18<ericonr18>	ahesford: > Trying to go on the void linux handbook
+T 1593566512 18<ahesford18>	there was elilo for EFI, but I had my head elsewhere then
+T 1593566513 18<ericonr18>	we should redirect SSL errors in void docs to the Time and Date page
+T 1593566517 18<ericonr18>	in http://
+T 1593566549 18<ericonr18>	is this even doable?
+T 1593566565 18<ericonr18>	I kind of want it now
+T 1593566573 18<ahesford18>	dunno, I'm not much of a web guy
+T 1593566654 18<ericonr18>	aedinius: can you link them to the handbook page, please?
+T 1593566672 18<ericonr18>	they are trying to go about solving it the wrong way
+T 1593566695 20<cinerea0>30	Anyone know what standard procedure is for packaging software that draws in dependencies via git submodules?
+T 1593566719 18<ericonr18>	usually a bunch of distfiles
+T 1593566828 20<cinerea0>30	Gotcha. Is it then a situation where it would be acceptable to draw in non-release git versions of those dependencies?
+T 1593566895 18<ericonr18>	yes, you should find out what commits were being used when the main application got a release
+T 1593567016 18<fossy18>	pretty easy to git checkout the version and to list the submodules
+T 1593567030 18<ifreund18>	welp, i have no idea why QT can't find the modules when cross compiling, I did add qt5-host-tools to the hostmakedepends
+T 1593567038 18<aedinius18>	ericonr: They're not far off
+T 1593567048 18<aedinius18>	ericonr: Just need to pick a timezone in Canada, not Canada itself.
+T 1593567050 18<ifreund18>	probably just need to go to sleep and look again in the morning
+T 1593567069 18<aedinius18>	"What timezone are you?" "Oh, Canada."
+T 1593567073 18<aedinius18>	Not even if flipped on its side
+T 1593567133 18<ericonr18>	ifreund: if you don't want to sleep yet, some packages have makedepends in hostmakedepends for cross
+T 1593567147 18<ericonr18>	aedinius: lol
+T 1593567208 18<ifreund18>	ericonr: got an example?
+T 1593567280 18<ifreund18>	huh, looks like that made it work for aarch64 cross at least
+T 1593567318 18<ifreund18>	spoke too soon, it failed at linking
+T 1593567327 18<ericonr18>	ifreund: it went by the void feed recently
+T 1593567381 18<ericonr18>	I can't find it now
+T 1593567682 18<ahesford18>	ifreund: hikari uses wayland-devel in both *makedepends for cross
+T 1593567701 18<ahesford18>	because the host has to run wayland-scanner
+T 1593567722 18<ahesford18>	my scipy fix uses python-numpy
+T 1593567744 18<ahesford18>	...in both because setup.py fails on the host if it is missing
+T 1593567764 18<ahesford18>	but then I have to jump throuhh hoops to use the target headers and libs
+T 1593567934 24*	anansi1 has quit (Ping timeout: 240 seconds)
+T 1593568062 23*	anansi1 (~samedi@107.158.96.9923) has joined
+T 1593568091 18<ericonr18>	I had to do this to get guix dependencies to work too
+T 1593568097 18<ericonr18>	stupid runtime checks
+T 1593568147 18<ericonr18>	it unfortunately only works for 64bit platforms, at least for now
+T 1593568766 24*	d31irium_ has quit (Ping timeout: 246 seconds)
+T 1593568830 24*	v0idkr4f1 has quit (Ping timeout: 265 seconds)
+T 1593569804 18<flexibeast18>	Hah, now freedesktop.org is down.
+T 1593569815 18<flexibeast18>	Oh, no, it's resolving now.
+T 1593569961 24*	anansi1 has quit (Ping timeout: 265 seconds)
+T 1593570062 23*	anansi1 (~samedi@107.158.96.9923) has joined
+T 1593570927 -18void-packages/22#xbps-	q66 pushed https://is.gd/3SWMVq
+T 1593572200 -18void-packages/22#xbps-	not-chicken opened pull request #23337 “gjs: update to 1.65.3;  mozjs68: update to 68.10.0” https://is.gd/zMY1Sd
+T 1593572976 -18void-packages/22#xbps-	q66 pushed https://is.gd/iS6sBA
+T 1593573799 20<cinerea0>30	What would you say is the best way to move the contents of one distfile into another? I'm trying a method with "mv *" right now and xbps-src is telling me the files I want to move don't exist, even though they do.
+T 1593573923 18<ericonr18>	with multiple distfiles you should use create_wrksrc=yes, and move files around in post_extract()
+T 1593573987 18<ericonr18>	try to run `./xbps-src extract <package>` to see what the file layout is looking like
+T 1593574039 18<ericonr18>	and with create_wrksrc you will probably need to set build_wrksrc=<folder-main-tarball-was-decompressed-into>
+T 1593575315 -18void-packages/22#xbps-	karl-nilsson opened pull request #23338 “python3-trimesh: update to 3.7.5.” https://is.gd/r3u7PQ
+T 1593575644 20<cinerea0>30	Hmm, still doesn't seem to be working. Is it a glob problem? Am I not allowed to use wildcards during post_extract for some reason?
+T 1593575987 18<ericonr18>	it should work just fine
+T 1593576003 18<ericonr18>	try to run `ls` in post_extract so you can see how the filesystem looks like
+T 1593576165 18<maldridge18>	Gottox: do you know off the top of your head what the slack is in a-lej-de?
+T 1593576176 18<maldridge18>	could I fit 3 more VMs on it about the size of vm2?
+T 1593577969 20<cinerea0>30	ericonr: Fixed it, turns out I was just quoting excessively.
+T 1593578383 18<ericonr18>	oh lol
+T 1593913521 19*	Now talking on 22#xbps
+T 1593913521 22*	Topic for 22#xbps is: daily pkg update-check: http://alpha.de.repo.voidlinux.org/void-updates/void-updates.txt
+T 1593913521 22*	Topic for 22#xbps set by 26maldridge (24Sun Feb 10 01:34:29 2019)
+T 1593913522 22*	Channel 22#xbps url: 24https://voidlinux.org
+T 1593913727 18<ericonr18>	ahesford: it's a bit wild that there were 90 PRs/issues opened in the three days I took from opening the issue to finding the fix
+T 1593913741 18<ericonr18>	thanks for merging them together c:
+T 1593913812 -18void-packages/22#xbps-	ericonr closed pull request #23214 “dkms: fix post-install hook.” https://is.gd/EHciFk
+T 1593913959 18<fossy18>	q66: ok, will fix
+T 1593915785 24*	anansi has quit (Ping timeout: 244 seconds)
+T 1593915905 23*	anansi (~samedi@64.44.80.20423) has joined
+T 1593916652 24*	flotsam has quit (Ping timeout: 256 seconds)
+T 1593918339 20<cinerea0>30	Just as a general question, how long should I wait before making the assumption that my request for a new version tag will go unanswered forever?
+T 1593918449 18<q6618>	?
+T 1593918579 20<cinerea0>30	There's something I want to package, but a vital commit occurred after the last official release. The dev hasn't made any commits to the project in 3 months, and hasn't been active on GitHub at all in a month. I opened an issue in the repo a few days ago asking about a new release including that vital commit I mentioned before.
+T 1593918878 18<ahesford18>	However long you think to wait, wait three months longer
+T 1593918890 18<q6618>	i see
+T 1593918897 18<q6618>	well i don't think there's any specific time
+T 1593918902 18<q6618>	it depends on the person managing the project
+T 1593918903 18<ahesford18>	By induction, just wait forever
+T 1593918952 18<ahesford18>	What is the vital commit?
+T 1593919003 18<ahesford18>	You can always just add a patch to your package. I doubt anybody will complain if you note that the patch is already upstream and you are just waiting for a release
+T 1593919067 20<cinerea0>30	>By induction, just wait forever
+T 1593919077 20<cinerea0>30	lol, that actually made me chuckle
+T 1593919106 20<cinerea0>30	The commit adds proper PAM support to the project, which is a display manager.
+T 1593919134 19<ericonr>	cinerea0: I feel like that's Ly
+T 1593919137 18<ericonr18>	is it Ly?
+T 1593919229 20<cinerea0>30	ericonr: It's Ly. I found a fork of the project that included the proper runit service files, changed them to use tty7, and it works.
+T 1593919256 18<ericonr18>	nice
+T 1593919271 18<ericonr18>	one of the oldest open PRs are for Ly
+T 1593919297 18<ericonr18>	https://github.com/void-linux/void-packages/pull/13649
+T 1593919306 18<ericonr18>	s/are/is/
+T 1593919391 18<ericonr18>	the author of Ly works in bursts. they come in every once in a while, accept PRs and close issues, then release a new version and vanish for a bit
+T 1593919413 18<ericonr18>	I managed to get 2 PRs in the middle of all that though
+T 1593919435 20<cinerea0>30	Oh yeah, I saw you in the contributor's list.
+T 1593919525 24*	Socke has quit (Ping timeout: 264 seconds)
+T 1593919549 18<ericonr18>	but yeah, if you want to add the patch for now it should be fine. I have a WIP I was making too https://github.com/ericonr/void-packages/tree/ly-0.5.0
+T 1593919562 18<ericonr18>	never put the patch in though
+T 1593919596 23*	Socke (~socke@dslb-188-096-137-084.188.096.pools.vodafone-ip.de23) has joined
+T 1593919702 20<cinerea0>30	Ok, so I think I'm going to continue working on my currently open PR. When I'm finished with that, I'll check back in on Ly and see if a new version has been pushed. If not, I'll make the package using 0.5.0 and bring it up to speed using patches.
+T 1593919718 20<cinerea0>30	Adding in all those distfiles sure is a pain in the ass, huh?
+T 1593919784 18<ericonr18>	heh, that's what we get with submodules
+T 1593919956 20<cinerea0>30	ericonr: For some reason that reminds me, I've been meaning to ask you, what's the deal with that crocodile in your GitHub profile pic?
+T 1593920094 18<ericonr18>	heh, just a photo I took on vacation once and ended up deciding to use as online identity
+T 1593920121 18<ericonr18>	I just really liked the pic :p
+T 1593920202 20<cinerea0>30	It is a very dapper croc, so I understand.
+T 1593920237 18<ericonr18>	:)
+T 1593920486 18<maldridge18>	well, I now have my desktop and one of void's servers talking via a VPN link
+T 1593920498 18<ericonr18>	btw, can I open a PR to update musl to 1.2.0 so we can track discussion there?
+T 1593920576 18<maldridge18>	feel free
+T 1593920581 18<maldridge18>	though I think it is not on the immediate horizon
+T 1593920604 18<ericonr18>	fair enough
+T 1593920624 18<ericonr18>	I will daily drive it and see if I spot any issues
+T 1593920640 18<ericonr18>	though it will likely be subtle breakage, but oh well
+T 1593920855 18<maldridge18>	its likely very subtle breakage, and the problem is that updating the C library like that is going to be a universe rebuild
+T 1593921214 18<ericonr18>	yeah
+T 1593921240 18<ericonr18>	and from the conversation I've seen on #musl, it seems like PHP isn't solved yet
+T 1593921251 18<ericonr18>	or at least it required some specific configuration
+T 1593921315 18<ericonr18>	I will do a proper reading of https://musl.libc.org/time64.html and all the associated links before making a PR
+T 1593921416 18<ericonr18>	we might need to update kernel-libc-headers as well, if I understand the issue correctly
+T 1593921666 18<maldridge18>	total aside, even if you're not american or have interest in US history, the musical Hamilton is on Disney+ and its some of the best musical theatre I've ever seen filmed.  still not quite as good as live performance, but well worth watching
+T 1593921888 18<ericonr18>	maldridge: you probably have some pull with disney, can you ask them about when Disney+ is going to be made available here?
+T 1593922044 24*	b has quit (Quit: Lost terminal)
+T 1593922270 18<maldridge18>	south america or Brazil in general?
+T 1593922282 18<maldridge18>	Brazil has some funky rules around data residency, that's why Google has a DC there
+T 1593922765 18<ericonr18>	hmm idk about the rest of SA
+T 1593922780 18<ericonr18>	but here in Brazil it just asks for my email so they can send me news about the service :p
+T 1593922857 18<maldridge18>	well, if you're in a major city or near a pop for a major network, you could always just VPN to the US
+T 1593923477 18<ericonr18>	using a VPN to browse to a paid service in another country feels like half-assing illegality
+T 1593923501 18<ericonr18>	I might download it somehow or wait for it to land here some other way, because it does seem like a good watch
+T 1593923504 18<ericonr18>	thanks for the rec c:
+T 1593923743 18<maldridge18>	meh
+T 1593923804 24*	_yopito has quit (Quit: Leaving)
+T 1593924642 23*	yopito (~yopito@lns-bzn-58-82-251-220-57.adsl.proxad.net23) has joined
+T 1593925374 FiSHLiM plugin unloaded

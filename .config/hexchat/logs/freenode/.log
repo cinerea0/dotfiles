@@ -1,0 +1,107 @@
+**** BEGIN LOGGING AT Tue Mar 10 11:26:45 2020
+
+Mar 10 11:26:45 *	Connecting to chat.freenode.net (195.154.200.232:6697)
+Mar 10 11:26:46 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 10 11:26:46 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 10 11:26:46 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 10 11:26:46 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Mar 10 11:26:46 *	* Subject: /CN=barjavel.freenode.net
+Mar 10 11:26:46 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Mar 10 11:26:46 *	* Certification info:
+Mar 10 11:26:46 *	  Subject:
+Mar 10 11:26:46 *	    CN=barjavel.freenode.net
+Mar 10 11:26:46 *	  Issuer:
+Mar 10 11:26:46 *	    C=US
+Mar 10 11:26:46 *	    O=Let's Encrypt
+Mar 10 11:26:46 *	    CN=Let's Encrypt Authority X3
+Mar 10 11:26:46 *	  Public key algorithm: rsaEncryption (4096 bits)
+Mar 10 11:26:46 *	  Sign algorithm sha256WithRSAEncryption
+Mar 10 11:26:46 *	  Valid since Mar  2 05:01:21 2020 GM to May 31 05:01:21 2020 GM
+Mar 10 11:26:46 *	* Cipher info:
+Mar 10 11:26:46 *	  Version: TLSv1/SSLv3, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Mar 10 11:26:46 *	Connected. Now logging in.
+**** BEGIN LOGGING AT Thu Mar 12 21:04:38 2020
+
+Mar 12 21:04:38 *	cinerea0 sets mode +Z on cinerea0
+Mar 12 21:04:38 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Thu Mar 12 21:04:44 2020
+
+**** BEGIN LOGGING AT Thu Mar 12 22:31:22 2020
+
+Mar 12 22:31:22 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Thu Mar 12 22:31:22 2020
+
+**** BEGIN LOGGING AT Tue Apr 21 19:02:26 2020
+
+Apr 21 19:02:26 *	cinerea0 sets mode +Z on cinerea0
+Apr 21 19:02:26 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Tue Apr 21 19:02:31 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 18:40:51 2020
+
+Jun 03 18:40:51 *	cinerea0 sets mode +Z on cinerea0
+Jun 03 18:40:51 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Wed Jun  3 18:40:57 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 20:43:56 2020
+
+Jun 03 20:43:56 *	cinerea0 sets mode +Z on cinerea0
+Jun 03 20:43:56 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Wed Jun  3 20:44:01 2020
+
+**** BEGIN LOGGING AT Wed Jun  3 21:13:56 2020
+
+Jun 03 21:13:56 *	cinerea0 sets mode +Z on cinerea0
+Jun 03 21:13:56 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Wed Jun  3 21:14:02 2020
+
+**** BEGIN LOGGING AT Tue Jun  9 22:04:36 2020
+
+Jun 09 22:04:36 *	cinerea0 sets mode +Z on cinerea0
+Jun 09 22:04:36 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Tue Jun  9 22:04:42 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 12:49:19 2020
+
+Jun 26 12:49:19 *	cinerea0 sets mode +Z on cinerea0
+Jun 26 12:49:19 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Fri Jun 26 12:49:25 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 14:13:55 2020
+
+Jun 26 14:13:55 *	cinerea0 sets mode +Z on cinerea0
+Jun 26 14:13:55 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Fri Jun 26 14:14:01 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 15:44:16 2020
+
+Jun 26 15:44:16 *	cinerea0 sets mode +Z on cinerea0
+Jun 26 15:44:16 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Fri Jun 26 15:44:22 2020
+
+**** BEGIN LOGGING AT Fri Jun 26 18:30:25 2020
+
+Jun 26 18:30:25 *	cinerea0 sets mode +Z on cinerea0
+Jun 26 18:30:25 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Fri Jun 26 18:30:31 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:30:41 2020
+
+Jun 27 21:30:41 *	cinerea0 is already in use. Retrying with erebus_...
+Jun 27 21:30:43 *	erebus_ sets mode +Z on erebus_
+Jun 27 21:30:43 *	erebus_ sets mode +i on erebus_
+**** ENDING LOGGING AT Sat Jun 27 21:30:49 2020
+
+**** BEGIN LOGGING AT Sat Jun 27 21:50:35 2020
+
+Jun 27 21:50:35 *	cinerea0 is already in use. Retrying with erebus_...
+Jun 27 21:50:38 *	erebus_ sets mode +Z on erebus_
+Jun 27 21:50:38 *	erebus_ sets mode +i on erebus_
+**** ENDING LOGGING AT Sat Jun 27 21:50:44 2020
+
+**** BEGIN LOGGING AT Mon Jun 29 21:19:36 2020
+
+Jun 29 21:19:36 *	cinerea0 sets mode +Z on cinerea0
+Jun 29 21:19:36 *	cinerea0 sets mode +i on cinerea0
+**** ENDING LOGGING AT Mon Jun 29 21:19:42 2020
+
